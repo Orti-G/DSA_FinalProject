@@ -52,7 +52,7 @@ namespace DSA
             list.Add(2);
             list.Add(3);
 
-            int answerKey = 0;
+            int answerKey = 1;
 
             list.Remove(answerKey);
 
@@ -116,23 +116,35 @@ namespace DSA
 
         private void ChoiceA_Text_Click(object sender, EventArgs e)
         {
-                /*panelA.BackgroundImage = */
+            panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
         }
 
         private void ChoiceB_Text_Click(object sender, EventArgs e)
         {
-
+            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
         }
 
         private void ChoiceC_Text_Click(object sender, EventArgs e)
         {
-
+            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
         }
 
 
         private void ChoiceD_Text_Click(object sender, EventArgs e)
         {
-
+            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
         }
 
         
