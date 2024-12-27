@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30D1DD79-0356-49EB-A8B7-96FFDE6868CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DSA</RootNamespace>
+    <AssemblyName>DSA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animation.Designer.cs">
+      <DependentUpon>Animation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Character.Designer.cs">
+      <DependentUpon>Character.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndScreen.Designer.cs">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mechanics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mechanics.Designer.cs">
+      <DependentUpon>Mechanics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Q&amp;A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q&amp;A.Designer.cs">
+      <DependentUpon>Q&amp;A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupPanel.Designer.cs">
+      <DependentUpon>SetupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winning.Designer.cs">
+      <DependentUpon>Winning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Animation.resx">
+      <DependentUpon>Animation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Character.resx">
+      <DependentUpon>Character.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndScreen.resx">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mechanics.resx">
+      <DependentUpon>Mechanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q&amp;A.resx">
+      <DependentUpon>Q&amp;A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupPanel.resx">
+      <DependentUpon>SetupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winning.resx">
+      <DependentUpon>Winning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Choice_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Choice_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lifeline_50-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lifeline_x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lifeline_ SwitchQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lifeline_ TimeFreeze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer-1minute.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_MoneyTree2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_MoneyBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Mathematics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Wrong_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Wrong_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Correct_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Correct_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG Studio 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Contestant1_Answering.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_QuestionPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Host_Questioning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrice_2Million.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Host_Intro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_1k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_1m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_3k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_5k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_10k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_20k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_35k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_50k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_70k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_100k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_150k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_250k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_400k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_CashPrize_600k.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Homescreen1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
