@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Question_Text = new System.Windows.Forms.Label();
             this.Lifeline_timeFreeze = new System.Windows.Forms.PictureBox();
             this.Lifeline_x2 = new System.Windows.Forms.PictureBox();
             this.Lifeline_SwitchQ = new System.Windows.Forms.PictureBox();
             this.Lifeline_5050 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.GifTimer = new System.Windows.Forms.PictureBox();
+            this.panel_Question = new System.Windows.Forms.Panel();
             this.ChoiceA = new System.Windows.Forms.Label();
             this.ChoiceA_Text = new System.Windows.Forms.Label();
             this.panelA = new System.Windows.Forms.Panel();
@@ -90,19 +91,24 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.MoneyTree_BG_Panel = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.ChoiceB = new System.Windows.Forms.Label();
             this.panelB = new System.Windows.Forms.Panel();
             this.ChoiceB_Text = new System.Windows.Forms.Label();
-            this.Q = new System.Windows.Forms.PictureBox();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.TimeToAnswer = new System.Windows.Forms.Timer(this.components);
+            this.panel_FinalAnswerNotif = new System.Windows.Forms.Panel();
+            this.btn_NoFinalAnswer = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_YesFinalAnswer = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.BackgroundGif = new System.Windows.Forms.PictureBox();
+            this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
+            this.transitionTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_5050)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GifTimer)).BeginInit();
+            this.panel_Question.SuspendLayout();
             this.panelA.SuspendLayout();
             this.panelC.SuspendLayout();
             this.panelD.SuspendLayout();
@@ -123,7 +129,8 @@
             this.MoneyTree_1.SuspendLayout();
             this.MoneyTree_BG_Panel.SuspendLayout();
             this.panelB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Q)).BeginInit();
+            this.panel_FinalAnswerNotif.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundGif)).BeginInit();
             this.SuspendLayout();
             // 
             // Question_Text
@@ -196,28 +203,28 @@
             this.Lifeline_5050.TabStop = false;
             this.Lifeline_5050.Click += new System.EventHandler(this.Lifeline_5050_Click);
             // 
-            // pictureBox8
+            // GifTimer
             // 
-            this.pictureBox8.Image = global::DSA.Properties.Resources.Timer_1minute;
-            this.pictureBox8.Location = new System.Drawing.Point(391, 353);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 28);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 14;
-            this.pictureBox8.TabStop = false;
+            this.GifTimer.Image = global::DSA.Properties.Resources.Timer_1minute;
+            this.GifTimer.Location = new System.Drawing.Point(391, 353);
+            this.GifTimer.Margin = new System.Windows.Forms.Padding(2);
+            this.GifTimer.Name = "GifTimer";
+            this.GifTimer.Size = new System.Drawing.Size(64, 28);
+            this.GifTimer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GifTimer.TabIndex = 14;
+            this.GifTimer.TabStop = false;
             // 
-            // panel1
+            // panel_Question
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::DSA.Properties.Resources.Q_A_QuestionPanel;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.Question_Text);
-            this.panel1.Location = new System.Drawing.Point(-15, 387);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 89);
-            this.panel1.TabIndex = 34;
+            this.panel_Question.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Question.BackgroundImage = global::DSA.Properties.Resources.Q_A_QuestionPanel;
+            this.panel_Question.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_Question.Controls.Add(this.Question_Text);
+            this.panel_Question.Location = new System.Drawing.Point(-15, 387);
+            this.panel_Question.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_Question.Name = "panel_Question";
+            this.panel_Question.Size = new System.Drawing.Size(873, 89);
+            this.panel_Question.TabIndex = 34;
             // 
             // ChoiceA
             // 
@@ -245,6 +252,7 @@
             this.ChoiceA_Text.TabIndex = 22;
             this.ChoiceA_Text.Text = "Choices must be short.";
             this.ChoiceA_Text.Click += new System.EventHandler(this.ChoiceA_Text_Click);
+            this.ChoiceA_Text.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ChoiceA_Text_MouseDoubleClick);
             // 
             // panelA
             // 
@@ -287,6 +295,7 @@
             this.ChoiceC_Text.TabIndex = 30;
             this.ChoiceC_Text.Text = "Limit answers to four/five";
             this.ChoiceC_Text.Click += new System.EventHandler(this.ChoiceC_Text_Click);
+            this.ChoiceC_Text.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ChoiceC_Text_MouseDoubleClick);
             // 
             // ChoiceC
             // 
@@ -328,6 +337,7 @@
             this.ChoiceD_Text.TabIndex = 31;
             this.ChoiceD_Text.Text = "Limit answers to four/five";
             this.ChoiceD_Text.Click += new System.EventHandler(this.ChoiceD_Text_Click);
+            this.ChoiceD_Text.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ChoiceD_Text_MouseDoubleClick);
             // 
             // ChoiceD
             // 
@@ -968,34 +978,6 @@
             this.MoneyTree_BG_Panel.Size = new System.Drawing.Size(202, 525);
             this.MoneyTree_BG_Panel.TabIndex = 40;
             // 
-            // label7
-            // 
-            this.label7.AllowDrop = true;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Linen;
-            this.label7.Location = new System.Drawing.Point(269, 261);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(284, 23);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "IS THAT YOUR FINAL ANSWER?";
-            // 
-            // label9
-            // 
-            this.label9.AllowDrop = true;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label9.Location = new System.Drawing.Point(310, 280);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(199, 19);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "<Click your Answer Again>";
-            // 
             // ChoiceB
             // 
             this.ChoiceB.AutoSize = true;
@@ -1036,17 +1018,7 @@
             this.ChoiceB_Text.TabIndex = 30;
             this.ChoiceB_Text.Text = "Choices must be short.";
             this.ChoiceB_Text.Click += new System.EventHandler(this.ChoiceB_Text_Click);
-            // 
-            // Q
-            // 
-            this.Q.Image = global::DSA.Properties.Resources.Host_Questioning;
-            this.Q.Location = new System.Drawing.Point(-1, 0);
-            this.Q.Margin = new System.Windows.Forms.Padding(2);
-            this.Q.Name = "Q";
-            this.Q.Size = new System.Drawing.Size(1043, 618);
-            this.Q.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Q.TabIndex = 44;
-            this.Q.TabStop = false;
+            this.ChoiceB_Text.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ChoiceB_Text_MouseDoubleClick);
             // 
             // kryptonButton4
             // 
@@ -1071,16 +1043,89 @@
             this.kryptonButton4.TabIndex = 45;
             this.kryptonButton4.Values.Text = "LIFELINES";
             // 
-            // Form5
+            // TimeToAnswer
+            // 
+            this.TimeToAnswer.Enabled = true;
+            this.TimeToAnswer.Interval = 1200;
+            this.TimeToAnswer.Tick += new System.EventHandler(this.TimeToAnswer_Tick);
+            // 
+            // panel_FinalAnswerNotif
+            // 
+            this.panel_FinalAnswerNotif.BackColor = System.Drawing.Color.Transparent;
+            this.panel_FinalAnswerNotif.Controls.Add(this.btn_NoFinalAnswer);
+            this.panel_FinalAnswerNotif.Controls.Add(this.btn_YesFinalAnswer);
+            this.panel_FinalAnswerNotif.Controls.Add(this.label7);
+            this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(279, 176);
+            this.panel_FinalAnswerNotif.Name = "panel_FinalAnswerNotif";
+            this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(308, 147);
+            this.panel_FinalAnswerNotif.TabIndex = 46;
+            this.panel_FinalAnswerNotif.Visible = false;
+            // 
+            // btn_NoFinalAnswer
+            // 
+            this.btn_NoFinalAnswer.Location = new System.Drawing.Point(180, 87);
+            this.btn_NoFinalAnswer.Name = "btn_NoFinalAnswer";
+            this.btn_NoFinalAnswer.Size = new System.Drawing.Size(63, 25);
+            this.btn_NoFinalAnswer.TabIndex = 50;
+            this.btn_NoFinalAnswer.Values.Text = "No";
+            this.btn_NoFinalAnswer.Click += new System.EventHandler(this.btn_NoFinalAnswer_Click);
+            // 
+            // btn_YesFinalAnswer
+            // 
+            this.btn_YesFinalAnswer.Location = new System.Drawing.Point(69, 87);
+            this.btn_YesFinalAnswer.Name = "btn_YesFinalAnswer";
+            this.btn_YesFinalAnswer.Size = new System.Drawing.Size(63, 25);
+            this.btn_YesFinalAnswer.TabIndex = 49;
+            this.btn_YesFinalAnswer.Values.Text = "Yes";
+            this.btn_YesFinalAnswer.Click += new System.EventHandler(this.btn_YesFinalAnswer_Click);
+            // 
+            // label7
+            // 
+            this.label7.AllowDrop = true;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Linen;
+            this.label7.Location = new System.Drawing.Point(18, 46);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(284, 23);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "IS THAT YOUR FINAL ANSWER?";
+            // 
+            // BackgroundGif
+            // 
+            this.BackgroundGif.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackgroundGif.Image = global::DSA.Properties.Resources.Host_Questioning;
+            this.BackgroundGif.Location = new System.Drawing.Point(0, 0);
+            this.BackgroundGif.Margin = new System.Windows.Forms.Padding(2);
+            this.BackgroundGif.Name = "BackgroundGif";
+            this.BackgroundGif.Size = new System.Drawing.Size(1042, 615);
+            this.BackgroundGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BackgroundGif.TabIndex = 44;
+            this.BackgroundGif.TabStop = false;
+            // 
+            // AnimationTimer
+            // 
+            this.AnimationTimer.Enabled = true;
+            this.AnimationTimer.Interval = 1200;
+            this.AnimationTimer.Tick += new System.EventHandler(this.AnimationTimer_Tick);
+            // 
+            // transitionTimer
+            // 
+            this.transitionTimer.Interval = 1200;
+            this.transitionTimer.Tick += new System.EventHandler(this.transitionTimer_Tick);
+            // 
+            // QA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::DSA.Properties.Resources.Host_Questioning;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1042, 615);
+            this.Controls.Add(this.panel_FinalAnswerNotif);
             this.Controls.Add(this.kryptonButton4);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.MoneyTree_BG_Panel);
             this.Controls.Add(this.panelD);
             this.Controls.Add(this.panelC);
@@ -1090,20 +1135,20 @@
             this.Controls.Add(this.Lifeline_x2);
             this.Controls.Add(this.Lifeline_SwitchQ);
             this.Controls.Add(this.Lifeline_5050);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Q);
+            this.Controls.Add(this.GifTimer);
+            this.Controls.Add(this.panel_Question);
+            this.Controls.Add(this.BackgroundGif);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form5";
+            this.Name = "QA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_5050)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GifTimer)).EndInit();
+            this.panel_Question.ResumeLayout(false);
             this.panelA.ResumeLayout(false);
             this.panelA.PerformLayout();
             this.panelC.ResumeLayout(false);
@@ -1143,20 +1188,21 @@
             this.MoneyTree_BG_Panel.ResumeLayout(false);
             this.panelB.ResumeLayout(false);
             this.panelB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Q)).EndInit();
+            this.panel_FinalAnswerNotif.ResumeLayout(false);
+            this.panel_FinalAnswerNotif.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundGif)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox GifTimer;
         private System.Windows.Forms.PictureBox Lifeline_5050;
         private System.Windows.Forms.PictureBox Lifeline_SwitchQ;
         private System.Windows.Forms.PictureBox Lifeline_x2;
         private System.Windows.Forms.PictureBox Lifeline_timeFreeze;
         private System.Windows.Forms.Label Question_Text;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_Question;
         private System.Windows.Forms.Label ChoiceA;
         private System.Windows.Forms.Label ChoiceA_Text;
         private System.Windows.Forms.Panel panelA;
@@ -1211,13 +1257,18 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel MoneyTree_BG_Panel;
         private System.Windows.Forms.Label ChoiceC_Text;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label ChoiceB;
         private System.Windows.Forms.Panel panelB;
         private System.Windows.Forms.Label ChoiceB_Text;
         private System.Windows.Forms.Label ChoiceD_Text;
-        private System.Windows.Forms.PictureBox Q;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
+        private System.Windows.Forms.Timer TimeToAnswer;
+        public System.Windows.Forms.Panel panel_FinalAnswerNotif;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_NoFinalAnswer;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_YesFinalAnswer;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox BackgroundGif;
+        private System.Windows.Forms.Timer AnimationTimer;
+        private System.Windows.Forms.Timer transitionTimer;
     }
 }
