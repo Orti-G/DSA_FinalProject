@@ -37,24 +37,20 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -289,6 +285,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GIF_Homescreen1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add a heading %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_SelectCharacter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_CharacterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_GameSetup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_Mechanics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_CharacterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CATEGORY OPTION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-12-28 160556.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-12-28 1605561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG and LOGO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG and LOGO %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG and LOGO %282%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

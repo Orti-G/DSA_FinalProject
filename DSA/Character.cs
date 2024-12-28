@@ -26,5 +26,19 @@ namespace DSA
         {
 
         }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            Category form8 = new Category();
+            form8.Show();
+            this.Hide();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            Home form8 = new Home();
+            form8.Show();
+            this.Hide();
+        }
     }
 }

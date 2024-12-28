@@ -63,6 +63,176 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__10_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__2_2 {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (2)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__5_1 {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (5)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__8_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_a_heading__9_ {
+            get {
+                object obj = ResourceManager.GetObject("Add a heading (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_and_LOGO {
+            get {
+                object obj = ResourceManager.GetObject("BG and LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_and_LOGO__1_ {
+            get {
+                object obj = ResourceManager.GetObject("BG and LOGO (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_and_LOGO__2_ {
+            get {
+                object obj = ResourceManager.GetObject("BG and LOGO (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_studio {
             get {
                 object obj = ResourceManager.GetObject("BG studio", resourceCulture);
@@ -76,6 +246,16 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap BG_Studio_2 {
             get {
                 object obj = ResourceManager.GetObject("BG Studio 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CATEGORY_OPTION {
+            get {
+                object obj = ResourceManager.GetObject("CATEGORY OPTION", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +473,116 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Labels {
+            get {
+                object obj = ResourceManager.GetObject("Labels", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Labels (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Labels (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Labels (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Labels (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("Labels (4)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Labels (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels_CharacterName {
+            get {
+                object obj = ResourceManager.GetObject("Labels_CharacterName", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels_GameSetup {
+            get {
+                object obj = ResourceManager.GetObject("Labels_GameSetup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels_Mechanics {
+            get {
+                object obj = ResourceManager.GetObject("Labels_Mechanics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels_SelectCharacter {
+            get {
+                object obj = ResourceManager.GetObject("Labels_SelectCharacter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lifeline__SwitchQuestion {
             get {
                 object obj = ResourceManager.GetObject("Lifeline_ SwitchQuestion", resourceCulture);
@@ -336,6 +626,16 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap NameYourCharacter {
             get {
                 object obj = ResourceManager.GetObject("NameYourCharacter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panel_CharacterName {
+            get {
+                object obj = ResourceManager.GetObject("Panel_CharacterName", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +766,26 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap Q_A_Wrong_Right {
             get {
                 object obj = ResourceManager.GetObject("Q&A_Wrong_Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_12_28_160556 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-12-28 160556", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_12_28_1605561 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-12-28 1605561", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

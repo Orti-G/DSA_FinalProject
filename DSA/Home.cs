@@ -19,14 +19,14 @@ namespace DSA
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            QA form8 = new QA();
+            Character form8 = new Character();
             form8.Show();
             this.Hide();
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            Winning form8 = new Winning();
+            Form4 form8 = new Form4();
             form8.Show();
             this.Hide();
         }

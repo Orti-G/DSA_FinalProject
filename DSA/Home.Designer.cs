@@ -28,26 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.startButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = global::DSA.Properties.Resources.GIF_Homescreen1;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1392, 746);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(566, 505);
+            this.startButton.Location = new System.Drawing.Point(572, 495);
             this.startButton.Name = "startButton";
             this.startButton.OverrideDefault.Back.Color1 = System.Drawing.Color.Blue;
             this.startButton.OverrideDefault.Back.Color2 = System.Drawing.Color.Navy;
@@ -76,7 +65,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(593, 593);
+            this.kryptonButton1.Location = new System.Drawing.Point(599, 594);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
@@ -98,30 +87,40 @@
             this.kryptonButton1.Values.Text = "MECHANICS";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::DSA.Properties.Resources.BG_and_LOGO__2_;
+            this.pictureBox3.Location = new System.Drawing.Point(342, 54);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(707, 382);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
+            this.BackgroundImage = global::DSA.Properties.Resources.Screenshot_2024_12_28_160556;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1390, 745);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton startButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

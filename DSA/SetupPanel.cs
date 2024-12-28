@@ -19,12 +19,14 @@ namespace DSA
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-
+            Category form8 = new Category();
+            form8.Show();
+            this.Hide();
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -40,6 +40,7 @@ namespace DSA
         public QA()
         {
             InitializeComponent();
+            panel1.Parent = Q;
 
         }
 
@@ -147,6 +148,9 @@ namespace DSA
             panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
         }
 
-        
+        private void Question_Text_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

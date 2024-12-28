@@ -21,5 +21,29 @@ namespace DSA
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Category_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            Character form8 = new Character();
+            form8.Show();
+            this.Hide();
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            SetupPanel form8 = new SetupPanel();
+            form8.Show();
+            this.Hide();
+        }
     }
 }
