@@ -83,6 +83,76 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG_Studio_3 {
+            get {
+                object obj = ResourceManager.GetObject("BG Studio 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_History {
+            get {
+                object obj = ResourceManager.GetObject("Category_History", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_History_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("Category_History_Clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_Math {
+            get {
+                object obj = ResourceManager.GetObject("Category_Math", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_Math_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("Category_Math_Clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_Science {
+            get {
+                object obj = ResourceManager.GetObject("Category_Science", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Category_Science_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("Category_Science_Clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CharacterNaming {
             get {
                 object obj = ResourceManager.GetObject("CharacterNaming", resourceCulture);
@@ -96,6 +166,46 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap CharacterSelectedBox {
             get {
                 object obj = ResourceManager.GetObject("CharacterSelectedBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Format_ClassicMT {
+            get {
+                object obj = ResourceManager.GetObject("Format_ClassicMT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Format_ClassicMT_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("Format_ClassicMT_Clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Format_HighRiskMT {
+            get {
+                object obj = ResourceManager.GetObject("Format_HighRiskMT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Format_HighRiskMT_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("Format_HighRiskMT_Clicked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +393,29 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIF_Logo {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Host_Questioning {
             get {
                 object obj = ResourceManager.GetObject("Host_Questioning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Labels_SelectCharacter {
+            get {
+                object obj = ResourceManager.GetObject("Labels_SelectCharacter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +466,26 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap NameYourCharacter {
             get {
                 object obj = ResourceManager.GetObject("NameYourCharacter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panel_CharacterName {
+            get {
+                object obj = ResourceManager.GetObject("Panel_CharacterName", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panel_CharacterNameDisplay {
+            get {
+                object obj = ResourceManager.GetObject("Panel_CharacterNameDisplay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -84,6 +84,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mechanics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.cs</DependentUpon>
@@ -273,6 +282,70 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GIF_Homescreen1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG Studio 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_SelectCharacter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_CharacterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Format_ClassicMT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Format_ClassicMT_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Format_HighRiskMT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Format_HighRiskMT_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_History_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_Math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_Math_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_Science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category_Science_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_CharacterNameDisplay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
