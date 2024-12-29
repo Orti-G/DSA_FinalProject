@@ -19,13 +19,28 @@ namespace DSA
 {
     public partial class QA : Form
     {
+        private bool Life2x = false;
+
+        private bool HalfChanceVisible = true;
+        private bool Life2xVisible = true;
+        private bool timeFreezeVisible = true;
+        private bool SwitchQuestionVisible = true;
+
         public QA()
         {
             InitializeComponent();
             AdjustBackgorund();
+
+            Lifeline_5050.Visible = HalfChanceVisible;
+            Lifeline_x2.Visible = Life2xVisible;
+            Lifeline_timeFreeze.Visible = timeFreezeVisible;
+            Lifeline_SwitchQ.Visible = SwitchQuestionVisible;
         }
         
+        
+
         private string UserAnswer;
+        private string UserSecondAnswer;
         private readonly string answerKey = "C";
 
         private int elapsedTime = -4;
@@ -34,7 +49,6 @@ namespace DSA
 
         private void Lifeline_5050_Click(object sender, EventArgs e)
         {
-            
             Random rnd = new Random();
             List<string> list = new List<string>();
             list.Add("A");
@@ -84,128 +98,301 @@ namespace DSA
                     count++;
                 }
             }
+
             Lifeline_5050.Visible = false;
-            
-            
+            HalfChanceVisible = false;
         }
 
         private void Lifeline_x2_Click(object sender, EventArgs e)
         {
-
+            Life2x = true;
+            Lifeline_x2.Visible = false;
+            Life2xVisible = false;
         }
 
         private void Lifeline_timeFreeze_Click(object sender, EventArgs e)
         {
             TimeToAnswer.Stop();
-            Lifeline_timeFreeze.Visible = false;
             GifTimer.Enabled = false;
+
+            Lifeline_timeFreeze.Visible = false;
+            timeFreezeVisible = false;
+            
         }
 
         private void Lifeline_SwitchQ_Click(object sender, EventArgs e)
         {
-            
+            Lifeline_SwitchQ.Visible = false;
+            SwitchQuestionVisible = false;
         }
 
         private void ChoiceA_Text_Click(object sender, EventArgs e)
         {
-            panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
-            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
-            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            if (Life2x && UserAnswer != null) 
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                AvoidChangingColorUserAnswer();
+            }
+            else
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            }
+            
         }
 
         private void ChoiceB_Text_Click(object sender, EventArgs e)
         {
-            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
-            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
-            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            if (Life2x && UserAnswer != null)
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                AvoidChangingColorUserAnswer();
+            }
+            else
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            }
+            
         }
 
         private void ChoiceC_Text_Click(object sender, EventArgs e)
         {
-            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
-            panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            if (Life2x && UserAnswer != null)
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                AvoidChangingColorUserAnswer();
+            }
+            else
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+            }            
         }
 
         private void ChoiceD_Text_Click(object sender, EventArgs e)
         {
-            panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
-            panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
-            panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+            if (Life2x && UserAnswer != null)
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+                AvoidChangingColorUserAnswer();
+            }
+            else
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+            }
+            
+        }
+
+        private void AvoidChangingColorUserAnswer()
+        {
+            if (UserAnswer == "A")
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+            }
+            else if (UserAnswer == "B")
+            {
+                panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;
+            }
+            else if (UserAnswer == "C")
+            {
+                panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+            }
+            else if (UserAnswer == "D")
+            {
+                panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+            }
         }
 
         private void ChoiceA_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            UserAnswer = "A";
-
+            if (Life2x && UserAnswer == null)
+            {
+                UserAnswer = "A";
+            }
+            else if (Life2x && UserAnswer != null)
+            {
+                UserSecondAnswer = "A";
+            }
+            else 
+            {
+                UserAnswer = "A";
+            }
+            
                 panel_FinalAnswerNotif.Visible = true;
-                panel_FinalAnswerNotif.BringToFront();
                 panelB.Enabled = false;
                 panelC.Enabled = false;
                 panelD.Enabled = false;
-                DisabledLifeLines();
-            
+                DisabledLifeLines();       
         }
 
         private void ChoiceB_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            UserAnswer = "B";
+            if (Life2x && UserAnswer == null)
+            {
+                UserAnswer = "B";
+            }
+            else if (Life2x && UserAnswer != null)
+            {
+                UserSecondAnswer = "B";
+            }
+            else
+            {
+                UserAnswer = "B";
+            }
 
                 panel_FinalAnswerNotif.Visible = true;
                 panelA.Enabled = false;
                 panelC.Enabled = false;
                 panelD.Enabled = false;
-                DisabledLifeLines();
-            
+                DisabledLifeLines();  
         }
 
         private void ChoiceC_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            UserAnswer = "C";
- 
-                panel_FinalAnswerNotif.Visible = true;
+            if (Life2x && UserAnswer == null)
+            {
+                UserAnswer = "C";
+            }
+            else if (Life2x && UserAnswer != null)
+            {
+                UserSecondAnswer = "C";
+            }
+            else
+            {
+                UserAnswer = "C";
+            }
+
+            panel_FinalAnswerNotif.Visible = true;
                 panelA.Enabled = false;
                 panelB.Enabled = false;
                 panelD.Enabled = false;
-                DisabledLifeLines();
-            
+                DisabledLifeLines();     
         }
 
         private void ChoiceD_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            UserAnswer = "D";
- 
-                panel_FinalAnswerNotif.Visible = true;
+            if (Life2x && UserAnswer == null)
+            {
+                UserAnswer = "D";
+            }
+            else if (Life2x && UserAnswer != null)
+            {
+                UserSecondAnswer = "D";
+            }
+            else
+            {
+                UserAnswer = "D";
+            }
+
+            panel_FinalAnswerNotif.Visible = true;
                 panelA.Enabled = false;
                 panelB.Enabled = false;
                 panelC.Enabled = false;
                 DisabledLifeLines();
-
         }
 
         private void btn_YesFinalAnswer_Click(object sender, EventArgs e)
         {
             panel_FinalAnswerNotif.Visible = false;
-            panelA.Enabled = true;
-            panelB.Enabled = true;
-            panelC.Enabled = true;
-            panelD.Enabled = true;
-            GifTimer.Visible = false;
 
-            TimeToAnswer.Stop();
-            TimeToAnswer.Dispose();
-            AnimationTimer.Stop();
-            AnimationTimer.Dispose();
+            if (Life2x && UserSecondAnswer == null)
+            {
+                AnswerChosen(UserAnswer);
+                EnabledLifeLines();
+            }
+            else
+            {
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+                GifTimer.Visible = false;
 
-            DisabledButtonEvent();
+                TimeToAnswer.Stop();
+                TimeToAnswer.Dispose();
+                AnimationTimer.Stop();
+                AnimationTimer.Dispose();
 
-            BackgroundGif.Image = null;
-            transitionTimer.Start();
+                DisabledButtonEvent();
 
+                BackgroundGif.Image = null;
+                transitionTimer.Start();
+            }
+
+        }
+
+        private void AnswerChosen(string answer)
+        {
+            if (answer == "A")
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;                
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+
+                panelA.Enabled = false;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+            }
+            else if (answer == "B")
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Wrong_Left;              
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+
+                panelA.Enabled = true;
+                panelB.Enabled = false;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+            }
+            else if (answer == "C")
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = false;
+                panelD.Enabled = true;
+            }
+            else if (answer == "D")
+            {
+                panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
+                panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
+                panelD.BackgroundImage = Properties.Resources.Q_A_Wrong_Right;
+
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = false;
+            }
         }
 
         private void TimeToAnswer_Tick(object sender, EventArgs e)
@@ -225,13 +412,22 @@ namespace DSA
                 panelC.Enabled = true;
                 panelD.Enabled = true;
 
-                UserAnswer = null;
-
                 panelA.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
                 panelB.BackgroundImage = Properties.Resources.Q_A_Choice_Left;
                 panelC.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
                 panelD.BackgroundImage = Properties.Resources.Q_A_Choice_Right;
 
+                if (Life2x && UserAnswer != null)
+                {
+                    UserSecondAnswer = null;
+                    AvoidChangingColorUserAnswer();
+                }
+                else 
+                {
+                    UserAnswer = null;
+                    
+                }
+                
                 BackgroundGif.Image = null;
                 transitionTimer.Start();
                 DisabledButtonEvent();
@@ -241,12 +437,54 @@ namespace DSA
         private void btn_NoFinalAnswer_Click(object sender, EventArgs e)
         {
             panel_FinalAnswerNotif.Visible = false;
-            UserAnswer = null;
-            panelA.Enabled = true;
-            panelB.Enabled = true;
-            panelC.Enabled = true;
-            panelD.Enabled = true;
+
+            if (Life2x && UserSecondAnswer != null)
+            {
+                UserSecondAnswer = null;
+                DisabledSpecifiedPanel(UserAnswer);
+            }
+            else 
+            {
+                UserAnswer = null;
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+            }
+             
             EnabledLifeLines();
+        }
+
+        private void DisabledSpecifiedPanel(string key) 
+        {
+            if(key == "A")
+            {
+                panelA.Enabled = false;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+            }
+            else if (key == "B")
+            {
+                panelA.Enabled = true;
+                panelB.Enabled = false;
+                panelC.Enabled = true;
+                panelD.Enabled = true;
+            }
+            else if (key == "C")
+            {
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = false;
+                panelD.Enabled = true;
+            }
+            else if (key == "D")
+            {
+                panelA.Enabled = true;
+                panelB.Enabled = true;
+                panelC.Enabled = true;
+                panelD.Enabled = false;
+            }
         }
 
         private void DisabledLifeLines() 
@@ -326,7 +564,7 @@ namespace DSA
         private void AnimationTimer_Tick(object sender, EventArgs e)
         {
             elapsedAnimation++;
-            if (elapsedAnimation == 15)
+            if (elapsedAnimation == 10)
             {
                 BackgroundGif.Image = Properties.Resources.GIF_Contestant1_Answering;
                 AnimationTimer.Stop();
@@ -346,11 +584,11 @@ namespace DSA
             }
         }
 
-        public void ShowResult() 
+        public void ShowResult()
         {
-            
+
             ShowCorrectAnswer();
-            if (UserAnswer == answerKey)
+            if (UserAnswer == answerKey || UserSecondAnswer == answerKey)
             {
                 BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
                 MessageBox.Show("Correct");
