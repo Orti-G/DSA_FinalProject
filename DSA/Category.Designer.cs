@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_Math = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -41,7 +41,7 @@
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Math)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -65,21 +65,21 @@
             this.pictureBox5.TabIndex = 11;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox3
+            // btn_Math
             // 
-            this.pictureBox3.Image = global::DSA.Properties.Resources.Category_Math;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(544, 155);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_Math.Image = global::DSA.Properties.Resources.Category_Math;
+            this.btn_Math.Location = new System.Drawing.Point(0, 0);
+            this.btn_Math.Name = "btn_Math";
+            this.btn_Math.Size = new System.Drawing.Size(544, 155);
+            this.btn_Math.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Math.TabIndex = 6;
+            this.btn_Math.TabStop = false;
+            this.btn_Math.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // kryptonPanel1
             // 
             this.kryptonPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.kryptonPanel1.Controls.Add(this.pictureBox3);
+            this.kryptonPanel1.Controls.Add(this.btn_Math);
             this.kryptonPanel1.Location = new System.Drawing.Point(418, 111);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(544, 89);
@@ -148,7 +148,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::DSA.Properties.Resources.Labels_SelectCharacter;
+            this.pictureBox4.Image = global::DSA.Properties.Resources.Labels_SelectFormat;
             this.pictureBox4.Location = new System.Drawing.Point(407, 466);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(577, 70);
@@ -159,7 +159,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::DSA.Properties.Resources.Labels_SelectCharacter;
+            this.pictureBox7.Image = global::DSA.Properties.Resources.Labels_SelectCategory;
             this.pictureBox7.Location = new System.Drawing.Point(295, 19);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(815, 86);
@@ -235,7 +235,7 @@
             this.Name = "Category";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Math)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -252,7 +252,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btn_Math;
         private System.Windows.Forms.PictureBox pictureBox5;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;

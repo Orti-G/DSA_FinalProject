@@ -28,45 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.selectCharacter1 = new System.Windows.Forms.PictureBox();
+            this.selectCharacter2 = new System.Windows.Forms.PictureBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.selectCharacter3 = new System.Windows.Forms.PictureBox();
+            this.panel_userName = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.txtBox_userName = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel_userName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // selectCharacter1
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::DSA.Properties.Resources.ProxyPLayer;
-            this.pictureBox2.Location = new System.Drawing.Point(187, 130);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(249, 336);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.selectCharacter1.BackColor = System.Drawing.Color.Transparent;
+            this.selectCharacter1.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
+            this.selectCharacter1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.selectCharacter1.Image = global::DSA.Properties.Resources.ProxyPLayer;
+            this.selectCharacter1.Location = new System.Drawing.Point(187, 130);
+            this.selectCharacter1.Name = "selectCharacter1";
+            this.selectCharacter1.Size = new System.Drawing.Size(249, 336);
+            this.selectCharacter1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.selectCharacter1.TabIndex = 4;
+            this.selectCharacter1.TabStop = false;
+            this.selectCharacter1.Click += new System.EventHandler(this.selectCharacter1_Click);
             // 
-            // pictureBox3
+            // selectCharacter2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::DSA.Properties.Resources.ProxyPLayer;
-            this.pictureBox3.Location = new System.Drawing.Point(565, 130);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(249, 336);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.selectCharacter2.BackColor = System.Drawing.Color.Transparent;
+            this.selectCharacter2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.selectCharacter2.Image = global::DSA.Properties.Resources.ProxyPlayer2;
+            this.selectCharacter2.Location = new System.Drawing.Point(565, 130);
+            this.selectCharacter2.Name = "selectCharacter2";
+            this.selectCharacter2.Size = new System.Drawing.Size(249, 336);
+            this.selectCharacter2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.selectCharacter2.TabIndex = 5;
+            this.selectCharacter2.TabStop = false;
+            this.selectCharacter2.Click += new System.EventHandler(this.selectCharacter2_Click);
             // 
             // kryptonButton2
             // 
@@ -128,27 +132,29 @@
             this.kryptonButton3.TabIndex = 16;
             this.kryptonButton3.Values.Text = "NEXT";
             // 
-            // pictureBox1
+            // selectCharacter3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::DSA.Properties.Resources.ProxyPLayer;
-            this.pictureBox1.Location = new System.Drawing.Point(945, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 336);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.selectCharacter3.BackColor = System.Drawing.Color.Transparent;
+            this.selectCharacter3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.selectCharacter3.Image = global::DSA.Properties.Resources.ProxyPlayer3;
+            this.selectCharacter3.Location = new System.Drawing.Point(945, 130);
+            this.selectCharacter3.Name = "selectCharacter3";
+            this.selectCharacter3.Size = new System.Drawing.Size(249, 336);
+            this.selectCharacter3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.selectCharacter3.TabIndex = 18;
+            this.selectCharacter3.TabStop = false;
+            this.selectCharacter3.Click += new System.EventHandler(this.selectCharacter3_Click);
             // 
-            // pictureBox4
+            // panel_userName
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::DSA.Properties.Resources.Panel_CharacterName;
-            this.pictureBox4.Location = new System.Drawing.Point(517, 592);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(351, 68);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
+            this.panel_userName.BackColor = System.Drawing.Color.Transparent;
+            this.panel_userName.Image = global::DSA.Properties.Resources.Panel_UserName;
+            this.panel_userName.Location = new System.Drawing.Point(514, 589);
+            this.panel_userName.Name = "panel_userName";
+            this.panel_userName.Size = new System.Drawing.Size(351, 55);
+            this.panel_userName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panel_userName.TabIndex = 19;
+            this.panel_userName.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -164,13 +170,27 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::DSA.Properties.Resources.Labels_SelectCharacter;
+            this.pictureBox6.Image = global::DSA.Properties.Resources.Labels_CharacterName;
             this.pictureBox6.Location = new System.Drawing.Point(404, 516);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(577, 70);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 21;
             this.pictureBox6.TabStop = false;
+            // 
+            // txtBox_userName
+            // 
+            this.txtBox_userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.txtBox_userName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox_userName.Font = new System.Drawing.Font("Footlight MT Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_userName.ForeColor = System.Drawing.Color.Yellow;
+            this.txtBox_userName.Location = new System.Drawing.Point(556, 603);
+            this.txtBox_userName.Name = "txtBox_userName";
+            this.txtBox_userName.Size = new System.Drawing.Size(279, 25);
+            this.txtBox_userName.TabIndex = 22;
+            this.txtBox_userName.Text = "Name Your Character";
+            this.txtBox_userName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBox_userName.TextChanged += new System.EventHandler(this.txtBox_userName_TextChanged);
             // 
             // Character
             // 
@@ -180,36 +200,40 @@
             this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1390, 745);
+            this.Controls.Add(this.txtBox_userName);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.selectCharacter3);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton3);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.selectCharacter2);
+            this.Controls.Add(this.selectCharacter1);
+            this.Controls.Add(this.panel_userName);
             this.DoubleBuffered = true;
             this.Name = "Character";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.Load += new System.EventHandler(this.Character_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectCharacter3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel_userName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox selectCharacter1;
+        private System.Windows.Forms.PictureBox selectCharacter2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox selectCharacter3;
+        private System.Windows.Forms.PictureBox panel_userName;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox txtBox_userName;
     }
 }

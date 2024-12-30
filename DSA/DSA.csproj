@@ -364,5 +364,71 @@
   <ItemGroup>
     <None Include="Resources\Panel_CharacterNameDisplay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_FinalAnswer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_FinalAnswer%28New%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_FinalAnswer%28NEW%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_GameSetup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_Mechanics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_SelectCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_SelectCharacter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_SelectFormat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_CharacterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_UserName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_UserName_SetUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_UserName_Display%28new%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProxyPlayer_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProxyPlayer_Clicked2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProxyPlayer_Clicked3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProxyPlayer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProxyPlayer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy_HostDisappointed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy_HostFinalAnswer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy_HostReadingQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy_PlayerCeleb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proxy_PlayerThinking.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

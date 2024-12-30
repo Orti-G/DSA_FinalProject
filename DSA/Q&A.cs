@@ -361,5 +361,46 @@ namespace DSA
                 MessageBox.Show("Wrong");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            panel_FinalAnswerNotif.Visible = false;
+            panelA.Enabled = true;
+            panelB.Enabled = true;
+            panelC.Enabled = true;
+            panelD.Enabled = true;
+            GifTimer.Visible = false;
+
+            TimeToAnswer.Stop();
+            TimeToAnswer.Dispose();
+            AnimationTimer.Stop();
+            AnimationTimer.Dispose();
+
+            DisabledButtonEvent();
+
+            BackgroundGif.Image = null;
+            transitionTimer.Start();
+        }
+
+        private void btn_FinalAnswerNo_Click(object sender, EventArgs e)
+        {
+            panel_FinalAnswerNotif.Visible = false;
+            UserAnswer = null;
+            panelA.Enabled = true;
+            panelB.Enabled = true;
+            panelC.Enabled = true;
+            panelD.Enabled = true;
+            EnabledLifeLines();
+        }
+
+        private void panel_FinalAnswerNotif_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

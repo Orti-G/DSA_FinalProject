@@ -15,6 +15,7 @@ namespace DSA
         public SetupPanel()
         {
             InitializeComponent();
+            
         }
 
         private void kryptonButton3_Click(object sender, EventArgs e)
@@ -26,5 +27,12 @@ namespace DSA
         {
 
         }
+
+        private void SetupPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
