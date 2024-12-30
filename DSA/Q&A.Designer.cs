@@ -143,7 +143,7 @@
             this.Question_Text.TabIndex = 10;
             this.Question_Text.Text = "The questions here must be 90 to 130 letters long, with at least 10 words but no " +
     "more than 25.";
-            this.Question_Text.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Question_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lifeline_timeFreeze
             // 
@@ -688,7 +688,7 @@
             // 
             // MoneyTree_6
             // 
-            this.MoneyTree_6.BackColor = System.Drawing.Color.Gold;
+            this.MoneyTree_6.BackColor = System.Drawing.Color.Transparent;
             this.MoneyTree_6.BackgroundImage = global::DSA.Properties.Resources.Q_A_MoneyBorder;
             this.MoneyTree_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MoneyTree_6.Controls.Add(this.label30);
@@ -1029,7 +1029,6 @@
             this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(363, 83);
             this.panel_FinalAnswerNotif.TabIndex = 46;
             this.panel_FinalAnswerNotif.Visible = false;
-            this.panel_FinalAnswerNotif.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_FinalAnswerNotif_Paint);
             // 
             // btn_FinalAnswerNo
             // 
@@ -1143,6 +1142,7 @@
             this.Name = "QA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.QA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).EndInit();
