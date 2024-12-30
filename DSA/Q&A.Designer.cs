@@ -145,7 +145,7 @@
             this.Question_Text.TabIndex = 10;
             this.Question_Text.Text = "The questions here must be 90 to 130 letters long, with at least 10 words but no " +
     "more than 25.";
-            this.Question_Text.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Question_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lifeline_timeFreeze
             // 
@@ -288,7 +288,7 @@
             this.ChoiceC_Text.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceC_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceC_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceC_Text.Location = new System.Drawing.Point(58, 15);
+            this.ChoiceC_Text.Location = new System.Drawing.Point(58, 12);
             this.ChoiceC_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceC_Text.Name = "ChoiceC_Text";
             this.ChoiceC_Text.Size = new System.Drawing.Size(299, 38);
@@ -714,7 +714,7 @@
             // 
             // MoneyTree_6
             // 
-            this.MoneyTree_6.BackColor = System.Drawing.Color.Gold;
+            this.MoneyTree_6.BackColor = System.Drawing.Color.Transparent;
             this.MoneyTree_6.BackgroundImage = global::DSA.Properties.Resources.Q_A_MoneyBorder;
             this.MoneyTree_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MoneyTree_6.Controls.Add(this.label30);
@@ -1143,6 +1143,7 @@
             this.Name = "QA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.QA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).EndInit();

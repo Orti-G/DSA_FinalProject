@@ -107,6 +107,7 @@
     <Compile Include="Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory.cs" />
     <Compile Include="Mechanics.cs">
       <SubType>Form</SubType>
     </Compile>

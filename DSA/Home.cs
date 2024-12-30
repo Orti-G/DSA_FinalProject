@@ -19,7 +19,8 @@ namespace DSA
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            QA form8 = new QA();
+            QA form8 = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
+            QA.myForm = form8;
             form8.Show();
             this.Hide();
         }
