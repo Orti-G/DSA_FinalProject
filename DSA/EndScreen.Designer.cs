@@ -80,7 +80,6 @@
             this.startButton.Size = new System.Drawing.Size(238, 61);
             this.startButton.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.startButton.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.startButton.StateCommon.Back.Image = global::DSA.Properties.Resources.Panel_CharacterNameDisplay;
             this.startButton.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
             this.startButton.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.startButton.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
@@ -222,7 +221,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DSA.Properties.Resources.BG_Studio_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1524, 872);
             this.Controls.Add(this.kryptonButton1);

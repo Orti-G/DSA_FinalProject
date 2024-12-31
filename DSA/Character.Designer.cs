@@ -63,7 +63,7 @@
             // 
             this.selectCharacter2.BackColor = System.Drawing.Color.Transparent;
             this.selectCharacter2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.selectCharacter2.Image = global::DSA.Properties.Resources.ProxyPlayer2;
+            //this.selectCharacter2.Image = global::DSA.Properties.Resources.ProxyPlayer2;
             this.selectCharacter2.Location = new System.Drawing.Point(615, 130);
             this.selectCharacter2.Name = "selectCharacter2";
             this.selectCharacter2.Size = new System.Drawing.Size(286, 406);
@@ -122,7 +122,7 @@
             // 
             this.selectCharacter3.BackColor = System.Drawing.Color.Transparent;
             this.selectCharacter3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.selectCharacter3.Image = global::DSA.Properties.Resources.ProxyPlayer3;
+            //his.selectCharacter3.Image = global::DSA.Properties.Resources.ProxyPlayer3;
             this.selectCharacter3.Location = new System.Drawing.Point(995, 130);
             this.selectCharacter3.Name = "selectCharacter3";
             this.selectCharacter3.Size = new System.Drawing.Size(286, 406);

@@ -118,26 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Try_Label_Congrats" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Label_Congrats.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Panel_FinalAnswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel_FinalAnswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Panel_ScrollColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel_ScrollColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Proxy_PlayerCeleb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proxy_PlayerCeleb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Category_History" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Category_History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LifelineActivated_5050" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LifelineActivated_50501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Proxy_HostDisappointed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proxy_HostDisappointed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_3k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_3k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIF_Contestant1_Answering" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Contestant1_Answering.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Q&amp;A_MoneyTree2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_MoneyTree2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +136,11 @@
   <data name="BG studio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG studio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_70k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_70k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BG Studio 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG Studio 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_1m" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_1m.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Q&amp;A_Correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Q&amp;A_Correct1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lifeline_x2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lifeline_x2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,9 +151,6 @@
   <data name="Format_ClassicMT_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Format_ClassicMT_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProxyPlayer3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPlayer3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GIF_TryNewCashPrize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_TryNewCashPrize.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -177,9 +159,6 @@
   </data>
   <data name="Lifeline_ SwitchQuestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lifeline_ SwitchQuestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Category_Math" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Category_Math.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LifelineActivated_ DoubleAnswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LifelineActivated_ DoubleAnswer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,41 +169,23 @@
   <data name="Labels_SelectCategory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Labels_SelectCategory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Proxy_HostReadingQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proxy_HostReadingQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIF_NewCashPrize_5K" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_NewCashPrize_5K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_600K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_600K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Try_Panel_FirstPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Panel_FirstPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_100k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_100k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Q&amp;A_Choice_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Choice_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ProxyPLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPLayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_Logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_NewCashPrize_1K" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_NewCashPrize_1K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Q&amp;A_Wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Wrong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CharacterNaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CharacterNaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_Homescreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_Homescreen1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Proxy_PlayerThinking" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proxy_PlayerThinking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Labels_SelectCharacter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Labels_SelectCharacter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Labels_GameSetup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Labels_GameSetup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,20 +193,14 @@
   <data name="Panel_CharacterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_CharacterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_20k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_20k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GIF_NewCashPrize_10K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_10K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Format_HighRiskMT_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Format_HighRiskMT_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Try_Leaderboard4th" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Leaderboard4th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Labels_SelectCharacter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Labels_SelectCharacter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIF_NewCashPrize_1K" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_NewCashPrize_1K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NameYourCharacter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NameYourCharacter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,9 +211,6 @@
   <data name="Lifeline_ TimeFreeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lifeline_ TimeFreeze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lifeline_50-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lifeline_50-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Q&amp;A_Choice_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Choice_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,38 +220,26 @@
   <data name="GIF_NewCashPrize_35K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_35K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_35k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_35k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CharacterNaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CharacterNaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProxyPlayer_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPlayer_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LifelineActivated_ SwitchQuestiom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LifelineActivated_ SwitchQuestiom1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CharacterSelectedBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CharacterSelectedBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProxyPlayer_Clicked3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPlayer_Clicked3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Category_History_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Category_History_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_70K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_70K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Q&amp;A_Science" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Q&amp;A_Science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Q&amp;A_Wrong_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Wrong_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_150k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_150k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_10k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_10k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GIF_NewCashPrize_1M" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_1M.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrice_2Million" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrice_2Million.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_2M" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_2M.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,26 +247,17 @@
   <data name="GIF_NewCashPrize_50K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_50K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Labels_SelectCharacter1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Labels_SelectCharacter1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Category_Science" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Category_Science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProxyPLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProxyPLayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG Studio 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG Studio 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_CashPrize_250k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_250k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GIF_NewCashPrize_250K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_250K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_5k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_5k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Proxy_HostFinalAnswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Proxy_HostFinalAnswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Labels_CharacterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Labels_CharacterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -337,17 +268,8 @@
   <data name="Labels_Mechanics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Labels_Mechanics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Try_LeaderBoad2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_LeaderBoad2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Try_Leaderboard_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Leaderboard_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_600k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_600k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_Contestant1_Answering" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_Contestant1_Answering.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIF_Homescreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Homescreen1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Q&amp;A_History" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,17 +277,8 @@
   <data name="Q&amp;A_MoneyBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_MoneyBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProxyPlayer_Clicked2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPlayer_Clicked2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Panel_3rdPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel_3rdPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_50k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_50k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_1k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_1k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Q&amp;A_Science" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Q&amp;A_Science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Label_Congrats" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Label_Congrats.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,8 +286,8 @@
   <data name="Q&amp;A_QuestionPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_QuestionPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Q&amp;A_Correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Q&amp;A_Correct1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Category_Math" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Category_Math.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Q&amp;A_Mathematics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Mathematics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,23 +295,14 @@
   <data name="Labels_Leaderboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Labels_Leaderboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LifelineActivated_ SwitchQuestiom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LifelineActivated_ SwitchQuestiom1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Category_History_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Category_History_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lifeline_50-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lifeline_50-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Panel_UserName_Display(new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_UserName_Display(new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ProxyPlayer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProxyPlayer2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Panel_UserName" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_UserName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Try_LeaderBoad1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_LeaderBoad1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_20K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_20K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -406,14 +310,11 @@
   <data name="Q&amp;A_Correct_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Q&amp;A_Correct_Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Try_Leaderboard_4th" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Leaderboard_4th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Panel_3rdPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panel_3rdPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Category_Science_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Category_Science_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Panel_FinalAnswer(NEW)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel_FinalAnswer(NEW)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_150K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_150K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -421,14 +322,8 @@
   <data name="Format_ClassicMT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Format_ClassicMT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Panel_FinalAnswer(New)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel_FinalAnswer(New).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Try_Label" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Try_Label.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Timer-1minute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Timer-1minute.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Panel_FinalAnswer(NEW)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panel_FinalAnswer(NEW)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_New1minTimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_New1minTimer1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,43 +340,16 @@
   <data name="Panel_CharacterNameDisplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_CharacterNameDisplay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Host_Questioning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Host_Questioning.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LifelineActivated_ TimeFreeze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LifelineActivated_ TimeFreeze1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_NewCashPrize_100K" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_NewCashPrize_100K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_NewCashPrize_5K" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_NewCashPrize_5K.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Category_History" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Category_History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIF_CashPrize_400k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_CashPrize_400k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Host_Questioning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Host_Questioning.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Panel_2ndPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_2ndPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_ HistoryClicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_ HistoryClicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_ History" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_ History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_ ScienceClicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_ ScienceClicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_ Science" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_ Science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_MathClicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_MathClicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Label_Leaderboard_Math" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Label_Leaderboard_Math.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

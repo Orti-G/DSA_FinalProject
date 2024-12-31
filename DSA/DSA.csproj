@@ -37,24 +37,21 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Krypton-master (1)\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,17 +92,11 @@
     <Compile Include="EndScreen.Designer.cs">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FirstPlace.cs">
+    <Compile Include="HistoryUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FirstPlace.Designer.cs">
-      <DependentUpon>FirstPlace.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FourthPlaceAndBelow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FourthPlaceAndBelow.Designer.cs">
-      <DependentUpon>FourthPlaceAndBelow.cs</DependentUpon>
+    <Compile Include="HistoryUC.Designer.cs">
+      <DependentUpon>HistoryUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -143,12 +134,6 @@
     <Compile Include="Q&amp;A.Designer.cs">
       <DependentUpon>Q&amp;A.cs</DependentUpon>
     </Compile>
-    <Compile Include="SecondAndThirdPlace.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SecondAndThirdPlace.Designer.cs">
-      <DependentUpon>SecondAndThirdPlace.cs</DependentUpon>
-    </Compile>
     <Compile Include="SetupPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,11 +160,8 @@
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirstPlace.resx">
-      <DependentUpon>FirstPlace.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FourthPlaceAndBelow.resx">
-      <DependentUpon>FourthPlaceAndBelow.cs</DependentUpon>
+    <EmbeddedResource Include="HistoryUC.resx">
+      <DependentUpon>HistoryUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -195,9 +177,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Q&amp;A.resx">
       <DependentUpon>Q&amp;A.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SecondAndThirdPlace.resx">
-      <DependentUpon>SecondAndThirdPlace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SetupPanel.resx">
       <DependentUpon>SetupPanel.cs</DependentUpon>
@@ -245,9 +224,6 @@
     <None Include="Resources\Lifeline_ TimeFreeze.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Timer-1minute.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Q&amp;A_MoneyTree2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -287,52 +263,7 @@
     <None Include="Resources\Host_Questioning.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\GIF_CashPrice_2Million.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\GIF_Host_Intro.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_1k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_1m.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_3k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_5k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_10k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_20k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_35k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_50k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_70k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_100k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_150k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_250k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_400k.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GIF_CashPrize_600k.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GIF_Homescreen1.gif" />
@@ -402,12 +333,6 @@
     <None Include="Resources\Panel_CharacterNameDisplay.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Panel_FinalAnswer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Panel_FinalAnswer%28New%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Panel_FinalAnswer%28NEW%292.png" />
   </ItemGroup>
   <ItemGroup>
@@ -418,9 +343,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Labels_SelectCategory.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Labels_SelectCharacter1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Labels_SelectFormat.png" />
@@ -436,36 +358,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panel_UserName_Display%28new%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ProxyPlayer_Clicked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ProxyPlayer_Clicked2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ProxyPlayer_Clicked3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ProxyPlayer2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ProxyPlayer3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Proxy_HostDisappointed.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Proxy_HostFinalAnswer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Proxy_HostReadingQ.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Proxy_PlayerCeleb.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Proxy_PlayerThinking.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GIF_New1minTimer1.gif" />
@@ -537,22 +429,10 @@
     <None Include="Resources\GIF_NewCashPrize_600K.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Try_Label_Congrats.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_Label.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Label_Congrats.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Labels_Leaderboard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Panel_ScrollColor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_Panel_FirstPlace.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panel_1srPlace.png" />
@@ -562,21 +442,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panel_3rdPlace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_Leaderboard4th.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_Leaderboard_.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_Leaderboard_4th.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_LeaderBoad1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Try_LeaderBoad2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Label_Leaderboard_ HistoryClicked.png" />
