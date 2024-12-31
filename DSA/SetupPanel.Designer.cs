@@ -49,20 +49,27 @@
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.kryptonButton3.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton3.Size = new System.Drawing.Size(137, 52);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.kryptonButton3.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton3.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton3.StateCommon.Border.Rounding = 20;
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton3.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.kryptonButton3.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.kryptonButton3.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton3.TabIndex = 20;
             this.kryptonButton3.Values.Text = "BACK";
             this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
@@ -73,20 +80,27 @@
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.kryptonButton4.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.Size = new System.Drawing.Size(137, 52);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.kryptonButton4.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.kryptonButton4.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.kryptonButton4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton4.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateCommon.Border.Rounding = 20;
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonButton4.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButton4.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.kryptonButton4.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.kryptonButton4.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.TabIndex = 19;
             this.kryptonButton4.Values.Text = "NEXT";
             this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
@@ -151,7 +165,7 @@
             this.selectCharacter1.BackColor = System.Drawing.Color.Transparent;
             this.selectCharacter1.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
             this.selectCharacter1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.selectCharacter1.Image = global::DSA.Properties.Resources.ProxyPLayer;
+            this.selectCharacter1.Image = global::DSA.Properties.Resources.Character_GIF_P1;
             this.selectCharacter1.Location = new System.Drawing.Point(413, 256);
             this.selectCharacter1.Name = "selectCharacter1";
             this.selectCharacter1.Size = new System.Drawing.Size(300, 401);
