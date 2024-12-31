@@ -12,14 +12,39 @@ namespace DSA
 {
     public partial class Introduction : Form
     {
+        private Timer timer;
         public Introduction()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            timer = new Timer();
+            timer.Interval = 31000; 
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            Home homeForm = new Home();
+            homeForm.Show();
+            timer.Stop();
+            this.Hide();
         }
 
         private void IntroPlayer_Enter(object sender, EventArgs e)
         {
-            //IntroPlayer.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\Intro_WWTBAM_Video.mp4";
+            //IntroPlayer.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\Try_Intro.mp4";
+        }
+
+        private void IntroPlayer_Enter_1(object sender, EventArgs e)
+        {
+            //IntroPlayer.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\Try_Intro.mp4";
+        }
+
+        private void Introduction_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

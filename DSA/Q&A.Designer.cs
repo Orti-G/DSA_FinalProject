@@ -102,6 +102,7 @@
             this.BackgroundGif = new System.Windows.Forms.PictureBox();
             this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.transitionTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).BeginInit();
@@ -150,10 +151,10 @@
             this.Lifeline_timeFreeze.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_timeFreeze.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_timeFreeze.Image = global::DSA.Properties.Resources.Lifeline__TimeFreeze;
-            this.Lifeline_timeFreeze.Location = new System.Drawing.Point(1247, 49);
+            this.Lifeline_timeFreeze.Location = new System.Drawing.Point(1346, 73);
             this.Lifeline_timeFreeze.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Lifeline_timeFreeze.Name = "Lifeline_timeFreeze";
-            this.Lifeline_timeFreeze.Size = new System.Drawing.Size(68, 39);
+            this.Lifeline_timeFreeze.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_timeFreeze.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_timeFreeze.TabIndex = 17;
             this.Lifeline_timeFreeze.TabStop = false;
@@ -164,10 +165,10 @@
             this.Lifeline_x2.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_x2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_x2.Image = global::DSA.Properties.Resources.Lifeline_x2;
-            this.Lifeline_x2.Location = new System.Drawing.Point(1180, 49);
+            this.Lifeline_x2.Location = new System.Drawing.Point(1271, 73);
             this.Lifeline_x2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Lifeline_x2.Name = "Lifeline_x2";
-            this.Lifeline_x2.Size = new System.Drawing.Size(68, 39);
+            this.Lifeline_x2.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_x2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_x2.TabIndex = 16;
             this.Lifeline_x2.TabStop = false;
@@ -178,10 +179,10 @@
             this.Lifeline_SwitchQ.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_SwitchQ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_SwitchQ.Image = global::DSA.Properties.Resources.Lifeline__SwitchQuestion;
-            this.Lifeline_SwitchQ.Location = new System.Drawing.Point(1315, 49);
+            this.Lifeline_SwitchQ.Location = new System.Drawing.Point(1422, 73);
             this.Lifeline_SwitchQ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Lifeline_SwitchQ.Name = "Lifeline_SwitchQ";
-            this.Lifeline_SwitchQ.Size = new System.Drawing.Size(68, 39);
+            this.Lifeline_SwitchQ.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_SwitchQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_SwitchQ.TabIndex = 16;
             this.Lifeline_SwitchQ.TabStop = false;
@@ -192,10 +193,10 @@
             this.Lifeline_5050.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_5050.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_5050.Image = global::DSA.Properties.Resources.Lifeline_50_50;
-            this.Lifeline_5050.Location = new System.Drawing.Point(1115, 49);
+            this.Lifeline_5050.Location = new System.Drawing.Point(1195, 73);
             this.Lifeline_5050.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Lifeline_5050.Name = "Lifeline_5050";
-            this.Lifeline_5050.Size = new System.Drawing.Size(68, 39);
+            this.Lifeline_5050.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_5050.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_5050.TabIndex = 15;
             this.Lifeline_5050.TabStop = false;
@@ -203,11 +204,12 @@
             // 
             // GifTimer
             // 
-            this.GifTimer.Image = global::DSA.Properties.Resources.Timer_1minute;
-            this.GifTimer.Location = new System.Drawing.Point(521, 434);
+            this.GifTimer.BackColor = System.Drawing.Color.Transparent;
+            this.GifTimer.Image = global::DSA.Properties.Resources.GIF_New1minTimer;
+            this.GifTimer.Location = new System.Drawing.Point(550, 508);
             this.GifTimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GifTimer.Name = "GifTimer";
-            this.GifTimer.Size = new System.Drawing.Size(85, 34);
+            this.GifTimer.Size = new System.Drawing.Size(124, 61);
             this.GifTimer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GifTimer.TabIndex = 14;
             this.GifTimer.TabStop = false;
@@ -218,10 +220,10 @@
             this.panel_Question.BackgroundImage = global::DSA.Properties.Resources.Q_A_QuestionPanel;
             this.panel_Question.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_Question.Controls.Add(this.Question_Text);
-            this.panel_Question.Location = new System.Drawing.Point(-20, 476);
+            this.panel_Question.Location = new System.Drawing.Point(-13, 567);
             this.panel_Question.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Question.Name = "panel_Question";
-            this.panel_Question.Size = new System.Drawing.Size(1164, 110);
+            this.panel_Question.Size = new System.Drawing.Size(1239, 125);
             this.panel_Question.TabIndex = 34;
             // 
             // ChoiceA
@@ -258,10 +260,10 @@
             this.panelA.Controls.Add(this.ChoiceA_Text);
             this.panelA.Controls.Add(this.ChoiceA);
             this.panelA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelA.Location = new System.Drawing.Point(-9, 586);
+            this.panelA.Location = new System.Drawing.Point(0, 690);
             this.panelA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelA.Name = "panelA";
-            this.panelA.Size = new System.Drawing.Size(572, 80);
+            this.panelA.Size = new System.Drawing.Size(606, 85);
             this.panelA.TabIndex = 35;
             // 
             // panelC
@@ -271,10 +273,10 @@
             this.panelC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelC.Controls.Add(this.ChoiceC_Text);
             this.panelC.Controls.Add(this.ChoiceC);
-            this.panelC.Location = new System.Drawing.Point(563, 586);
+            this.panelC.Location = new System.Drawing.Point(606, 690);
             this.panelC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelC.Name = "panelC";
-            this.panelC.Size = new System.Drawing.Size(567, 82);
+            this.panelC.Size = new System.Drawing.Size(606, 85);
             this.panelC.TabIndex = 36;
             // 
             // ChoiceC_Text
@@ -311,10 +313,10 @@
             this.panelD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelD.Controls.Add(this.ChoiceD_Text);
             this.panelD.Controls.Add(this.ChoiceD);
-            this.panelD.Location = new System.Drawing.Point(563, 665);
+            this.panelD.Location = new System.Drawing.Point(606, 772);
             this.panelD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelD.Name = "panelD";
-            this.panelD.Size = new System.Drawing.Size(567, 80);
+            this.panelD.Size = new System.Drawing.Size(606, 85);
             this.panelD.TabIndex = 37;
             // 
             // ChoiceD_Text
@@ -355,7 +357,7 @@
             this.MoneyTree_15.Location = new System.Drawing.Point(0, 0);
             this.MoneyTree_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_15.Name = "MoneyTree_15";
-            this.MoneyTree_15.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_15.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_15.TabIndex = 0;
             // 
             // label11
@@ -390,10 +392,10 @@
             this.MoneyTree_14.Controls.Add(this.label12);
             this.MoneyTree_14.Controls.Add(this.label13);
             this.MoneyTree_14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_14.Location = new System.Drawing.Point(0, 43);
+            this.MoneyTree_14.Location = new System.Drawing.Point(0, 47);
             this.MoneyTree_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_14.Name = "MoneyTree_14";
-            this.MoneyTree_14.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_14.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_14.TabIndex = 43;
             // 
             // label12
@@ -428,10 +430,10 @@
             this.MoneyTree_13.Controls.Add(this.label14);
             this.MoneyTree_13.Controls.Add(this.label212);
             this.MoneyTree_13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_13.Location = new System.Drawing.Point(0, 86);
+            this.MoneyTree_13.Location = new System.Drawing.Point(0, 94);
             this.MoneyTree_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_13.Name = "MoneyTree_13";
-            this.MoneyTree_13.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_13.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_13.TabIndex = 43;
             // 
             // label14
@@ -466,10 +468,10 @@
             this.MoneyTree_12.Controls.Add(this.label18);
             this.MoneyTree_12.Controls.Add(this.label19);
             this.MoneyTree_12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_12.Location = new System.Drawing.Point(0, 129);
+            this.MoneyTree_12.Location = new System.Drawing.Point(0, 141);
             this.MoneyTree_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_12.Name = "MoneyTree_12";
-            this.MoneyTree_12.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_12.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_12.TabIndex = 43;
             // 
             // label18
@@ -504,10 +506,10 @@
             this.MoneyTree_11.Controls.Add(this.label16);
             this.MoneyTree_11.Controls.Add(this.label17);
             this.MoneyTree_11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_11.Location = new System.Drawing.Point(0, 172);
+            this.MoneyTree_11.Location = new System.Drawing.Point(0, 188);
             this.MoneyTree_11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_11.Name = "MoneyTree_11";
-            this.MoneyTree_11.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_11.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_11.TabIndex = 44;
             // 
             // label16
@@ -542,10 +544,10 @@
             this.MoneyTree_10.Controls.Add(this.label20);
             this.MoneyTree_10.Controls.Add(this.label21);
             this.MoneyTree_10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_10.Location = new System.Drawing.Point(0, 215);
+            this.MoneyTree_10.Location = new System.Drawing.Point(0, 235);
             this.MoneyTree_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_10.Name = "MoneyTree_10";
-            this.MoneyTree_10.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_10.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_10.TabIndex = 44;
             // 
             // label20
@@ -580,10 +582,10 @@
             this.MoneyTree_9.Controls.Add(this.label22);
             this.MoneyTree_9.Controls.Add(this.label23);
             this.MoneyTree_9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_9.Location = new System.Drawing.Point(0, 258);
+            this.MoneyTree_9.Location = new System.Drawing.Point(0, 282);
             this.MoneyTree_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_9.Name = "MoneyTree_9";
-            this.MoneyTree_9.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_9.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_9.TabIndex = 44;
             // 
             // label22
@@ -618,10 +620,10 @@
             this.MoneyTree_8.Controls.Add(this.label24);
             this.MoneyTree_8.Controls.Add(this.label25);
             this.MoneyTree_8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_8.Location = new System.Drawing.Point(0, 301);
+            this.MoneyTree_8.Location = new System.Drawing.Point(0, 329);
             this.MoneyTree_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_8.Name = "MoneyTree_8";
-            this.MoneyTree_8.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_8.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_8.TabIndex = 44;
             // 
             // label24
@@ -656,10 +658,10 @@
             this.MoneyTree_7.Controls.Add(this.label28);
             this.MoneyTree_7.Controls.Add(this.label29);
             this.MoneyTree_7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_7.Location = new System.Drawing.Point(0, 344);
+            this.MoneyTree_7.Location = new System.Drawing.Point(0, 376);
             this.MoneyTree_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_7.Name = "MoneyTree_7";
-            this.MoneyTree_7.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_7.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_7.TabIndex = 45;
             // 
             // label28
@@ -694,10 +696,10 @@
             this.MoneyTree_6.Controls.Add(this.label30);
             this.MoneyTree_6.Controls.Add(this.label31);
             this.MoneyTree_6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_6.Location = new System.Drawing.Point(0, 387);
+            this.MoneyTree_6.Location = new System.Drawing.Point(0, 423);
             this.MoneyTree_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_6.Name = "MoneyTree_6";
-            this.MoneyTree_6.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_6.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_6.TabIndex = 45;
             // 
             // label30
@@ -732,10 +734,10 @@
             this.MoneyTree_5.Controls.Add(this.label26);
             this.MoneyTree_5.Controls.Add(this.label27);
             this.MoneyTree_5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_5.Location = new System.Drawing.Point(0, 430);
+            this.MoneyTree_5.Location = new System.Drawing.Point(0, 470);
             this.MoneyTree_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_5.Name = "MoneyTree_5";
-            this.MoneyTree_5.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_5.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_5.TabIndex = 45;
             // 
             // label26
@@ -770,10 +772,10 @@
             this.MoneyTree_4.Controls.Add(this.label32);
             this.MoneyTree_4.Controls.Add(this.label33);
             this.MoneyTree_4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_4.Location = new System.Drawing.Point(0, 473);
+            this.MoneyTree_4.Location = new System.Drawing.Point(0, 517);
             this.MoneyTree_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_4.Name = "MoneyTree_4";
-            this.MoneyTree_4.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_4.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_4.TabIndex = 45;
             // 
             // label32
@@ -808,10 +810,10 @@
             this.MoneyTree_3.Controls.Add(this.label34);
             this.MoneyTree_3.Controls.Add(this.label35);
             this.MoneyTree_3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_3.Location = new System.Drawing.Point(0, 516);
+            this.MoneyTree_3.Location = new System.Drawing.Point(0, 564);
             this.MoneyTree_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_3.Name = "MoneyTree_3";
-            this.MoneyTree_3.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_3.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_3.TabIndex = 45;
             // 
             // label34
@@ -846,10 +848,10 @@
             this.MoneyTree_2.Controls.Add(this.label36);
             this.MoneyTree_2.Controls.Add(this.label37);
             this.MoneyTree_2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_2.Location = new System.Drawing.Point(0, 559);
+            this.MoneyTree_2.Location = new System.Drawing.Point(0, 611);
             this.MoneyTree_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_2.Name = "MoneyTree_2";
-            this.MoneyTree_2.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_2.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_2.TabIndex = 45;
             // 
             // label36
@@ -884,10 +886,10 @@
             this.MoneyTree_1.Controls.Add(this.label38);
             this.MoneyTree_1.Controls.Add(this.label39);
             this.MoneyTree_1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_1.Location = new System.Drawing.Point(0, 602);
+            this.MoneyTree_1.Location = new System.Drawing.Point(0, 658);
             this.MoneyTree_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_1.Name = "MoneyTree_1";
-            this.MoneyTree_1.Size = new System.Drawing.Size(269, 43);
+            this.MoneyTree_1.Size = new System.Drawing.Size(295, 47);
             this.MoneyTree_1.TabIndex = 45;
             // 
             // label38
@@ -934,10 +936,10 @@
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_13);
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_14);
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_15);
-            this.MoneyTree_BG_Panel.Location = new System.Drawing.Point(1111, 96);
+            this.MoneyTree_BG_Panel.Location = new System.Drawing.Point(1199, 131);
             this.MoneyTree_BG_Panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoneyTree_BG_Panel.Name = "MoneyTree_BG_Panel";
-            this.MoneyTree_BG_Panel.Size = new System.Drawing.Size(269, 646);
+            this.MoneyTree_BG_Panel.Size = new System.Drawing.Size(295, 707);
             this.MoneyTree_BG_Panel.TabIndex = 40;
             // 
             // ChoiceB
@@ -959,10 +961,10 @@
             this.panelB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelB.Controls.Add(this.ChoiceB_Text);
             this.panelB.Controls.Add(this.ChoiceB);
-            this.panelB.Location = new System.Drawing.Point(-9, 665);
+            this.panelB.Location = new System.Drawing.Point(0, 772);
             this.panelB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelB.Name = "panelB";
-            this.panelB.Size = new System.Drawing.Size(572, 80);
+            this.panelB.Size = new System.Drawing.Size(606, 85);
             this.panelB.TabIndex = 36;
             // 
             // ChoiceB_Text
@@ -982,31 +984,24 @@
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(1153, 16);
+            this.kryptonButton4.Location = new System.Drawing.Point(1240, 27);
             this.kryptonButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton4.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButton4.Size = new System.Drawing.Size(195, 27);
+            this.kryptonButton4.Size = new System.Drawing.Size(210, 35);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.MidnightBlue;
-            this.kryptonButton4.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.kryptonButton4.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.kryptonButton4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton4.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton4.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButton4.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton4.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton4.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton4.TabIndex = 45;
             this.kryptonButton4.Values.Text = "LIFELINES";
             // 
@@ -1023,7 +1018,7 @@
             this.panel_FinalAnswerNotif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_FinalAnswerNotif.Controls.Add(this.btn_FinalAnswerNo);
             this.panel_FinalAnswerNotif.Controls.Add(this.kryptonButton1);
-            this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(378, 335);
+            this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(430, 431);
             this.panel_FinalAnswerNotif.Margin = new System.Windows.Forms.Padding(4);
             this.panel_FinalAnswerNotif.Name = "panel_FinalAnswerNotif";
             this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(363, 83);
@@ -1037,26 +1032,19 @@
             this.btn_FinalAnswerNo.Name = "btn_FinalAnswerNo";
             this.btn_FinalAnswerNo.OverrideDefault.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
             this.btn_FinalAnswerNo.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_FinalAnswerNo.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btn_FinalAnswerNo.Size = new System.Drawing.Size(75, 27);
             this.btn_FinalAnswerNo.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.btn_FinalAnswerNo.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btn_FinalAnswerNo.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btn_FinalAnswerNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_FinalAnswerNo.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.btn_FinalAnswerNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btn_FinalAnswerNo.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btn_FinalAnswerNo.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btn_FinalAnswerNo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_FinalAnswerNo.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.btn_FinalAnswerNo.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btn_FinalAnswerNo.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.btn_FinalAnswerNo.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btn_FinalAnswerNo.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.btn_FinalAnswerNo.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.btn_FinalAnswerNo.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btn_FinalAnswerNo.TabIndex = 51;
             this.btn_FinalAnswerNo.Values.Text = "NO";
             this.btn_FinalAnswerNo.Click += new System.EventHandler(this.btn_FinalAnswerNo_Click);
@@ -1068,26 +1056,19 @@
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton1.Size = new System.Drawing.Size(75, 27);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ButtonHighlight;
             this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonButton1.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton1.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton1.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonButton1.TabIndex = 47;
             this.kryptonButton1.Values.Text = "YES";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
@@ -1099,10 +1080,11 @@
             this.BackgroundGif.Location = new System.Drawing.Point(0, 0);
             this.BackgroundGif.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BackgroundGif.Name = "BackgroundGif";
-            this.BackgroundGif.Size = new System.Drawing.Size(1389, 757);
+            this.BackgroundGif.Size = new System.Drawing.Size(1524, 872);
             this.BackgroundGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackgroundGif.TabIndex = 44;
             this.BackgroundGif.TabStop = false;
+            this.BackgroundGif.Click += new System.EventHandler(this.BackgroundGif_Click);
             // 
             // AnimationTimer
             // 
@@ -1115,14 +1097,25 @@
             this.transitionTimer.Interval = 1200;
             this.transitionTimer.Tick += new System.EventHandler(this.transitionTimer_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.Q_A_Correct;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(298, 349);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(602, 163);
+            this.panel1.TabIndex = 35;
+            // 
             // QA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::DSA.Properties.Resources.Host_Questioning;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1389, 757);
+            this.ClientSize = new System.Drawing.Size(1524, 872);
             this.Controls.Add(this.panel_FinalAnswerNotif);
             this.Controls.Add(this.kryptonButton4);
             this.Controls.Add(this.MoneyTree_BG_Panel);
@@ -1134,10 +1127,12 @@
             this.Controls.Add(this.Lifeline_x2);
             this.Controls.Add(this.Lifeline_SwitchQ);
             this.Controls.Add(this.Lifeline_5050);
-            this.Controls.Add(this.GifTimer);
             this.Controls.Add(this.panel_Question);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.GifTimer);
             this.Controls.Add(this.BackgroundGif);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1268,5 +1263,6 @@
         private System.Windows.Forms.Timer transitionTimer;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_FinalAnswerNo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

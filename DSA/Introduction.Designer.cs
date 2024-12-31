@@ -28,36 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introduction));
-            this.IntroPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            ((System.ComponentModel.ISupportInitialize)(this.IntroPlayer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // IntroPlayer
-            // 
-            this.IntroPlayer.Enabled = true;
-            this.IntroPlayer.Location = new System.Drawing.Point(-1, -2);
-            this.IntroPlayer.Name = "IntroPlayer";
-            this.IntroPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("IntroPlayer.OcxState")));
-            this.IntroPlayer.Size = new System.Drawing.Size(1394, 792);
-            this.IntroPlayer.TabIndex = 18;
-            this.IntroPlayer.Enter += new System.EventHandler(this.IntroPlayer_Enter);
             // 
             // Introduction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1390, 745);
-            this.Controls.Add(this.IntroPlayer);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1920, 1055);
+            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Introduction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Introduction";
-            ((System.ComponentModel.ISupportInitialize)(this.IntroPlayer)).EndInit();
+            this.Load += new System.EventHandler(this.Introduction_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private AxWMPLib.AxWindowsMediaPlayer IntroPlayer;
     }
 }

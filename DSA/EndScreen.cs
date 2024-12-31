@@ -26,5 +26,21 @@ namespace DSA
         {
 
         }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_userName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+            Leaderboard myForm = new Leaderboard();
+            myForm.Show();
+            this.Hide();
+        }
     }
 }

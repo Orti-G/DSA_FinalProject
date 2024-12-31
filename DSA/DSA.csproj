@@ -95,6 +95,18 @@
     <Compile Include="EndScreen.Designer.cs">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstPlace.Designer.cs">
+      <DependentUpon>FirstPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FourthPlaceAndBelow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FourthPlaceAndBelow.Designer.cs">
+      <DependentUpon>FourthPlaceAndBelow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,12 @@
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory.cs" />
+    <Compile Include="Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mechanics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +142,12 @@
     </Compile>
     <Compile Include="Q&amp;A.Designer.cs">
       <DependentUpon>Q&amp;A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondAndThirdPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SecondAndThirdPlace.Designer.cs">
+      <DependentUpon>SecondAndThirdPlace.cs</DependentUpon>
     </Compile>
     <Compile Include="SetupPanel.cs">
       <SubType>Form</SubType>
@@ -151,17 +175,29 @@
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FirstPlace.resx">
+      <DependentUpon>FirstPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourthPlaceAndBelow.resx">
+      <DependentUpon>FourthPlaceAndBelow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Q&amp;A.resx">
       <DependentUpon>Q&amp;A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondAndThirdPlace.resx">
+      <DependentUpon>SecondAndThirdPlace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SetupPanel.resx">
       <DependentUpon>SetupPanel.cs</DependentUpon>
@@ -430,6 +466,135 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Proxy_PlayerThinking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_New1minTimer1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Wrong1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LifelineActivated_ DoubleAnswer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LifelineActivated_ SwitchQuestiom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LifelineActivated_ TimeFreeze1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LifelineActivated_50501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q&amp;A_Correct1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_TryNewCashPrize.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_1K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_1M.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_2M.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_3K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_5K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_10K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_20K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_35K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_50K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_70K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_100K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_150K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_250K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_400K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_600K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Label_Congrats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Congrats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labels_Leaderboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_ScrollColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Panel_FirstPlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_1srPlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_2ndPlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel_3rdPlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Leaderboard4th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Leaderboard_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_Leaderboard_4th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_LeaderBoad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Try_LeaderBoad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_ HistoryClicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_ History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_ ScienceClicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_ Science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_MathClicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_Leaderboard_Math.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

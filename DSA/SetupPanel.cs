@@ -33,6 +33,14 @@ namespace DSA
 
         }
 
+        private void label_userName_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

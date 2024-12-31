@@ -705,6 +705,10 @@ namespace DSA
                 MessageBox.Show("Wrong");
             }
         }
-        
+
+        private void BackgroundGif_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
