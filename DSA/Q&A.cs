@@ -66,24 +66,75 @@ namespace DSA
         
         private void QA_Load(object sender, EventArgs e)
         {
-            currentQuestion = Questions.Dequeue();
-            MoneyTreeLevel = 15 - Questions.Count;
+            if (Questions.Count == 0)
+            {
+                EndScreen gameresult = new EndScreen();
+                gameresult.Show();
+                this.Close();
+                this.Dispose();
 
-            MoneyTreeLevelHighlight();
-            
-            Lifeline_5050.Visible = HalfChanceVisible;
-            Lifeline_x2.Visible = Life2xVisible;
-            Lifeline_timeFreeze.Visible = timeFreezeVisible;
-            Lifeline_SwitchQ.Visible = SwitchQuestionVisible;
+            }
+            else
+            {
+                currentQuestion = Questions.Dequeue();
 
-            Question_Text.Text = currentQuestion.getQuestion();
+                MoneyTreeLevel = 15 - Questions.Count;
 
-            ChoiceA_Text.Text = currentQuestion.getOptions()[0];
-            ChoiceB_Text.Text = currentQuestion.getOptions()[1];
-            ChoiceC_Text.Text = currentQuestion.getOptions()[2];
-            ChoiceD_Text.Text = currentQuestion.getOptions()[3];
+                MoneyTreeLevelHighlight();
 
-            answerKey = currentQuestion.getAnswer();
+                Lifeline_5050.Visible = HalfChanceVisible;
+                Lifeline_x2.Visible = Life2xVisible;
+                Lifeline_timeFreeze.Visible = timeFreezeVisible;
+                Lifeline_SwitchQ.Visible = SwitchQuestionVisible;
+
+                Question_Text.Text = currentQuestion.getQuestion();
+
+                if (currentQuestion.getOptions()[0].Length <= 26)
+                {
+                    ChoiceA_Text.Text = currentQuestion.getOptions()[0];
+                }
+                else
+                {
+                    ChoiceA_Text.Visible = false;
+                    ChoiceA_LongText.Visible = true;
+                    ChoiceA_LongText.Text = currentQuestion.getOptions()[0];
+                }
+
+                if (currentQuestion.getOptions()[1].Length <= 26)
+                {
+                    ChoiceB_Text.Text = currentQuestion.getOptions()[1];
+                }
+                else
+                {
+                    ChoiceB_Text.Visible = false;
+                    ChoiceB_LongText.Visible = true;
+                    ChoiceB_LongText.Text = currentQuestion.getOptions()[1];
+                }
+
+                if (currentQuestion.getOptions()[2].Length <= 26)
+                {
+                    ChoiceC_Text.Text = currentQuestion.getOptions()[2];
+                }
+                else
+                {
+                    ChoiceC_Text.Visible = false;
+                    ChoiceC_LongText.Visible = true;
+                    ChoiceC_LongText.Text = currentQuestion.getOptions()[2];
+                }
+
+                if (currentQuestion.getOptions()[3].Length <= 26)
+                {
+                    ChoiceD_Text.Text = currentQuestion.getOptions()[3];
+                }
+                else
+                {
+                    ChoiceD_Text.Visible = false;
+                    ChoiceD_LongText.Visible = true;
+                    ChoiceD_LongText.Text = currentQuestion.getOptions()[3];
+                }
+
+                answerKey = currentQuestion.getAnswer();
+            }
         }
         private void MoneyTreeLevelHighlight() 
         {
@@ -169,6 +220,7 @@ namespace DSA
                 {
                     ChoiceA.Visible = false;
                     ChoiceA_Text.Visible = false;
+                    ChoiceA_LongText.Visible = false;
                     list.Remove(random);
                     random = list[rnd.Next(list.Count)];
                     count++;
@@ -177,6 +229,7 @@ namespace DSA
                 {
                     ChoiceB.Visible = false;
                     ChoiceB_Text.Visible = false;
+                    ChoiceB_LongText.Visible = false;
                     list.Remove(random);
                     random = list[rnd.Next(list.Count)];
                     count++;
@@ -185,6 +238,7 @@ namespace DSA
                 {
                     ChoiceC.Visible = false;
                     ChoiceC_Text.Visible = false;
+                    ChoiceC_LongText.Visible = false;
                     list.Remove(random);
                     random = list[rnd.Next(list.Count)];
                     count++;
@@ -193,6 +247,7 @@ namespace DSA
                 {
                     ChoiceD.Visible = false;
                     ChoiceD_Text.Visible = false;
+                    ChoiceD_LongText.Visible = false;
                     list.Remove(random);
                     random = list[rnd.Next(list.Count)];
                     count++;
@@ -222,6 +277,55 @@ namespace DSA
 
         private void Lifeline_SwitchQ_Click(object sender, EventArgs e)
         {
+
+            Question_Text.Text = currentQuestion.getSpareQuestion();
+
+            if (currentQuestion.getSpareOptions()[0].Length <= 26)
+            {
+                ChoiceA_Text.Text = currentQuestion.getSpareOptions()[0];
+            }
+            else
+            {
+                ChoiceA_Text.Visible = false;
+                ChoiceA_LongText.Visible = true;
+                ChoiceA_LongText.Text = currentQuestion.getSpareOptions()[0];
+            }
+
+            if (currentQuestion.getSpareOptions()[1].Length <= 26)
+            {
+                ChoiceB_Text.Text = currentQuestion.getSpareOptions()[1];
+            }
+            else
+            {
+                ChoiceB_Text.Visible = false;
+                ChoiceB_LongText.Visible = true;
+                ChoiceB_LongText.Text = currentQuestion.getSpareOptions()[1];
+            }
+
+            if (currentQuestion.getSpareOptions()[2].Length <= 26)
+            {
+                ChoiceC_Text.Text = currentQuestion.getSpareOptions()[2];
+            }
+            else
+            {
+                ChoiceC_Text.Visible = false;
+                ChoiceC_LongText.Visible = true;
+                ChoiceC_LongText.Text = currentQuestion.getSpareOptions()[2];
+            }
+
+            if (currentQuestion.getSpareOptions()[3].Length <= 26)
+            {
+                ChoiceD_Text.Text = currentQuestion.getSpareOptions()[3];
+            }
+            else
+            {
+                ChoiceD_Text.Visible = false;
+                ChoiceD_LongText.Visible = true;
+                ChoiceD_LongText.Text = currentQuestion.getSpareOptions()[3];
+            }
+
+            answerKey = currentQuestion.getSpareAnswer();
+
             Lifeline_SwitchQ.Visible = false;
             SwitchQuestionVisible = false;
         }
@@ -303,6 +407,24 @@ namespace DSA
                 panelD.BackgroundImage = wrongRight;
             }
             
+        }
+
+        private void ChoiceA_LongText_Click(object sender, EventArgs e)
+        {
+            ChoiceA_Text_Click(ChoiceA_Text, EventArgs.Empty);
+        }
+        private void ChoiceB_LongText_Click(object sender, EventArgs e)
+        {
+            ChoiceB_Text_Click(ChoiceB_Text, EventArgs.Empty);
+        }
+        private void ChoiceC_LongText_Click(object sender, EventArgs e)
+        {
+            ChoiceC_Text_Click(ChoiceC_Text, EventArgs.Empty);
+        }
+
+        private void ChoiceD_LongText_Click(object sender, EventArgs e)
+        {
+            ChoiceD_Text_Click(ChoiceD_Text, EventArgs.Empty);
         }
 
         private void AvoidChangingColorUserAnswer()
@@ -388,7 +510,7 @@ namespace DSA
                 panelA.Enabled = false;
                 panelB.Enabled = false;
                 panelD.Enabled = false;
-                DisabledLifeLines();     
+                DisabledLifeLines();
         }
 
         private void ChoiceD_Text_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -407,11 +529,31 @@ namespace DSA
             }
 
             panel_FinalAnswerNotif.Visible = true;
-                panelA.Enabled = false;
-                panelB.Enabled = false;
-                panelC.Enabled = false;
-                DisabledLifeLines();
+            panelA.Enabled = false;
+            panelB.Enabled = false;
+            panelC.Enabled = false;
+            DisabledLifeLines();
         }
+
+        private void ChoiceA_LongText_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ChoiceA_Text_MouseDoubleClick(ChoiceA_Text, e);
+        }
+        private void ChoiceB_LongText_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ChoiceB_Text_MouseDoubleClick(ChoiceB_Text, e);
+        }
+
+        private void ChoiceC_LongText_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ChoiceC_Text_MouseDoubleClick(ChoiceC_Text, e);
+        }
+
+        private void ChoiceD_LongText_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ChoiceD_Text_MouseDoubleClick(ChoiceD_Text, e);
+        }
+
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             panel_FinalAnswerNotif.Visible = false;
@@ -626,7 +768,12 @@ namespace DSA
         {
             
             panel_Question.Parent = BackgroundGif;
-            
+
+            GifTimer.Parent = BackgroundGif;
+
+            panel_FinalAnswerNotif.Parent = BackgroundGif;
+            panel_CorrectAnswerNotice.Parent = BackgroundGif;
+
             panelA.Parent = BackgroundGif;
             panelB.Parent = BackgroundGif;
             panelC.Parent = BackgroundGif;
@@ -647,10 +794,23 @@ namespace DSA
             ChoiceB_Text.Click -= ChoiceB_Text_Click;
             ChoiceC_Text.Click -= ChoiceC_Text_Click;
             ChoiceD_Text.Click -= ChoiceD_Text_Click;
+
+            ChoiceA_LongText.Click -= ChoiceA_LongText_Click;
+            ChoiceB_LongText.Click -= ChoiceB_LongText_Click;
+            ChoiceC_LongText.Click -= ChoiceC_LongText_Click;
+            ChoiceD_LongText.Click -= ChoiceD_LongText_Click;
+
+
             ChoiceA_Text.MouseDoubleClick -= ChoiceA_Text_MouseDoubleClick;
             ChoiceB_Text.MouseDoubleClick -= ChoiceB_Text_MouseDoubleClick;
             ChoiceC_Text.MouseDoubleClick -= ChoiceC_Text_MouseDoubleClick;
             ChoiceD_Text.MouseDoubleClick -= ChoiceD_Text_MouseDoubleClick;
+
+            ChoiceA_LongText.MouseDoubleClick -= ChoiceA_LongText_MouseDoubleClick;
+            ChoiceB_LongText.MouseDoubleClick -= ChoiceB_LongText_MouseDoubleClick;
+            ChoiceC_LongText.MouseDoubleClick -= ChoiceC_LongText_MouseDoubleClick;
+            ChoiceD_LongText.MouseDoubleClick -= ChoiceD_LongText_MouseDoubleClick;
+
             Lifeline_5050.Click -= Lifeline_5050_Click;
             Lifeline_x2.Click -= Lifeline_x2_Click;
             Lifeline_timeFreeze.Click -= Lifeline_timeFreeze_Click;
@@ -672,7 +832,7 @@ namespace DSA
         private void transitionTimer_Tick(object sender, EventArgs e)
         {        
             elapsedTransition++;
-            if (elapsedTransition == 5)
+            if (elapsedTransition == 3)
             {
                 
                 transitionTimer.Stop();
@@ -704,11 +864,6 @@ namespace DSA
                 BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
                 MessageBox.Show("Wrong");
             }
-        }
-
-        private void BackgroundGif_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
     }
 }
