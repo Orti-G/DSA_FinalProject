@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 //insert suspense animation in line 205 and 234
 //insert winning animation in line 354
@@ -35,6 +36,7 @@ namespace DSA
         private int elapsedTime = -4;
         private int elapsedAnimation = -2;
         private int elapsedTransition = -2;
+        private int transitionCount = 0;
 
         private Image wrongLeft = Properties.Resources.Q_A_Wrong_Left;
         private Image wrongRight = Properties.Resources.Q_A_Wrong_Right;
@@ -45,6 +47,7 @@ namespace DSA
         private Inventory currentQuestion;
         private int MoneyTreeLevel;
 
+        private int[] SafeHavens = {5,10,15};
         
         public QA(Queue<Inventory> questions,bool halfchance,bool life2x, bool timeFreeze, bool switchQuestion)
         {
@@ -66,75 +69,65 @@ namespace DSA
         
         private void QA_Load(object sender, EventArgs e)
         {
-            if (Questions.Count == 0)
-            {
-                EndScreen gameresult = new EndScreen();
-                gameresult.Show();
-                this.Close();
-                this.Dispose();
+            currentQuestion = Questions.Dequeue();
 
+            MoneyTreeLevel = 15 - Questions.Count;
+
+            MoneyTreeLevelHighlight();
+
+            Lifeline_5050.Visible = HalfChanceVisible;
+            Lifeline_x2.Visible = Life2xVisible;
+            Lifeline_timeFreeze.Visible = timeFreezeVisible;
+            Lifeline_SwitchQ.Visible = SwitchQuestionVisible;
+
+            Question_Text.Text = currentQuestion.getQuestion();
+
+            if (currentQuestion.getOptions()[0].Length <= 26)
+            {
+                ChoiceA_Text.Text = currentQuestion.getOptions()[0];
             }
             else
             {
-                currentQuestion = Questions.Dequeue();
-
-                MoneyTreeLevel = 15 - Questions.Count;
-
-                MoneyTreeLevelHighlight();
-
-                Lifeline_5050.Visible = HalfChanceVisible;
-                Lifeline_x2.Visible = Life2xVisible;
-                Lifeline_timeFreeze.Visible = timeFreezeVisible;
-                Lifeline_SwitchQ.Visible = SwitchQuestionVisible;
-
-                Question_Text.Text = currentQuestion.getQuestion();
-
-                if (currentQuestion.getOptions()[0].Length <= 26)
-                {
-                    ChoiceA_Text.Text = currentQuestion.getOptions()[0];
-                }
-                else
-                {
-                    ChoiceA_Text.Visible = false;
-                    ChoiceA_LongText.Visible = true;
-                    ChoiceA_LongText.Text = currentQuestion.getOptions()[0];
-                }
-
-                if (currentQuestion.getOptions()[1].Length <= 26)
-                {
-                    ChoiceB_Text.Text = currentQuestion.getOptions()[1];
-                }
-                else
-                {
-                    ChoiceB_Text.Visible = false;
-                    ChoiceB_LongText.Visible = true;
-                    ChoiceB_LongText.Text = currentQuestion.getOptions()[1];
-                }
-
-                if (currentQuestion.getOptions()[2].Length <= 26)
-                {
-                    ChoiceC_Text.Text = currentQuestion.getOptions()[2];
-                }
-                else
-                {
-                    ChoiceC_Text.Visible = false;
-                    ChoiceC_LongText.Visible = true;
-                    ChoiceC_LongText.Text = currentQuestion.getOptions()[2];
-                }
-
-                if (currentQuestion.getOptions()[3].Length <= 26)
-                {
-                    ChoiceD_Text.Text = currentQuestion.getOptions()[3];
-                }
-                else
-                {
-                    ChoiceD_Text.Visible = false;
-                    ChoiceD_LongText.Visible = true;
-                    ChoiceD_LongText.Text = currentQuestion.getOptions()[3];
-                }
-
-                answerKey = currentQuestion.getAnswer();
+                ChoiceA_Text.Visible = false;
+                ChoiceA_LongText.Visible = true;
+                ChoiceA_LongText.Text = currentQuestion.getOptions()[0];
             }
+
+            if (currentQuestion.getOptions()[1].Length <= 26)
+            {
+                ChoiceB_Text.Text = currentQuestion.getOptions()[1];
+            }
+            else
+            {
+                ChoiceB_Text.Visible = false;
+                ChoiceB_LongText.Visible = true;
+                ChoiceB_LongText.Text = currentQuestion.getOptions()[1];
+            }
+
+            if (currentQuestion.getOptions()[2].Length <= 26)
+            {
+                ChoiceC_Text.Text = currentQuestion.getOptions()[2];
+            }
+            else
+            {
+                ChoiceC_Text.Visible = false;
+                ChoiceC_LongText.Visible = true;
+                ChoiceC_LongText.Text = currentQuestion.getOptions()[2];
+            }
+
+            if (currentQuestion.getOptions()[3].Length <= 26)
+            {
+                ChoiceD_Text.Text = currentQuestion.getOptions()[3];
+            }
+            else
+            {
+                ChoiceD_Text.Visible = false;
+                ChoiceD_LongText.Visible = true;
+                ChoiceD_LongText.Text = currentQuestion.getOptions()[3];
+            }
+
+            answerKey = currentQuestion.getAnswer();
+            
         }
         private void MoneyTreeLevelHighlight() 
         {
@@ -256,6 +249,8 @@ namespace DSA
 
             Lifeline_5050.Visible = false;
             HalfChanceVisible = false;
+
+            DisabledLifeLines();
         }
 
         private void Lifeline_x2_Click(object sender, EventArgs e)
@@ -263,6 +258,7 @@ namespace DSA
             Life2x = true;
             Lifeline_x2.Visible = false;
             Life2xVisible = false;
+            DisabledLifeLines();
         }
 
         private void Lifeline_timeFreeze_Click(object sender, EventArgs e)
@@ -272,7 +268,8 @@ namespace DSA
 
             Lifeline_timeFreeze.Visible = false;
             timeFreezeVisible = false;
-            
+            DisabledLifeLines();
+
         }
 
         private void Lifeline_SwitchQ_Click(object sender, EventArgs e)
@@ -328,6 +325,7 @@ namespace DSA
 
             Lifeline_SwitchQ.Visible = false;
             SwitchQuestionVisible = false;
+            DisabledLifeLines();
         }
 
         private void ChoiceA_Text_Click(object sender, EventArgs e)
@@ -826,43 +824,106 @@ namespace DSA
                 BackgroundGif.Image = Properties.Resources.GIF_Contestant1_Answering;
                 AnimationTimer.Stop();
                 AnimationTimer.Dispose();
-            }
+            } 
         }
 
         private void transitionTimer_Tick(object sender, EventArgs e)
-        {        
+        {
             elapsedTransition++;
-            if (elapsedTransition == 3)
+            if (elapsedTransition == 3 && transitionCount == 0)
             {
-                
+
+                transitionTimer.Stop();
+                elapsedTransition = -2;
+                ShowResult();
+
+            }
+            else if (elapsedTransition == 3 && transitionCount == 1)
+            {
                 transitionTimer.Stop();
                 transitionTimer.Dispose();
-                ShowResult();
+
+                if (Questions.Count != 0)
+                {
+                    Winning winning = new Winning(Questions, HalfChanceVisible, Life2xVisible, timeFreezeVisible, SwitchQuestionVisible);
+                    winning.Show();
+                    this.Close();
+                    this.Dispose();
+                    myForm = null;
+                }
+                else
+                {
+                    EndScreen gameResult = new EndScreen(2000000);
+                    gameResult.Show();
+                    this.Close();
+                    this.Dispose();
+                    myForm = null;
+                }
+            } 
+            else if(elapsedTransition == 3 && transitionCount == 2)
+            {
+                transitionTimer.Stop();
+                transitionTimer.Dispose();
+
+                EndScreen gameResult = new EndScreen(TotalWinningsAfterLosing());
+                gameResult.Show();
+                this.Close();
+                this.Dispose();
+                myForm = null;
             }
         }
 
-        public void ShowResult()
+        private int TotalWinningsAfterLosing()
+        {
+            int totalWinnings = 0;
+
+            if (SafeHavens.Length == 3)
+            {
+                if (MoneyTreeLevel <= SafeHavens[2] && MoneyTreeLevel > SafeHavens[1])
+                {
+                    totalWinnings = 150000;
+                }
+                else if (MoneyTreeLevel <= SafeHavens[1] && MoneyTreeLevel > SafeHavens[0])
+                {
+                    totalWinnings = 20000;
+                }
+                else
+                {
+                    totalWinnings = 0;
+                }
+            }
+            else 
+            {
+                if (MoneyTreeLevel <= SafeHavens[0])
+                {
+                    totalWinnings = 0;
+                }
+                else
+                {
+                    totalWinnings = 20000;
+                }
+            }
+
+            return totalWinnings;
+        }
+
+        private void ShowResult()
         {
 
             ShowCorrectAnswer();
             if (UserAnswer == answerKey || UserSecondAnswer == answerKey)
             {
                 BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
-                MessageBox.Show("Correct");
-
-                QA nextQuestion = new QA(Questions,HalfChanceVisible,Life2xVisible,timeFreezeVisible,SwitchQuestionVisible);
-                QA.myForm = nextQuestion;
-                nextQuestion.Show();
-                this.Close();
-                this.Dispose();
-                myForm = null;
-                
+                panel_CorrectAnswerNotice.Visible = true;
+                transitionCount = 1;
+                transitionTimer.Start();
 
             }
             else 
             {
                 BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
-                MessageBox.Show("Wrong");
+                transitionCount = 2;
+                transitionTimer.Start();
             }
         }   
     }

@@ -19,7 +19,7 @@ namespace DSA
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            QA form8 = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
+            QA form8 = new QA(History.HistoryQuestions(), true, true, true, true);
             QA.myForm = form8;
             form8.Show();
             this.Hide();
@@ -27,9 +27,9 @@ namespace DSA
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            Winning form8 = new Winning();
+            /*Winning form8 = new Winning();
             form8.Show();
-            this.Hide();
+            this.Hide();*/
         }
     }
 }

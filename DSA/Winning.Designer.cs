@@ -28,110 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.currentMoneyGif = new System.Windows.Forms.PictureBox();
+            this.backgroundGif = new System.Windows.Forms.PictureBox();
+            this.btn_takeMoney = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_Continue = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            ((System.ComponentModel.ISupportInitialize)(this.currentMoneyGif)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundGif)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // currentMoneyGif
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::DSA.Properties.Resources.GIF_NewCashPrize_600K;
-            this.pictureBox2.Location = new System.Drawing.Point(1, 714);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1524, 159);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 44;
-            this.pictureBox2.TabStop = false;
+            this.currentMoneyGif.BackColor = System.Drawing.Color.Transparent;
+            this.currentMoneyGif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.currentMoneyGif.Image = global::DSA.Properties.Resources.GIF_NewCashPrize_600K;
+            this.currentMoneyGif.Location = new System.Drawing.Point(1, 580);
+            this.currentMoneyGif.Margin = new System.Windows.Forms.Padding(2);
+            this.currentMoneyGif.Name = "currentMoneyGif";
+            this.currentMoneyGif.Size = new System.Drawing.Size(1143, 129);
+            this.currentMoneyGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.currentMoneyGif.TabIndex = 44;
+            this.currentMoneyGif.TabStop = false;
             // 
-            // pictureBox1
+            // backgroundGif
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
-            this.pictureBox1.Image = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1524, 872);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 45;
-            this.pictureBox1.TabStop = false;
+            this.backgroundGif.BackColor = System.Drawing.Color.Transparent;
+            this.backgroundGif.BackgroundImage = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
+            this.backgroundGif.Image = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
+            this.backgroundGif.Location = new System.Drawing.Point(1, 1);
+            this.backgroundGif.Margin = new System.Windows.Forms.Padding(2);
+            this.backgroundGif.Name = "backgroundGif";
+            this.backgroundGif.Size = new System.Drawing.Size(1143, 708);
+            this.backgroundGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backgroundGif.TabIndex = 45;
+            this.backgroundGif.TabStop = false;
             // 
-            // kryptonButton1
+            // btn_takeMoney
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(33, 648);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.Size = new System.Drawing.Size(227, 60);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_takeMoney.Location = new System.Drawing.Point(25, 526);
+            this.btn_takeMoney.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_takeMoney.Name = "btn_takeMoney";
+            this.btn_takeMoney.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_takeMoney.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_takeMoney.Size = new System.Drawing.Size(170, 49);
+            this.btn_takeMoney.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_takeMoney.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_takeMoney.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_takeMoney.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
+            this.btn_takeMoney.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 20;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton1.TabIndex = 48;
-            this.kryptonButton1.Values.Text = "TAKE THE MONEY";
+            this.btn_takeMoney.StateCommon.Border.Rounding = 20;
+            this.btn_takeMoney.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_takeMoney.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_takeMoney.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.btn_takeMoney.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
+            this.btn_takeMoney.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.btn_takeMoney.TabIndex = 48;
+            this.btn_takeMoney.Values.Text = "TAKE THE MONEY";
+            this.btn_takeMoney.Click += new System.EventHandler(this.btn_takeMoney_Click);
             // 
-            // kryptonButton2
+            // btn_Continue
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1320, 648);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.Size = new System.Drawing.Size(192, 58);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_Continue.Location = new System.Drawing.Point(990, 526);
+            this.btn_Continue.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Continue.Name = "btn_Continue";
+            this.btn_Continue.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Continue.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Continue.Size = new System.Drawing.Size(144, 47);
+            this.btn_Continue.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Continue.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Continue.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Continue.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
+            this.btn_Continue.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
-            this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton2.TabIndex = 49;
-            this.kryptonButton2.Values.Text = "CONTINUE";
+            this.btn_Continue.StateCommon.Border.Rounding = 20;
+            this.btn_Continue.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_Continue.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Continue.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.btn_Continue.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
+            this.btn_Continue.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.btn_Continue.TabIndex = 49;
+            this.btn_Continue.Values.Text = "CONTINUE";
+            this.btn_Continue.Click += new System.EventHandler(this.btn_Continue_Click);
             // 
             // Winning
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1524, 872);
-            this.Controls.Add(this.kryptonButton2);
-            this.Controls.Add(this.kryptonButton1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1143, 708);
+            this.Controls.Add(this.btn_Continue);
+            this.Controls.Add(this.btn_takeMoney);
+            this.Controls.Add(this.currentMoneyGif);
+            this.Controls.Add(this.backgroundGif);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Winning";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Winning_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.currentMoneyGif)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundGif)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private System.Windows.Forms.PictureBox currentMoneyGif;
+        private System.Windows.Forms.PictureBox backgroundGif;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_takeMoney;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Continue;
     }
 }
