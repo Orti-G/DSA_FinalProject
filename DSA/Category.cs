@@ -27,168 +27,90 @@ namespace DSA
         private Image HighRisk_Clicked = Properties.Resources.Format_HighRiskMT_Clicked;
 
         private Timer animationTimer;
-        private Panel panelToResize;
-        private Size targetSize;
-        private Panel[] panels;
-        private Point[] targetLocations;
-        private int animationSpeed = 10; // Controls animation speed
+        private Panel activePanel;
+        private Panel previousPanel;
+        private const int DefaultHeight = 104;
+        private const int ExpandedHeight = 177;
+        private const int AnimationStep = 20;
 
         public Category()
         {
             InitializeComponent();
-
-            /*// Initialize panels and their default properties
-            panel_Math.Location = new Point(441, 123);
-            panel_Math.Size = new Size(639, 103);
-
-            panel_Science.Location = new Point(441, 232);
-            panel_Science.Size = new Size(639, 103);
-
-            panel_History.Location = new Point(441, 341);
-            panel_History.Size = new Size(639, 103);
-
-            panels = new Panel[] { panel_Math, panel_Science, panel_History };
-
-            // Initialize timer for animations
-            animationTimer = new Timer();
-            animationTimer.Interval = 15; // Smoothness of animation
-            animationTimer.Tick += AnimatePanels;*/
+            animationTimer = new Timer { Interval = 5 }; // Adjust interval for smoother animation
+            animationTimer.Tick += AnimationTimer_Tick;
         }
+
 
         private void btn_Math_Click(object sender, EventArgs e)
         {
-           /* SetAnimation(panel_Math, new Size(639, 179), new Point[]
-            {
-            new Point(441, 302),
-            new Point(441, 411)
-            });*/
-
             btn_Math.BackgroundImage = Math_Clicked;
             btn_Science.BackgroundImage = Science_Default;
             btn_History.BackgroundImage = History_Default;
+
+            HandlePanelSwitch(panel_Math);
         }
 
         private void btn_Science_Click(object sender, EventArgs e)
         {
-           /* SetAnimation(panel_Science, new Size(639, 179), new Point[]
-            {
-            new Point(441, 123),
-            new Point(440, 416)
-            });*/
-
             btn_Science.BackgroundImage = Science_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_History.BackgroundImage = History_Default;
+
+            HandlePanelSwitch(panel_Science);
         }
 
         private void btn_History_Click(object sender, EventArgs e)
         {
-           /* if (btn_Math.BackgroundImage == Math_Clicked)
-            {
-                SetAnimation(panel_Math, new Size(639, 103), null); // Reset panel_Math to its default size
-            }
-
-            // Move panel_Science to its new location (if it was previously clicked)
-            if (btn_Science.BackgroundImage == Science_Clicked)
-            {
-                SetAnimation(panel_Science, new Size(639, 103), new Point[]
-                {
-            new Point(441, 233) // Move panel_Science to (441, 233)
-                });
-            }
-
-            // Move panel_History to (441, 342) and resize to (639, 179)
-            SetAnimation(panel_History, new Size(639, 179), new Point[]
-            {
-        new Point(440, 342) // Move panel_History to (441, 342)
-            });
-*/
-            // Update button background images
             btn_History.BackgroundImage = History_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_Science.BackgroundImage = Science_Default;
+
+            HandlePanelSwitch(panel_History);
         }
 
-        private void SetAnimation(Panel resizePanel, Size newSize, Point[] newLocations)
+        private void HandlePanelSwitch(Panel panel)
         {
-            panelToResize = resizePanel;
-            targetSize = newSize;
+            if (activePanel == panel) return; // Do nothing if the same button is clicked
 
-            // Check if newLocations has valid data
-            if (newLocations != null)
-            {
-                targetLocations = new Point[panels.Length - 1];
-                int index = 0;
+            // Set the previous panel for collapse
+            previousPanel = activePanel;
 
-                foreach (Panel panel in panels)
-                {
-                    if (panel != resizePanel && index < newLocations.Length)
-                    {
-                        targetLocations[index] = newLocations[index];
-                        index++;
-                    }
-                }
-            }
-            else
-            {
-                targetLocations = Array.Empty<Point>(); // No animation for other panels
-            }
+            // Set the new panel as active for expansion
+            activePanel = panel;
 
+            // Start the animation timer
             animationTimer.Start();
         }
 
-        private void AnimatePanels(object sender, EventArgs e)
+        private void AnimationTimer_Tick(object sender, EventArgs e)
         {
-            bool resizingDone = true, movingDone = true;
+            bool isAnimating = false;
 
-            // Resize the active panel
-            if (panelToResize.Size != targetSize)
+            // Collapse the previous panel
+            if (previousPanel != null && previousPanel.Height > DefaultHeight)
             {
-                resizingDone = false;
-                int widthStep = (targetSize.Width - panelToResize.Width) / animationSpeed;
-                int heightStep = (targetSize.Height - panelToResize.Height) / animationSpeed;
-
-                panelToResize.Size = new Size(
-                    panelToResize.Width + widthStep,
-                    panelToResize.Height + heightStep
-                );
-
-                // Correct final size
-                if (Math.Abs(targetSize.Width - panelToResize.Width) < Math.Abs(widthStep))
-                    panelToResize.Width = targetSize.Width;
-                if (Math.Abs(targetSize.Height - panelToResize.Height) < Math.Abs(heightStep))
-                    panelToResize.Height = targetSize.Height;
-            }
-
-            // Move other panels
-            int index = 0;
-            foreach (Panel panel in panels)
-            {
-                if (panel != panelToResize && index < targetLocations.Length)
+                previousPanel.Height -= AnimationStep;
+                if (previousPanel.Height <= DefaultHeight)
                 {
-                    if (panel.Location != targetLocations[index])
-                    {
-                        movingDone = false;
-                        int xStep = (targetLocations[index].X - panel.Location.X) / animationSpeed;
-                        int yStep = (targetLocations[index].Y - panel.Location.Y) / animationSpeed;
-
-                        panel.Location = new Point(
-                            panel.Location.X + xStep,
-                            panel.Location.Y + yStep
-                        );
-
-                        // Correct final position
-                        if (Math.Abs(targetLocations[index].X - panel.Location.X) < Math.Abs(xStep))
-                            panel.Location = new Point(targetLocations[index].X, panel.Location.Y);
-                        if (Math.Abs(targetLocations[index].Y - panel.Location.Y) < Math.Abs(yStep))
-                            panel.Location = new Point(panel.Location.X, targetLocations[index].Y);
-                    }
-                    index++;
+                    previousPanel.Height = DefaultHeight;
+                    previousPanel = null;
                 }
+                isAnimating = true;
             }
 
-            // Stop timer when animation is complete
-            if (resizingDone && movingDone)
+            // Expand the active panel
+            if (activePanel != null && activePanel.Height < ExpandedHeight)
+            {
+                activePanel.Height += AnimationStep;
+                if (activePanel.Height >= ExpandedHeight)
+                {
+                    activePanel.Height = ExpandedHeight;
+                }
+                isAnimating = true;
+            }
+
+            // Stop the timer if no more animation is needed
+            if (!isAnimating)
             {
                 animationTimer.Stop();
             }
@@ -211,6 +133,5 @@ namespace DSA
         {
 
         }
-
     }
 }

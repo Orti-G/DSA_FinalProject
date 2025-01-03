@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSA.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,19 @@ namespace DSA
 {
     public partial class Character : Form
     {
+        private Image player1_image = Resources.Character_GIF_P1;
+        private Image player1_Stillimage = Properties.Resources.Character_still_P1;
+
+        private Image player2_image = Resources.Character_GIF_P2;
+        private Image player2_Stillimage = Resources.Character_still_P2;
+
+        private Image player3_image = Resources.Character_GIF_P3;
+        private Image player3_Stillimage = Resources.Character_still_P3;
+
+        private Image panelBackground = Resources.CharacterSelectedBox;
         public Character()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Character_Load(object sender, EventArgs e)
@@ -34,35 +35,40 @@ namespace DSA
 
         private void selectCharacter1_Click(object sender, EventArgs e)
         {
-            //selectCharacter1.Image=Properties.Resources.ProxyPlayer_Clicked;
-            selectCharacter1.BackgroundImage=Properties.Resources.CharacterSelectedBox;
 
-            //selectCharacter2.Image=Properties.Resources.ProxyPlayer2;
-            selectCharacter2.BackgroundImage = null;
-            //selectCharacter3.Image = Properties.Resources.ProxyPlayer3;
-            selectCharacter3.BackgroundImage = null;
+            pictureBox_P1.Image = player1_image;
+            panel_P1.BackgroundImage = panelBackground;
+
+            pictureBox_P2.Image = player2_Stillimage;
+            panel_P2.BackgroundImage = null;
+
+            pictureBox_P3.Image = player3_Stillimage;
+            panel_P3.BackgroundImage = null;
         }
 
-        private void selectCharacter2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            //selectCharacter2.Image = Properties.Resources.ProxyPlayer_Clicked2;
-            selectCharacter2.BackgroundImage = Properties.Resources.CharacterSelectedBox;
+            pictureBox_P1.Image = player1_Stillimage;
+            panel_P1.BackgroundImage = null;
 
-            selectCharacter1.Image = Properties.Resources.ProxyPLayer;
-            selectCharacter1.BackgroundImage = null;
-           // selectCharacter3.Image = Properties.Resources.ProxyPlayer3;
-            selectCharacter3.BackgroundImage = null;
+            pictureBox_P2.Image = player2_image;
+            panel_P2.BackgroundImage = panelBackground;
+
+            pictureBox_P3.Image = player3_Stillimage;
+            panel_P3.BackgroundImage = null;
         }
 
-        private void selectCharacter3_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //selectCharacter3.Image = Properties.Resources.ProxyPlayer_Clicked3;
-            selectCharacter3.BackgroundImage = Properties.Resources.CharacterSelectedBox;
+            pictureBox_P1.Image = player1_Stillimage;
+            panel_P1.BackgroundImage = null;
 
-            //selectCharacter2.Image = Properties.Resources.ProxyPlayer2;
-            selectCharacter2.BackgroundImage = null;
-            selectCharacter1.Image = Properties.Resources.ProxyPLayer;
-            selectCharacter1.BackgroundImage = null;
+            pictureBox_P2.Image = player2_Stillimage;
+            panel_P2.BackgroundImage = null;
+
+            pictureBox_P3.Image = player3_image;
+            panel_P3.BackgroundImage = panelBackground;
+
         }
 
         private void txtBox_userName_Click(object sender, EventArgs e)
