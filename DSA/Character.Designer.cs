@@ -51,9 +51,10 @@
             this.selectCharacter1.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
             this.selectCharacter1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.selectCharacter1.Image = global::DSA.Properties.Resources.ProxyPLayer;
-            this.selectCharacter1.Location = new System.Drawing.Point(231, 130);
+            this.selectCharacter1.Location = new System.Drawing.Point(173, 106);
+            this.selectCharacter1.Margin = new System.Windows.Forms.Padding(2);
             this.selectCharacter1.Name = "selectCharacter1";
-            this.selectCharacter1.Size = new System.Drawing.Size(286, 406);
+            this.selectCharacter1.Size = new System.Drawing.Size(214, 330);
             this.selectCharacter1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.selectCharacter1.TabIndex = 4;
             this.selectCharacter1.TabStop = false;
@@ -63,10 +64,10 @@
             // 
             this.selectCharacter2.BackColor = System.Drawing.Color.Transparent;
             this.selectCharacter2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            //this.selectCharacter2.Image = global::DSA.Properties.Resources.ProxyPlayer2;
-            this.selectCharacter2.Location = new System.Drawing.Point(615, 130);
+            this.selectCharacter2.Location = new System.Drawing.Point(461, 106);
+            this.selectCharacter2.Margin = new System.Windows.Forms.Padding(2);
             this.selectCharacter2.Name = "selectCharacter2";
-            this.selectCharacter2.Size = new System.Drawing.Size(286, 406);
+            this.selectCharacter2.Size = new System.Drawing.Size(214, 330);
             this.selectCharacter2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.selectCharacter2.TabIndex = 5;
             this.selectCharacter2.TabStop = false;
@@ -74,11 +75,12 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(49, 782);
+            this.kryptonButton2.Location = new System.Drawing.Point(37, 635);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.Size = new System.Drawing.Size(137, 52);
+            this.kryptonButton2.Size = new System.Drawing.Size(103, 42);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
@@ -88,7 +90,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton2.StateCommon.Border.Rounding = 20;
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
             this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
@@ -97,11 +99,12 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(1346, 782);
+            this.kryptonButton3.Location = new System.Drawing.Point(1010, 635);
+            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton3.Size = new System.Drawing.Size(137, 52);
+            this.kryptonButton3.Size = new System.Drawing.Size(103, 42);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
@@ -111,7 +114,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton3.StateCommon.Border.Rounding = 20;
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Copperplate Std 31 AB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
             this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
@@ -122,10 +125,10 @@
             // 
             this.selectCharacter3.BackColor = System.Drawing.Color.Transparent;
             this.selectCharacter3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            //his.selectCharacter3.Image = global::DSA.Properties.Resources.ProxyPlayer3;
-            this.selectCharacter3.Location = new System.Drawing.Point(995, 130);
+            this.selectCharacter3.Location = new System.Drawing.Point(746, 106);
+            this.selectCharacter3.Margin = new System.Windows.Forms.Padding(2);
             this.selectCharacter3.Name = "selectCharacter3";
-            this.selectCharacter3.Size = new System.Drawing.Size(286, 406);
+            this.selectCharacter3.Size = new System.Drawing.Size(214, 330);
             this.selectCharacter3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.selectCharacter3.TabIndex = 18;
             this.selectCharacter3.TabStop = false;
@@ -135,9 +138,10 @@
             // 
             this.panel_userName.BackColor = System.Drawing.Color.Transparent;
             this.panel_userName.Image = global::DSA.Properties.Resources.Panel_UserName;
-            this.panel_userName.Location = new System.Drawing.Point(571, 699);
+            this.panel_userName.Location = new System.Drawing.Point(428, 568);
+            this.panel_userName.Margin = new System.Windows.Forms.Padding(2);
             this.panel_userName.Name = "panel_userName";
-            this.panel_userName.Size = new System.Drawing.Size(378, 64);
+            this.panel_userName.Size = new System.Drawing.Size(284, 52);
             this.panel_userName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.panel_userName.TabIndex = 19;
             this.panel_userName.TabStop = false;
@@ -146,9 +150,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::DSA.Properties.Resources.Labels_SelectCharacter;
-            this.pictureBox5.Location = new System.Drawing.Point(313, 28);
+            this.pictureBox5.Location = new System.Drawing.Point(235, 23);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(886, 82);
+            this.pictureBox5.Size = new System.Drawing.Size(664, 67);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
@@ -157,9 +162,10 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::DSA.Properties.Resources.Labels_CharacterName;
-            this.pictureBox6.Location = new System.Drawing.Point(456, 609);
+            this.pictureBox6.Location = new System.Drawing.Point(342, 495);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(601, 75);
+            this.pictureBox6.Size = new System.Drawing.Size(451, 61);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 21;
             this.pictureBox6.TabStop = false;
@@ -170,22 +176,24 @@
             this.txtBox_userName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBox_userName.Font = new System.Drawing.Font("Footlight MT Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_userName.ForeColor = System.Drawing.Color.Yellow;
-            this.txtBox_userName.Location = new System.Drawing.Point(611, 711);
+            this.txtBox_userName.Location = new System.Drawing.Point(444, 579);
+            this.txtBox_userName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBox_userName.MaxLength = 20;
             this.txtBox_userName.Name = "txtBox_userName";
-            this.txtBox_userName.Size = new System.Drawing.Size(301, 35);
+            this.txtBox_userName.Size = new System.Drawing.Size(254, 28);
             this.txtBox_userName.TabIndex = 22;
             this.txtBox_userName.Text = "Name Your Character";
             this.txtBox_userName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBox_userName.TextChanged += new System.EventHandler(this.txtBox_userName_TextChanged);
+            this.txtBox_userName.Click += new System.EventHandler(this.txtBox_userName_Click);
             // 
             // Character
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1524, 872);
+            this.ClientSize = new System.Drawing.Size(1143, 708);
             this.Controls.Add(this.txtBox_userName);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -197,6 +205,7 @@
             this.Controls.Add(this.panel_userName);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Character";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

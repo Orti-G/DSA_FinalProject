@@ -46,5 +46,10 @@ namespace DSA
         {
 
         }
+
+        private void IntroPlayer_Enter_2(object sender, EventArgs e)
+        {
+            IntroPlayer.URL = @"C:\Users\ortig\Downloads\Try_Intro.mp4";
+        }
     }
 }

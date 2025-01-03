@@ -32,11 +32,6 @@ namespace DSA
 
         }
 
-        private void txtBox_userName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void selectCharacter1_Click(object sender, EventArgs e)
         {
             //selectCharacter1.Image=Properties.Resources.ProxyPlayer_Clicked;
@@ -68,6 +63,14 @@ namespace DSA
             selectCharacter2.BackgroundImage = null;
             selectCharacter1.Image = Properties.Resources.ProxyPLayer;
             selectCharacter1.BackgroundImage = null;
+        }
+
+        private void txtBox_userName_Click(object sender, EventArgs e)
+        {
+            if (txtBox_userName.Text == "Name Your Character") 
+            {
+                txtBox_userName.Text = null;
+            }  
         }
     }
 }
