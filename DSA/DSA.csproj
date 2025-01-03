@@ -461,5 +461,77 @@
   <ItemGroup>
     <None Include="Resources\Label_Leaderboard_Math.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_GIF_P1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_GIF_P2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_GIF_P3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_still_P1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_still_P2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character_still_P3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Answering_P1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Answering_P2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Answering_P3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Contestant1_Answering1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Host_AskingIsthatyourfianlanswer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Host_AskingQuestion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Host_Disappointed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P1%28long%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P2%28long%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P3%28long%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Intense_P3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_winning_P1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_winning_P2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_winning_P3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_newINRO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_NewCashPrize_0.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

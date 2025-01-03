@@ -153,6 +153,66 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Character_GIF_P1 {
+            get {
+                object obj = ResourceManager.GetObject("Character_GIF_P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character_GIF_P2 {
+            get {
+                object obj = ResourceManager.GetObject("Character_GIF_P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character_GIF_P3 {
+            get {
+                object obj = ResourceManager.GetObject("Character_GIF_P3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character_still_P1 {
+            get {
+                object obj = ResourceManager.GetObject("Character_still_P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character_still_P2 {
+            get {
+                object obj = ResourceManager.GetObject("Character_still_P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Character_still_P3 {
+            get {
+                object obj = ResourceManager.GetObject("Character_still_P3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CharacterNaming {
             get {
                 object obj = ResourceManager.GetObject("CharacterNaming", resourceCulture);
@@ -213,9 +273,49 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIF_Answering_P1 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Answering_P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Answering_P2 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Answering_P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Answering_P3 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Answering_P3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIF_Contestant1_Answering {
             get {
                 object obj = ResourceManager.GetObject("GIF_Contestant1_Answering", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Contestant1_Answering1 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Contestant1_Answering1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +333,99 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIF_Host_AskingIsthatyourfianlanswer {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Host_AskingIsthatyourfianlanswer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Host_AskingQuestion {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Host_AskingQuestion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Host_Disappointed {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Host_Disappointed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIF_Host_Intro {
             get {
                 object obj = ResourceManager.GetObject("GIF_Host_Intro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P1 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P1_long_ {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P1(long)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P2 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P2_long_ {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P2(long)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P3 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_Intense_P3_long_ {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Intense_P3(long)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +446,16 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap GIF_New1minTimer {
             get {
                 object obj = ResourceManager.GetObject("GIF_New1minTimer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_NewCashPrize_0 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_NewCashPrize_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +613,49 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIF_newINRO {
+            get {
+                object obj = ResourceManager.GetObject("GIF_newINRO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIF_TryNewCashPrize {
             get {
                 object obj = ResourceManager.GetObject("GIF_TryNewCashPrize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_winning_P1 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_winning_P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_winning_P2 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_winning_P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_winning_P3 {
+            get {
+                object obj = ResourceManager.GetObject("GIF_winning_P3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
