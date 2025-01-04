@@ -22,6 +22,8 @@ namespace DSA
             timer.Interval = 31000; 
             timer.Tick += Timer_Tick;
             timer.Start();
+
+            IntroVid.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\VID_Intro(long).mp4";
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -33,24 +35,14 @@ namespace DSA
             this.Hide();
         }
 
-        private void IntroPlayer_Enter(object sender, EventArgs e)
-        {
-            //IntroPlayer.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\Try_Intro.mp4";
-        }
-
-        private void IntroPlayer_Enter_1(object sender, EventArgs e)
-        {
-            //IntroPlayer.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\Try_Intro.mp4";
-        }
-
         private void Introduction_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void IntroPlayer_Enter_2(object sender, EventArgs e)
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-            IntroPlayer.URL = @"C:\Users\ortig\Downloads\Try_Intro.mp4";
+
         }
     }
 }
