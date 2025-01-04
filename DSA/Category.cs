@@ -31,20 +31,22 @@ namespace DSA
         private Timer animationTimer;
         private Panel activePanel;
         private Panel previousPanel;
-        private const int DefaultHeight = 104;
-        private const int ExpandedHeight = 177;
-        private const int AnimationStep = 20;
+        private const int DefaultHeight = 80;
+        private const int ExpandedHeight = 140;
+        private const int AnimationStep = 5;
+        private bool isAnimating = false; // Track animation state
 
         public Category()
         {
             InitializeComponent();
-            animationTimer = new Timer { Interval = 1 }; // Adjust interval for smoother animation
+            animationTimer = new Timer { Interval = 2 }; // Adjust interval for smoother animation
             animationTimer.Tick += AnimationTimer_Tick;
         }
 
-
         private void btn_Math_Click(object sender, EventArgs e)
         {
+            if (isAnimating) return; // Prevent interaction while animation is in progress
+
             btn_Math.BackgroundImage = Math_Clicked;
             btn_Science.BackgroundImage = Science_Default;
             btn_History.BackgroundImage = History_Default;
@@ -54,6 +56,8 @@ namespace DSA
 
         private void btn_Science_Click(object sender, EventArgs e)
         {
+            if (isAnimating) return; // Prevent interaction while animation is in progress
+
             btn_Science.BackgroundImage = Science_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_History.BackgroundImage = History_Default;
@@ -63,6 +67,8 @@ namespace DSA
 
         private void btn_History_Click(object sender, EventArgs e)
         {
+            if (isAnimating) return; // Prevent interaction while animation is in progress
+
             btn_History.BackgroundImage = History_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_Science.BackgroundImage = Science_Default;
@@ -72,7 +78,7 @@ namespace DSA
 
         private void HandlePanelSwitch(Panel panel)
         {
-            if (activePanel == panel) return; // Do nothing if the same button is clicked
+            if (activePanel == panel) return; // Do nothing if the same panel is clicked
 
             // Set the previous panel for collapse
             previousPanel = activePanel;
@@ -81,43 +87,45 @@ namespace DSA
             activePanel = panel;
 
             // Start the animation timer
+            isAnimating = true;
             animationTimer.Start();
         }
 
         private void AnimationTimer_Tick(object sender, EventArgs e)
         {
-            bool isAnimating = false;
+            bool isExpanding = false;
+            bool isCollapsing = false;
 
             // Collapse the previous panel
             if (previousPanel != null && previousPanel.Height > DefaultHeight)
             {
                 previousPanel.Height -= AnimationStep;
+                isCollapsing = true;
                 if (previousPanel.Height <= DefaultHeight)
                 {
                     previousPanel.Height = DefaultHeight;
-                    previousPanel = null;
+                    previousPanel = null; // Finished collapsing
                 }
-                isAnimating = true;
             }
 
-            // Expand the active panel
-            if (activePanel != null && activePanel.Height < ExpandedHeight)
+            // Expand the active panel only after collapsing is finished
+            if (activePanel != null && previousPanel == null && activePanel.Height < ExpandedHeight)
             {
                 activePanel.Height += AnimationStep;
+                isExpanding = true;
                 if (activePanel.Height >= ExpandedHeight)
                 {
-                    activePanel.Height = ExpandedHeight;
+                    activePanel.Height = ExpandedHeight; // Finished expanding
                 }
-                isAnimating = true;
             }
 
-            // Stop the timer if no more animation is needed
-            if (!isAnimating)
+            // Stop the timer when both actions (expanding/collapsing) are finished
+            if (!isExpanding && !isCollapsing)
             {
+                isAnimating = false; // Reset animation state
                 animationTimer.Stop();
             }
         }
-
 
         private void btn_Classic_Click(object sender, EventArgs e)
         {
@@ -133,24 +141,12 @@ namespace DSA
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            if (SetupPanel.instanceSetUp == null)
-            {
-                SetupPanel setUp = new SetupPanel();
-                SetupPanel.instanceSetUp = setUp;
-                setUp.Show();
-            }
-            else 
-            {
-                SetupPanel.instanceSetUp.Show();
-            }
-            
-            this.Hide();
+
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            Character.characterInstance.Show();
-            this.Hide();
+
         }
     }
 }

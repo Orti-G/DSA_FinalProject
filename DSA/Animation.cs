@@ -31,5 +31,10 @@ namespace DSA
             //this.Close();
             //this.Dispose();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

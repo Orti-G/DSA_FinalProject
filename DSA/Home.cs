@@ -40,5 +40,19 @@ namespace DSA
             form8.Show();
             this.Hide();*/
         }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+            Form4 mechanics = new Form4(); 
+            mechanics.Show();
+            this.Hide();
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+            Character character = new Character();
+            character.Show();
+            this.Hide();
+        }
     }
 }

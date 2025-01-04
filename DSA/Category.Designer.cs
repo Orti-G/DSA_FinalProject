@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.btn_Classic = new System.Windows.Forms.PictureBox();
             this.btn_Math = new System.Windows.Forms.PictureBox();
             this.panel_Math = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -61,7 +62,7 @@
             // 
             // btn_Classic
             // 
-            this.btn_Classic.BackgroundImage = global::DSA.Properties.Resources.Format_ClassicMT;
+            this.btn_Classic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Classic.BackgroundImage")));
             this.btn_Classic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Classic.Location = new System.Drawing.Point(356, 666);
             this.btn_Classic.Name = "btn_Classic";
@@ -73,7 +74,7 @@
             // 
             // btn_Math
             // 
-            this.btn_Math.BackgroundImage = global::DSA.Properties.Resources.Category_Math;
+            this.btn_Math.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Math.BackgroundImage")));
             this.btn_Math.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Math.Location = new System.Drawing.Point(0, 0);
             this.btn_Math.Name = "btn_Math";
@@ -143,7 +144,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::DSA.Properties.Resources.Labels_SelectFormat;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(470, 588);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(577, 70);
@@ -154,7 +155,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::DSA.Properties.Resources.Labels_SelectCategory;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(356, 31);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(815, 86);
@@ -164,7 +165,7 @@
             // 
             // btn_HighRisk
             // 
-            this.btn_HighRisk.BackgroundImage = global::DSA.Properties.Resources.Format_HighRiskMT;
+            this.btn_HighRisk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_HighRisk.BackgroundImage")));
             this.btn_HighRisk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_HighRisk.Location = new System.Drawing.Point(816, 666);
             this.btn_HighRisk.Name = "btn_HighRisk";
@@ -185,7 +186,7 @@
             // 
             // btn_Science
             // 
-            this.btn_Science.BackgroundImage = global::DSA.Properties.Resources.Category_Science;
+            this.btn_Science.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Science.BackgroundImage")));
             this.btn_Science.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Science.Location = new System.Drawing.Point(0, 0);
             this.btn_Science.Name = "btn_Science";
@@ -207,7 +208,7 @@
             // 
             // btn_History
             // 
-            this.btn_History.BackgroundImage = global::DSA.Properties.Resources.Category_History;
+            this.btn_History.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_History.BackgroundImage")));
             this.btn_History.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_History.Location = new System.Drawing.Point(0, 0);
             this.btn_History.Name = "btn_History";
@@ -248,9 +249,10 @@
             // 
             // Category
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1524, 872);
             this.Controls.Add(this.btn_Classic);
