@@ -16,6 +16,9 @@ namespace DSA
     {
         public static Category categoryInstance;
 
+        public static string categoryName;
+        public static string moneyTree;
+
         private Image Math_Default = Properties.Resources.Category_Math;
         private Image Science_Default = Properties.Resources.Category_Science;
         private Image History_Default = Properties.Resources.Category_History;
@@ -34,7 +37,6 @@ namespace DSA
         private const int DefaultHeight = 104;
         private const int ExpandedHeight = 177;
         private const int AnimationStep = 20;
-
         public Category()
         {
             InitializeComponent();
@@ -45,6 +47,7 @@ namespace DSA
 
         private void btn_Math_Click(object sender, EventArgs e)
         {
+            categoryName = "Math";
             btn_Math.BackgroundImage = Math_Clicked;
             btn_Science.BackgroundImage = Science_Default;
             btn_History.BackgroundImage = History_Default;
@@ -54,6 +57,7 @@ namespace DSA
 
         private void btn_Science_Click(object sender, EventArgs e)
         {
+            categoryName = "Science";
             btn_Science.BackgroundImage = Science_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_History.BackgroundImage = History_Default;
@@ -63,6 +67,7 @@ namespace DSA
 
         private void btn_History_Click(object sender, EventArgs e)
         {
+            categoryName = "History";
             btn_History.BackgroundImage = History_Clicked;
             btn_Math.BackgroundImage = Math_Default;
             btn_Science.BackgroundImage = Science_Default;
@@ -121,30 +126,47 @@ namespace DSA
 
         private void btn_Classic_Click(object sender, EventArgs e)
         {
+            moneyTree = "Classic";
             btn_Classic.BackgroundImage = Classic_Clicked;
             btn_HighRisk.BackgroundImage = HighRisk_Default;
         }
 
         private void btn_HighRisk_Click(object sender, EventArgs e)
         {
+            moneyTree = "Risky";
             btn_HighRisk.BackgroundImage = HighRisk_Clicked;
             btn_Classic.BackgroundImage = Classic_Default;
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            if (SetupPanel.instanceSetUp == null)
+            bool nextPanel = true;
+
+            if (categoryName == null)
+            {
+                MessageBox.Show("Please select a category");
+                nextPanel = false;
+            }
+            else if (moneyTree == null)
+            {
+                MessageBox.Show("Please select a format");
+                nextPanel = false;
+            }
+
+            if (SetupPanel.instanceSetUp == null && nextPanel)
             {
                 SetupPanel setUp = new SetupPanel();
                 SetupPanel.instanceSetUp = setUp;
                 setUp.Show();
+                this.Hide();
             }
-            else 
+            else if(nextPanel)
             {
                 SetupPanel.instanceSetUp.Show();
+                this.Hide();
             }
             
-            this.Hide();
+            
         }
 
         private void btn_Back_Click(object sender, EventArgs e)

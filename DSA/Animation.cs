@@ -26,6 +26,7 @@ namespace DSA
         {
             _timer.Stop();
             QA gameplay = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
+            QA.myForm = gameplay;
             gameplay.Show();
             this.Hide();
             //this.Close();

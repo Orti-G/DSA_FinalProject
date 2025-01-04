@@ -32,13 +32,13 @@
             this.btn_Next = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label_userName = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBox_moneyTree = new System.Windows.Forms.PictureBox();
+            this.picBox_category = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.selectCharacter1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_moneyTree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_category)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).BeginInit();
             this.SuspendLayout();
@@ -105,7 +105,6 @@
             this.label_userName.TabIndex = 27;
             this.label_userName.Text = "USER NAME";
             this.label_userName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label_userName.Click += new System.EventHandler(this.label_userName_Click);
             // 
             // pictureBox5
             // 
@@ -119,27 +118,27 @@
             this.pictureBox5.TabIndex = 28;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // picBox_moneyTree
             // 
-            this.pictureBox6.Image = global::DSA.Properties.Resources.Format_HighRiskMT_Clicked;
-            this.pictureBox6.Location = new System.Drawing.Point(586, 271);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(340, 99);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 29;
-            this.pictureBox6.TabStop = false;
+            this.picBox_moneyTree.Image = global::DSA.Properties.Resources.Format_HighRiskMT_Clicked;
+            this.picBox_moneyTree.Location = new System.Drawing.Point(586, 271);
+            this.picBox_moneyTree.Margin = new System.Windows.Forms.Padding(2);
+            this.picBox_moneyTree.Name = "picBox_moneyTree";
+            this.picBox_moneyTree.Size = new System.Drawing.Size(340, 99);
+            this.picBox_moneyTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_moneyTree.TabIndex = 29;
+            this.picBox_moneyTree.TabStop = false;
             // 
-            // pictureBox1
+            // picBox_category
             // 
-            this.pictureBox1.Image = global::DSA.Properties.Resources.Category_Science_Clicked;
-            this.pictureBox1.Location = new System.Drawing.Point(586, 375);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(426, 155);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
+            this.picBox_category.Image = global::DSA.Properties.Resources.Category_Science_Clicked;
+            this.picBox_category.Location = new System.Drawing.Point(586, 375);
+            this.picBox_category.Margin = new System.Windows.Forms.Padding(2);
+            this.picBox_category.Name = "picBox_category";
+            this.picBox_category.Size = new System.Drawing.Size(426, 155);
+            this.picBox_category.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_category.TabIndex = 30;
+            this.picBox_category.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -151,7 +150,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // selectCharacter1
             // 
@@ -175,8 +173,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1143, 708);
             this.Controls.Add(this.selectCharacter1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picBox_category);
+            this.Controls.Add(this.picBox_moneyTree);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label_userName);
             this.Controls.Add(this.btn_Back);
@@ -188,10 +186,9 @@
             this.Name = "SetupPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
-            this.Load += new System.EventHandler(this.SetupPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_moneyTree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_category)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).EndInit();
             this.ResumeLayout(false);
@@ -203,8 +200,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Next;
         private System.Windows.Forms.Label label_userName;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBox_moneyTree;
+        private System.Windows.Forms.PictureBox picBox_category;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox selectCharacter1;
     }

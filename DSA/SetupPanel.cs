@@ -16,25 +16,38 @@ namespace DSA
         public SetupPanel()
         {
             InitializeComponent();
-            
+            label_userName.Text = Character.playerName;
+            SetUpPlayer();
         }
-
-
-        private void SetupPanel_Load(object sender, EventArgs e)
+        private void SetUpPlayer()
         {
+            if (Character.playerCharacter == "Jeff")
+            {
+                selectCharacter1.Image = Properties.Resources.Character_GIF_P1;
+            }
+            else if (Character.playerCharacter == "Golfy")
+            {
+                selectCharacter1.Image = Properties.Resources.Character_GIF_P2;
+            }
+            else 
+            {
+                selectCharacter1.Image = Properties.Resources.Character_GIF_P3;
+            }
 
+            if (Category.categoryName == "Math")
+            {
+                picBox_category.Image = Properties.Resources.Category_Math_Clicked;
+            }
+            else if (Category.categoryName == "History")
+            {
+                picBox_category.Image = Properties.Resources.Category_History_Clicked;
+            }
+
+            if (Category.moneyTree == "Classic") 
+            {
+                picBox_moneyTree.Image = Properties.Resources.Format_ClassicMT_Clicked;
+            }
         }
-
-        private void label_userName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Next_Click(object sender, EventArgs e)
         {
             QA gameplay = new QA(Mathematics.MathematicsQuestions(),true,true,true,true);
@@ -50,7 +63,9 @@ namespace DSA
         private void btn_Back_Click(object sender, EventArgs e)
         {
             Category.categoryInstance.Show();
-            this.Hide();
+            this.Close();
+            this.Dispose();
+            instanceSetUp = null;
         }
     }
 }

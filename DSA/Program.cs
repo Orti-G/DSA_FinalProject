@@ -17,7 +17,7 @@ namespace DSA
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Animation());
+            Application.Run(new Home());
         }
     }
 }

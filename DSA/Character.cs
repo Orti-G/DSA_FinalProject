@@ -25,6 +25,9 @@ namespace DSA
         private Image player3_Stillimage = Resources.Character_still_P3;
 
         private Image panelBackground = Resources.CharacterSelectedBox;
+
+        public static string playerCharacter;
+        public static string playerName;
         public Character()
         {
             InitializeComponent();
@@ -37,7 +40,7 @@ namespace DSA
 
         private void selectCharacter1_Click(object sender, EventArgs e)
         {
-
+            playerCharacter = "Jeff";
             pictureBox_P1.Image = player1_image;
             panel_P1.BackgroundImage = panelBackground;
 
@@ -50,6 +53,8 @@ namespace DSA
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            playerCharacter = "Golfy";
+
             pictureBox_P1.Image = player1_Stillimage;
             panel_P1.BackgroundImage = null;
 
@@ -62,6 +67,8 @@ namespace DSA
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            playerCharacter = "Squidward";
+
             pictureBox_P1.Image = player1_Stillimage;
             panel_P1.BackgroundImage = null;
 
@@ -89,18 +96,34 @@ namespace DSA
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            if (Category.categoryInstance == null)
+            bool nextPanel = true;
+            playerName = txtBox_userName.Text;
+
+            if (playerCharacter == null)
+            {
+                MessageBox.Show("Please select a character");
+                nextPanel = false;
+            } 
+            else if (playerName == "Name Your Character" || playerName == "")
+            {
+               MessageBox.Show("Please input name for your character");
+                nextPanel = false;
+            }
+
+            if (Category.categoryInstance == null && nextPanel)
             {
                 Category categoryForm = new Category();
                 Category.categoryInstance = categoryForm;
                 categoryForm.Show();
+                this.Hide();
             }
-            else 
+            else if (nextPanel)
             {
                 Category.categoryInstance.Show();
+                this.Hide();
             }
             
-            this.Hide();
+            
         }
     }
 }
