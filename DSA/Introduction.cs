@@ -27,6 +27,7 @@ namespace DSA
         private void Timer_Tick(object sender, EventArgs e)
         {
             Home homeForm = new Home();
+            Home.homeInstance = homeForm;
             homeForm.Show();
             timer.Stop();
             this.Hide();

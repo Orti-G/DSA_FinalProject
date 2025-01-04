@@ -13,6 +13,8 @@ namespace DSA
 {
     public partial class Character : Form
     {
+        public static Character characterInstance;
+
         private Image player1_image = Resources.Character_GIF_P1;
         private Image player1_Stillimage = Properties.Resources.Character_still_P1;
 
@@ -77,6 +79,28 @@ namespace DSA
             {
                 txtBox_userName.Text = null;
             }  
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            Home.homeInstance.Show();
+            this.Hide();
+        }
+
+        private void btn_Next_Click(object sender, EventArgs e)
+        {
+            if (Category.categoryInstance == null)
+            {
+                Category categoryForm = new Category();
+                Category.categoryInstance = categoryForm;
+                categoryForm.Show();
+            }
+            else 
+            {
+                Category.categoryInstance.Show();
+            }
+            
+            this.Hide();
         }
     }
 }

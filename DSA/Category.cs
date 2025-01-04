@@ -14,6 +14,8 @@ namespace DSA
 {
     public partial class Category : Form
     {
+        public static Category categoryInstance;
+
         private Image Math_Default = Properties.Resources.Category_Math;
         private Image Science_Default = Properties.Resources.Category_Science;
         private Image History_Default = Properties.Resources.Category_History;
@@ -36,7 +38,7 @@ namespace DSA
         public Category()
         {
             InitializeComponent();
-            animationTimer = new Timer { Interval = 5 }; // Adjust interval for smoother animation
+            animationTimer = new Timer { Interval = 1 }; // Adjust interval for smoother animation
             animationTimer.Tick += AnimationTimer_Tick;
         }
 
@@ -129,9 +131,26 @@ namespace DSA
             btn_Classic.BackgroundImage = Classic_Default;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btn_Next_Click(object sender, EventArgs e)
         {
+            if (SetupPanel.instanceSetUp == null)
+            {
+                SetupPanel setUp = new SetupPanel();
+                SetupPanel.instanceSetUp = setUp;
+                setUp.Show();
+            }
+            else 
+            {
+                SetupPanel.instanceSetUp.Show();
+            }
+            
+            this.Hide();
+        }
 
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            Character.characterInstance.Show();
+            this.Hide();
         }
     }
 }

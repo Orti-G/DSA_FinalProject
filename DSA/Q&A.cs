@@ -48,12 +48,17 @@ namespace DSA
         private int MoneyTreeLevel;
 
         private int[] SafeHavens = {5,10,15};
+
+        private Timer timerForLifelines;
         
         public QA(Queue<Inventory> questions,bool halfchance,bool life2x, bool timeFreeze, bool switchQuestion)
         {
             
             InitializeComponent();
             AdjustBackgorund();
+            timerForLifelines = new Timer();
+            timerForLifelines.Interval = 3000;
+            timerForLifelines.Tick += Timer_Tick;
 
             HalfChanceVisible = halfchance;
             Life2xVisible = life2x;
@@ -63,10 +68,9 @@ namespace DSA
             Questions = questions;
             
         }
-        
-        
 
         
+
         private void QA_Load(object sender, EventArgs e)
         {
             currentQuestion = Questions.Dequeue();
@@ -249,7 +253,9 @@ namespace DSA
 
             Lifeline_5050.Visible = false;
             HalfChanceVisible = false;
-
+            timerForLifelines.Start();
+            panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.LifelineActivated_5050;
+            panel_CorrectAnswerNotice.Visible = true;
             DisabledLifeLines();
         }
 
@@ -258,6 +264,9 @@ namespace DSA
             Life2x = true;
             Lifeline_x2.Visible = false;
             Life2xVisible = false;
+            timerForLifelines.Start();
+            panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.LifelineActivated__DoubleAnswer;
+            panel_CorrectAnswerNotice.Visible = true;
             DisabledLifeLines();
         }
 
@@ -268,6 +277,11 @@ namespace DSA
 
             Lifeline_timeFreeze.Visible = false;
             timeFreezeVisible = false;
+
+            timerForLifelines.Start();
+            panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.LifelineActivated__TimeFreeze;
+            panel_CorrectAnswerNotice.Visible = true;
+
             DisabledLifeLines();
 
         }
@@ -325,9 +339,21 @@ namespace DSA
 
             Lifeline_SwitchQ.Visible = false;
             SwitchQuestionVisible = false;
+            timerForLifelines.Start();
+            panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.LifelineActivated__SwitchQuestiom;
+            panel_CorrectAnswerNotice.Visible = true;
+
             DisabledLifeLines();
         }
 
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            timerForLifelines.Stop();
+            timerForLifelines.Dispose();
+            timerForLifelines = null;
+            panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.Q_A_Correct;
+            panel_CorrectAnswerNotice.Visible = false;
+        }
         private void ChoiceA_Text_Click(object sender, EventArgs e)
         {
             if (Life2x && UserAnswer != null) 
@@ -576,7 +602,7 @@ namespace DSA
 
                 DisabledButtonEvent();
 
-                BackgroundGif.Image = null;
+                BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
                 transitionTimer.Start();
             }
         }
@@ -665,8 +691,8 @@ namespace DSA
                     UserAnswer = null;
                     
                 }
-                
-                BackgroundGif.Image = null;
+
+                BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
                 transitionTimer.Start();
                 DisabledButtonEvent();
             }
@@ -913,7 +939,7 @@ namespace DSA
             ShowCorrectAnswer();
             if (UserAnswer == answerKey || UserSecondAnswer == answerKey)
             {
-                BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
+                BackgroundGif.Image = null;
                 panel_CorrectAnswerNotice.Visible = true;
                 transitionCount = 1;
                 transitionTimer.Start();
@@ -921,7 +947,7 @@ namespace DSA
             }
             else 
             {
-                BackgroundGif.Image = Properties.Resources.GIF_Homescreen1;
+                BackgroundGif.Image = Properties.Resources.GIF_Host_Disappointed;
                 transitionCount = 2;
                 transitionTimer.Start();
             }

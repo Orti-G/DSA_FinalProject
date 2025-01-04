@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pictureBox_P1 = new System.Windows.Forms.PictureBox();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_Back = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_Next = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel_userName = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -57,7 +57,7 @@
             this.pictureBox_P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_P1.Image = global::DSA.Properties.Resources.Character_still_P1;
             this.pictureBox_P1.Location = new System.Drawing.Point(-2, -58);
-            this.pictureBox_P1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox_P1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox_P1.Name = "pictureBox_P1";
             this.pictureBox_P1.Size = new System.Drawing.Size(236, 385);
             this.pictureBox_P1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,60 +65,62 @@
             this.pictureBox_P1.TabStop = false;
             this.pictureBox_P1.Click += new System.EventHandler(this.selectCharacter1_Click);
             // 
-            // kryptonButton2
+            // btn_Back
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(37, 635);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.Size = new System.Drawing.Size(103, 42);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_Back.Location = new System.Drawing.Point(37, 635);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Back.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Back.Size = new System.Drawing.Size(103, 42);
+            this.btn_Back.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Back.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Back.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Back.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
+            this.btn_Back.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 20;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
-            this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton2.TabIndex = 17;
-            this.kryptonButton2.Values.Text = "BACK";
+            this.btn_Back.StateCommon.Border.Rounding = 20;
+            this.btn_Back.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_Back.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Back.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.btn_Back.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
+            this.btn_Back.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.btn_Back.TabIndex = 17;
+            this.btn_Back.Values.Text = "BACK";
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
-            // kryptonButton3
+            // btn_Next
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(1010, 635);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton3.Size = new System.Drawing.Size(103, 42);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
-            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_Next.Location = new System.Drawing.Point(1010, 635);
+            this.btn_Next.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Next.Name = "btn_Next";
+            this.btn_Next.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Next.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Next.Size = new System.Drawing.Size(103, 42);
+            this.btn_Next.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Next.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Next.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Next.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
+            this.btn_Next.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateCommon.Border.Rounding = 20;
-            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
-            this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton3.TabIndex = 16;
-            this.kryptonButton3.Values.Text = "NEXT";
+            this.btn_Next.StateCommon.Border.Rounding = 20;
+            this.btn_Next.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_Next.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Next.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.btn_Next.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
+            this.btn_Next.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.btn_Next.TabIndex = 16;
+            this.btn_Next.Values.Text = "NEXT";
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // panel_userName
             // 
             this.panel_userName.BackColor = System.Drawing.Color.Transparent;
             this.panel_userName.Image = global::DSA.Properties.Resources.Panel_UserName;
             this.panel_userName.Location = new System.Drawing.Point(428, 568);
-            this.panel_userName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_userName.Margin = new System.Windows.Forms.Padding(2);
             this.panel_userName.Name = "panel_userName";
             this.panel_userName.Size = new System.Drawing.Size(284, 52);
             this.panel_userName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +132,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::DSA.Properties.Resources.Labels_SelectCharacter;
             this.pictureBox5.Location = new System.Drawing.Point(235, 23);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(664, 67);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +144,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::DSA.Properties.Resources.Labels_CharacterName;
             this.pictureBox6.Location = new System.Drawing.Point(342, 495);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(451, 61);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,7 +159,7 @@
             this.txtBox_userName.ForeColor = System.Drawing.Color.Yellow;
             this.txtBox_userName.Location = new System.Drawing.Point(453, 579);
             this.txtBox_userName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBox_userName.MaxLength = 20;
+            this.txtBox_userName.MaxLength = 17;
             this.txtBox_userName.Name = "txtBox_userName";
             this.txtBox_userName.Size = new System.Drawing.Size(235, 28);
             this.txtBox_userName.TabIndex = 22;
@@ -171,7 +173,7 @@
             this.panel_P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_P1.Controls.Add(this.pictureBox_P1);
             this.panel_P1.Location = new System.Drawing.Point(197, 106);
-            this.panel_P1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_P1.Margin = new System.Windows.Forms.Padding(2);
             this.panel_P1.Name = "panel_P1";
             this.panel_P1.Size = new System.Drawing.Size(235, 330);
             this.panel_P1.TabIndex = 23;
@@ -182,7 +184,7 @@
             this.panel_P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_P2.Controls.Add(this.pictureBox_P2);
             this.panel_P2.Location = new System.Drawing.Point(458, 103);
-            this.panel_P2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_P2.Margin = new System.Windows.Forms.Padding(2);
             this.panel_P2.Name = "panel_P2";
             this.panel_P2.Size = new System.Drawing.Size(235, 330);
             this.panel_P2.TabIndex = 24;
@@ -193,7 +195,7 @@
             this.pictureBox_P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_P2.Image = global::DSA.Properties.Resources.Character_still_P2;
             this.pictureBox_P2.Location = new System.Drawing.Point(-2, -58);
-            this.pictureBox_P2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox_P2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox_P2.Name = "pictureBox_P2";
             this.pictureBox_P2.Size = new System.Drawing.Size(236, 385);
             this.pictureBox_P2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,7 +209,7 @@
             this.panel_P3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_P3.Controls.Add(this.pictureBox_P3);
             this.panel_P3.Location = new System.Drawing.Point(724, 105);
-            this.panel_P3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_P3.Margin = new System.Windows.Forms.Padding(2);
             this.panel_P3.Name = "panel_P3";
             this.panel_P3.Size = new System.Drawing.Size(235, 330);
             this.panel_P3.TabIndex = 25;
@@ -218,7 +220,7 @@
             this.pictureBox_P3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_P3.Image = global::DSA.Properties.Resources.Character_still_P3;
             this.pictureBox_P3.Location = new System.Drawing.Point(-2, -58);
-            this.pictureBox_P3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox_P3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox_P3.Name = "pictureBox_P3";
             this.pictureBox_P3.Size = new System.Drawing.Size(236, 385);
             this.pictureBox_P3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -240,12 +242,12 @@
             this.Controls.Add(this.txtBox_userName);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.kryptonButton2);
-            this.Controls.Add(this.kryptonButton3);
+            this.Controls.Add(this.btn_Back);
+            this.Controls.Add(this.btn_Next);
             this.Controls.Add(this.panel_userName);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Character";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
@@ -266,8 +268,8 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox_P1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Back;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Next;
         private System.Windows.Forms.PictureBox panel_userName;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;

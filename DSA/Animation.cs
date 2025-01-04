@@ -12,14 +12,24 @@ namespace DSA
 {
     public partial class Animation : Form
     {
+        private Timer _timer;
         public Animation()
         {
             InitializeComponent();
+            _timer = new Timer();
+            _timer.Interval = 5500;
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-
+            _timer.Stop();
+            QA gameplay = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
+            gameplay.Show();
+            this.Hide();
+            //this.Close();
+            //this.Dispose();
         }
     }
 }

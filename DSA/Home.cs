@@ -12,6 +12,7 @@ namespace DSA
 {
     public partial class Home : Form
     {
+        public static Home homeInstance;
         public Home()
         {
             InitializeComponent();
@@ -19,9 +20,17 @@ namespace DSA
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            QA form8 = new QA(History.HistoryQuestions(), true, true, true, true);
-            QA.myForm = form8;
-            form8.Show();
+            if (Character.characterInstance == null)
+            {
+                Character characterPanel = new Character();
+                Character.characterInstance = characterPanel;
+                characterPanel.Show();
+            } 
+            else 
+            {
+                Character.characterInstance.Show();
+            }
+            
             this.Hide();
         }
 

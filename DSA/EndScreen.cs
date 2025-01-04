@@ -88,7 +88,7 @@ namespace DSA
             }
             else 
             {
-                userWinnings.Image = null;
+                userWinnings.Image = Properties.Resources.GIF_NewCashPrize_0;
             }
         }
         private void startButton_Click(object sender, EventArgs e)
