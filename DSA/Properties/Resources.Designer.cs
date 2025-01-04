@@ -303,6 +303,16 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GIF_BeforeQA_final_ {
+            get {
+                object obj = ResourceManager.GetObject("GIF_BeforeQA(final)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GIF_Contestant1_Answering {
             get {
                 object obj = ResourceManager.GetObject("GIF_Contestant1_Answering", resourceCulture);
@@ -436,6 +446,16 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap GIF_Logo {
             get {
                 object obj = ResourceManager.GetObject("GIF_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GIF_New_HomeScreen {
+            get {
+                object obj = ResourceManager.GetObject("GIF_New_HomeScreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1076,6 +1096,36 @@ namespace DSA.Properties {
         internal static System.Drawing.Bitmap Q_A_Wrong_Right {
             get {
                 object obj = ResourceManager.GetObject("Q&A_Wrong_Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TRY_GIF_BeforeQA {
+            get {
+                object obj = ResourceManager.GetObject("TRY_GIF_BeforeQA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TRY_Icon {
+            get {
+                object obj = ResourceManager.GetObject("TRY_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TRY_NewBeforeQA {
+            get {
+                object obj = ResourceManager.GetObject("TRY_NewBeforeQA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

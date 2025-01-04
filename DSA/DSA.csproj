@@ -74,6 +74,12 @@
     <Compile Include="Animation.Designer.cs">
       <DependentUpon>Animation.cs</DependentUpon>
     </Compile>
+    <Compile Include="BeforeQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeforeQA.Designer.cs">
+      <DependentUpon>BeforeQA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Animation.resx">
       <DependentUpon>Animation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeforeQA.resx">
+      <DependentUpon>BeforeQA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
@@ -532,6 +541,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GIF_NewCashPrize_0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRY_GIF_BeforeQA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRY_NewBeforeQA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_New_HomeScreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRY_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_BeforeQA%28final%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

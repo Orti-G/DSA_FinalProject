@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Winning));
             this.currentMoneyGif = new System.Windows.Forms.PictureBox();
             this.backgroundGif = new System.Windows.Forms.PictureBox();
             this.btn_takeMoney = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -40,11 +41,11 @@
             // 
             this.currentMoneyGif.BackColor = System.Drawing.Color.Transparent;
             this.currentMoneyGif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.currentMoneyGif.Image = global::DSA.Properties.Resources.GIF_NewCashPrize_600K;
-            this.currentMoneyGif.Location = new System.Drawing.Point(1, 580);
-            this.currentMoneyGif.Margin = new System.Windows.Forms.Padding(2);
+            this.currentMoneyGif.Image = ((System.Drawing.Image)(resources.GetObject("currentMoneyGif.Image")));
+            this.currentMoneyGif.Location = new System.Drawing.Point(1, 714);
+            this.currentMoneyGif.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.currentMoneyGif.Name = "currentMoneyGif";
-            this.currentMoneyGif.Size = new System.Drawing.Size(1143, 129);
+            this.currentMoneyGif.Size = new System.Drawing.Size(1524, 159);
             this.currentMoneyGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.currentMoneyGif.TabIndex = 44;
             this.currentMoneyGif.TabStop = false;
@@ -52,24 +53,24 @@
             // backgroundGif
             // 
             this.backgroundGif.BackColor = System.Drawing.Color.Transparent;
-            this.backgroundGif.BackgroundImage = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
-            this.backgroundGif.Image = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
+            this.backgroundGif.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backgroundGif.BackgroundImage")));
+            this.backgroundGif.Image = ((System.Drawing.Image)(resources.GetObject("backgroundGif.Image")));
             this.backgroundGif.Location = new System.Drawing.Point(1, 1);
-            this.backgroundGif.Margin = new System.Windows.Forms.Padding(2);
+            this.backgroundGif.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backgroundGif.Name = "backgroundGif";
-            this.backgroundGif.Size = new System.Drawing.Size(1143, 708);
+            this.backgroundGif.Size = new System.Drawing.Size(1524, 871);
             this.backgroundGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.backgroundGif.TabIndex = 45;
             this.backgroundGif.TabStop = false;
             // 
             // btn_takeMoney
             // 
-            this.btn_takeMoney.Location = new System.Drawing.Point(25, 526);
-            this.btn_takeMoney.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_takeMoney.Location = new System.Drawing.Point(33, 647);
+            this.btn_takeMoney.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_takeMoney.Name = "btn_takeMoney";
             this.btn_takeMoney.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_takeMoney.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_takeMoney.Size = new System.Drawing.Size(170, 49);
+            this.btn_takeMoney.Size = new System.Drawing.Size(227, 60);
             this.btn_takeMoney.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_takeMoney.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.btn_takeMoney.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
@@ -89,12 +90,12 @@
             // 
             // btn_Continue
             // 
-            this.btn_Continue.Location = new System.Drawing.Point(990, 526);
-            this.btn_Continue.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Continue.Location = new System.Drawing.Point(1320, 647);
+            this.btn_Continue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Continue.Name = "btn_Continue";
             this.btn_Continue.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_Continue.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_Continue.Size = new System.Drawing.Size(144, 47);
+            this.btn_Continue.Size = new System.Drawing.Size(192, 58);
             this.btn_Continue.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_Continue.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.btn_Continue.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
@@ -114,18 +115,18 @@
             // 
             // Winning
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DSA.Properties.Resources.GIF_Contestant1_Answering;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1143, 708);
+            this.ClientSize = new System.Drawing.Size(1524, 871);
             this.Controls.Add(this.btn_Continue);
             this.Controls.Add(this.btn_takeMoney);
             this.Controls.Add(this.currentMoneyGif);
             this.Controls.Add(this.backgroundGif);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Winning";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
