@@ -99,7 +99,7 @@
             this.label_userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(0)))), ((int)(((byte)(137)))));
             this.label_userName.Font = new System.Drawing.Font("Footlight MT Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_userName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.label_userName.Location = new System.Drawing.Point(835, 272);
+            this.label_userName.Location = new System.Drawing.Point(785, 279);
             this.label_userName.Name = "label_userName";
             this.label_userName.Size = new System.Drawing.Size(259, 38);
             this.label_userName.TabIndex = 27;
@@ -121,10 +121,10 @@
             // picBox_moneyTree
             // 
             this.picBox_moneyTree.Image = global::DSA.Properties.Resources.Format_HighRiskMT_Clicked;
-            this.picBox_moneyTree.Location = new System.Drawing.Point(586, 271);
+            this.picBox_moneyTree.Location = new System.Drawing.Point(731, 340);
             this.picBox_moneyTree.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_moneyTree.Name = "picBox_moneyTree";
-            this.picBox_moneyTree.Size = new System.Drawing.Size(340, 99);
+            this.picBox_moneyTree.Size = new System.Drawing.Size(474, 119);
             this.picBox_moneyTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox_moneyTree.TabIndex = 29;
             this.picBox_moneyTree.TabStop = false;
@@ -132,10 +132,10 @@
             // picBox_category
             // 
             this.picBox_category.Image = global::DSA.Properties.Resources.Category_Science_Clicked;
-            this.picBox_category.Location = new System.Drawing.Point(586, 375);
+            this.picBox_category.Location = new System.Drawing.Point(731, 474);
             this.picBox_category.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_category.Name = "picBox_category";
-            this.picBox_category.Size = new System.Drawing.Size(426, 155);
+            this.picBox_category.Size = new System.Drawing.Size(525, 183);
             this.picBox_category.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox_category.TabIndex = 30;
             this.picBox_category.TabStop = false;
@@ -143,7 +143,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(781, 256);
+            this.pictureBox2.Location = new System.Drawing.Point(731, 263);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(372, 69);

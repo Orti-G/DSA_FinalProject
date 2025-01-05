@@ -15,9 +15,16 @@ namespace DSA
         public Form4()
         {
             InitializeComponent();
+            mechanicsVid.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\Graphics & Animations\VID_Mechanincs_Final.mp4";
+
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
         {
 
         }
