@@ -22,5 +22,16 @@ namespace DSA
         {
 
         }
+
+        private void Leaderboard_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < PlayerCard.GameHistory.Count; i++) {
+                PlayerCard item = PlayerCard.GameHistory.Pop();
+                HistoryUC card = new HistoryUC(item);
+                flowLayoutPanel_GameHistory.Controls.Add(card);
+                PlayerCard.GameHistoryTemporary.Push(item);
+            }
+            PlayerCard.ReturnToSender();
+        }
     }
 }

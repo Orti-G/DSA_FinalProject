@@ -19,9 +19,23 @@ namespace DSA
             InitializeComponent();
             UserTotalMoney = userTotalMoney;
         }
-        private void EndScreen_Load(object sender, EventArgs e)
+        private async Task LoadDataAsync()
         {
+
+            await Task.Delay(3000);
+
+        }
+        private async void EndScreen_Load(object sender, EventArgs e)
+        {
+            PlayerCard.PlayerDescription.AddLast(UserTotalMoney.ToString());
+            PlayerCard.UnloadPlayerDescription();
+
+            await LoadDataAsync();
+
             showCaseMoney();
+            SetUpPlayer();
+
+            BeforeQA.instanceBQA.Dispose();
         }
 
         private void showCaseMoney() 
@@ -89,6 +103,38 @@ namespace DSA
             else 
             {
                 userWinnings.Image = Properties.Resources.GIF_NewCashPrize_0;
+            }
+        }
+
+        private void SetUpPlayer()
+        {
+            label_userName.Text = Character.playerName;
+
+            if (Character.playerCharacter == "Jeff")
+            {
+                picBox_player.Image = Properties.Resources.Character_GIF_P1;
+            }
+            else if (Character.playerCharacter == "Golfy")
+            {
+                picBox_player.Image = Properties.Resources.Character_GIF_P2;
+            }
+            else
+            {
+                picBox_player.Image = Properties.Resources.Character_GIF_P3;
+            }
+
+            if (Category.categoryName == "Math")
+            {
+                picBox_Category.Image = Properties.Resources.Category_Math_Clicked;
+            }
+            else if (Category.categoryName == "History")
+            {
+                picBox_Category.Image = Properties.Resources.Category_History_Clicked;
+            }
+
+            if (Category.moneyTree == "Classic")
+            {
+                picBox_MoneyTree.Image = Properties.Resources.Format_ClassicMT_Clicked;
             }
         }
         private void startButton_Click(object sender, EventArgs e)

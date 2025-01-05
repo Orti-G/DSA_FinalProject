@@ -26,34 +26,38 @@ namespace DSA
         {
             _timer.Stop();
             BeforeQA beforeQA = new BeforeQA();
+            BeforeQA.instanceBQA = beforeQA;
             this.Close();
             this.Dispose();
 
             if (Category.categoryName == "Math")
             {
                 QA gameplay = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
-                beforeQA.ShowDialog();
+                beforeQA.TopMost = true;
+                beforeQA.Show();
                 gameplay.Show();
                 gameplay = null;
             }
             else if (Category.categoryName == "Science")
             {
                 QA gameplay = new QA(Science.ScienceQuestions(), true, true, true, true);
-                beforeQA.ShowDialog();
+                beforeQA.TopMost = true;
+                beforeQA.Show();
                 gameplay.Show();
                 gameplay = null;
             }
             else 
             {
                 QA gameplay = new QA(History.HistoryQuestions(), true, true, true, true);
-                beforeQA.ShowDialog();
+                beforeQA.TopMost = true;
+                beforeQA.Show();
                 gameplay.Show();
                 gameplay = null;
             }
 
             beforeQA = null;
-            
-            
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

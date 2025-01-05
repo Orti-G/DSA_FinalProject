@@ -50,6 +50,11 @@ namespace DSA
         }
         private void btn_Next_Click(object sender, EventArgs e)
         {
+            PlayerCard.PlayerDescription.AddLast(Character.playerName);
+            PlayerCard.PlayerDescription.AddLast(Character.playerCharacter);
+            PlayerCard.PlayerDescription.AddLast(Category.categoryName);
+            PlayerCard.PlayerDescription.AddLast(Category.moneyTree);
+
             Animation animate = new Animation();
             animate.Show();
             instanceSetUp = null;

@@ -142,7 +142,7 @@ namespace DSA
 
         private void btn_HighRisk_Click(object sender, EventArgs e)
         {
-            moneyTree = "Risky";
+            moneyTree = "High Risk";
             btn_HighRisk.BackgroundImage = HighRisk_Clicked;
             btn_Classic.BackgroundImage = Classic_Default;
         }

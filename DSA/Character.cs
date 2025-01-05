@@ -30,7 +30,9 @@ namespace DSA
         public static string playerName;
         public Character()
         {
+            this.DoubleBuffered = true;
             InitializeComponent();
+
         }
 
         private void Character_Load(object sender, EventArgs e)

@@ -129,6 +129,7 @@
     <Compile Include="Mechanics.Designer.cs">
       <DependentUpon>Mechanics.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerCard.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

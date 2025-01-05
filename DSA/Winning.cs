@@ -120,11 +120,14 @@ namespace DSA
         private void btn_Continue_Click(object sender, EventArgs e)
         {
             BeforeQA beforeQA = new BeforeQA();
+            BeforeQA.instanceBQA = beforeQA;
+
             QA nextQuestion = new QA(Questions, HalfChanceVisible, Life2xVisible, timeFreezeVisible, SwitchQuestionVisible);
             QA.myForm = nextQuestion;
             this.Close();
             this.Dispose();
-            beforeQA.ShowDialog();
+            beforeQA.TopMost = true;
+            beforeQA.Show();
             nextQuestion.Show();
             nextQuestion = null;
             beforeQA = null;
@@ -135,10 +138,16 @@ namespace DSA
 
         private void btn_takeMoney_Click(object sender, EventArgs e)
         {
+            BeforeQA beforeQA = new BeforeQA();
+            BeforeQA.instanceBQA = beforeQA;
+
             EndScreen gameResult = new EndScreen(UserMoney);
+            beforeQA.TopMost = true;
+            beforeQA.Show();
             gameResult.Show();
             this.Close();
             this.Dispose();
+            beforeQA = null;
         }
 
         

@@ -33,7 +33,7 @@ namespace DSA
         private string UserSecondAnswer;
         private string answerKey;
 
-        private int elapsedTime = -4;
+        private int elapsedTime = -2;
         private int elapsedAnimation = -2;
         private int elapsedTransition = -2;
         private int transitionCount = 0;
@@ -80,13 +80,23 @@ namespace DSA
                 int[] checkpoint = {5,15};
                 SafeHavens = checkpoint;
             }
-            
+            GifTimer.Enabled = false;
         }
 
-        
 
-        private void QA_Load(object sender, EventArgs e)
+        private async Task LoadDataAsync()
         {
+        
+            await Task.Delay(4000); 
+
+        }
+        private async void QA_Load(object sender, EventArgs e)
+        {
+            await LoadDataAsync();
+
+            BeforeQA.instanceBQA.Dispose();
+            GifTimer.Enabled = true;
+
             currentQuestion = Questions.Dequeue();
 
             MoneyTreeLevel = 15 - Questions.Count;
@@ -145,6 +155,8 @@ namespace DSA
             }
 
             answerKey = currentQuestion.getAnswer();
+
+            
             
         }
         private void MoneyTreeLevelHighlight() 
@@ -913,11 +925,17 @@ namespace DSA
                 transitionTimer.Stop();
                 transitionTimer.Dispose();
 
+                BeforeQA beforeQA = new BeforeQA();
+                BeforeQA.instanceBQA = beforeQA;
+
                 EndScreen gameResult = new EndScreen(TotalWinningsAfterLosing());
+                beforeQA.TopMost = true;
+                beforeQA.Show();
                 gameResult.Show();
                 this.Close();
                 this.Dispose();
                 myForm = null;
+                beforeQA = null;
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
                 GC.Collect();
