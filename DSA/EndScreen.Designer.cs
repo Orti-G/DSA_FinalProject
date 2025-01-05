@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EndScreen));
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_Home = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.startButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.userWinnings = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -49,29 +49,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonButton3
+            // btn_Home
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(534, 648);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton3.Size = new System.Drawing.Size(154, 33);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
-            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_Home.Location = new System.Drawing.Point(534, 648);
+            this.btn_Home.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Home.Name = "btn_Home";
+            this.btn_Home.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Home.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Home.Size = new System.Drawing.Size(154, 33);
+            this.btn_Home.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
+            this.btn_Home.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Home.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_Home.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
+            this.btn_Home.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateCommon.Border.Rounding = 20;
-            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
-            this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
-            this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton3.TabIndex = 18;
-            this.kryptonButton3.Values.Text = "HOME";
+            this.btn_Home.StateCommon.Border.Rounding = 20;
+            this.btn_Home.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_Home.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.StatePressed.Back.Color1 = System.Drawing.Color.Yellow;
+            this.btn_Home.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
+            this.btn_Home.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
+            this.btn_Home.TabIndex = 18;
+            this.btn_Home.Values.Text = "HOME";
+            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
             // startButton
             // 
@@ -189,7 +190,6 @@
             this.label_userName.TabIndex = 31;
             this.label_userName.Text = "USER NAME";
             this.label_userName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label_userName.Click += new System.EventHandler(this.label_userName_Click);
             // 
             // pictureBox4
             // 
@@ -245,7 +245,7 @@
             this.Controls.Add(this.picBox_player);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.userWinnings);
-            this.Controls.Add(this.kryptonButton3);
+            this.Controls.Add(this.btn_Home);
             this.Controls.Add(this.startButton);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -266,7 +266,7 @@
         }
 
         #endregion
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Home;
         private ComponentFactory.Krypton.Toolkit.KryptonButton startButton;
         private System.Windows.Forms.PictureBox userWinnings;
         private System.Windows.Forms.PictureBox pictureBox5;

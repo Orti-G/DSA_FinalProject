@@ -36,6 +36,19 @@ namespace DSA
             btn_takeMoney.Parent = backgroundGif;
             currentMoneyGif.Parent = backgroundGif;
             ShowMoney(15 - Questions.Count);
+
+            if (Character.playerCharacter == "Jeff")
+            {
+                backgroundGif.Image = Properties.Resources.GIF_Answering_P1;
+            }
+            else if (Character.playerCharacter == "Golfy")
+            {
+                backgroundGif.Image = Properties.Resources.GIF_Answering_P2;
+            }
+            else
+            {
+                backgroundGif.Image = Properties.Resources.GIF_Answering_P3;
+            }
         }
 
         public void ShowMoney(int level)

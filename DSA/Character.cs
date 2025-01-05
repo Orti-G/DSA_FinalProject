@@ -92,8 +92,18 @@ namespace DSA
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            Home.homeInstance.Show();
-            this.Hide();
+            if (Home.homeInstance != null)
+            {
+                Home.homeInstance.Show();
+                this.Hide();
+            }
+            else 
+            {
+                Home home = new Home();
+                Home.homeInstance = home;
+                home.Show();
+            }
+            
         }
 
         private void btn_Next_Click(object sender, EventArgs e)

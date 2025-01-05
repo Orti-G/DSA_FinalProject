@@ -20,17 +20,23 @@ namespace DSA
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-
+            Home homeForm = new Home();
+            Home.homeInstance = homeForm;
+            homeForm.Show();
+            this.Close();
+            this.Dispose();
+            homeForm = null;
         }
 
         private void Leaderboard_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < PlayerCard.GameHistory.Count; i++) {
+            while (PlayerCard.GameHistory.Count > 0) { 
                 PlayerCard item = PlayerCard.GameHistory.Pop();
                 HistoryUC card = new HistoryUC(item);
                 flowLayoutPanel_GameHistory.Controls.Add(card);
                 PlayerCard.GameHistoryTemporary.Push(item);
             }
+
             PlayerCard.ReturnToSender();
         }
     }

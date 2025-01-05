@@ -139,20 +139,34 @@ namespace DSA
         }
         private void startButton_Click(object sender, EventArgs e)
         {
+            Character character = new Character();
+            Character.characterInstance = character;
+            character.Show();
+            this.Close();
+            this.Dispose();
 
-        }
-
-        private void label_userName_Click(object sender, EventArgs e)
-        {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
         }
 
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
             Leaderboard myForm = new Leaderboard();
             myForm.Show();
-            this.Hide();
+            this.Close();
+            this.Dispose();
+            myForm = null;
         }
 
-        
+        private void btn_Home_Click(object sender, EventArgs e)
+        {
+            Home homeForm = new Home();
+            Home.homeInstance = homeForm;
+            homeForm.Show();
+            this.Close();
+            this.Dispose();
+            homeForm = null;
+        }
     }
 }

@@ -59,8 +59,8 @@ namespace DSA
             }
 
             GameHistory.Push(new PlayerCard(st[0], st[1], st[2], st[3], st[4]));
-            
             st.Clear();
+            PlayerDescription.Clear();
 
 
         }

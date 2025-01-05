@@ -87,7 +87,7 @@ namespace DSA
         private async Task LoadDataAsync()
         {
         
-            await Task.Delay(4000); 
+            await Task.Delay(3700); 
 
         }
         private async void QA_Load(object sender, EventArgs e)
@@ -628,7 +628,18 @@ namespace DSA
 
                 DisabledButtonEvent();
 
-                BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
+                if (Character.playerCharacter == "Jeff")
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
+                }
+                else if (Character.playerCharacter == "Golfy")
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P2;
+                }
+                else
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P3;
+                }
                 transitionTimer.Start();
             }
         }
@@ -718,7 +729,19 @@ namespace DSA
                     
                 }
 
-                BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
+                if (Character.playerCharacter == "Jeff")
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
+                }
+                else if (Character.playerCharacter == "Golfy")
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P2;
+                }
+                else
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Intense_P3;
+                }
+                
                 transitionTimer.Start();
                 DisabledButtonEvent();
             }
@@ -873,7 +896,19 @@ namespace DSA
             elapsedAnimation++;
             if (elapsedAnimation == 10)
             {
-                BackgroundGif.Image = Properties.Resources.GIF_Contestant1_Answering;
+                if (Character.playerCharacter == "Jeff")
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Answering_P1;
+                } 
+                else if (Character.playerCharacter == "Golfy") 
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Answering_P2;
+                }
+                else 
+                {
+                    BackgroundGif.Image = Properties.Resources.GIF_Answering_P3;
+                }
+                
                 AnimationTimer.Stop();
                 AnimationTimer.Dispose();
             } 
@@ -982,7 +1017,19 @@ namespace DSA
             ShowCorrectAnswer();
             if (UserAnswer == answerKey || UserSecondAnswer == answerKey)
             {
-                BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                if (Character.playerCharacter == "Jeff")
+                {
+                    BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                }
+                else if (Character.playerCharacter == "Golfy")
+                {
+                    BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                }
+                else
+                {
+                    BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                }
+                
                 panel_CorrectAnswerNotice.Visible = true;
                 transitionCount = 1;
                 transitionTimer.Start();
