@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QA));
             this.Question_Text = new System.Windows.Forms.Label();
             this.Lifeline_timeFreeze = new System.Windows.Forms.PictureBox();
             this.Lifeline_x2 = new System.Windows.Forms.PictureBox();
@@ -107,6 +108,9 @@
             this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.transitionTimer = new System.Windows.Forms.Timer(this.components);
             this.panel_CorrectAnswerNotice = new System.Windows.Forms.Panel();
+            this.BGMu = new System.Windows.Forms.Panel();
+            this.BGMusic = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_timeFreeze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_x2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Lifeline_SwitchQ)).BeginInit();
@@ -135,6 +139,8 @@
             this.panelB.SuspendLayout();
             this.panel_FinalAnswerNotif.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundGif)).BeginInit();
+            this.BGMu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BGMusic)).BeginInit();
             this.SuspendLayout();
             // 
             // Question_Text
@@ -142,10 +148,10 @@
             this.Question_Text.BackColor = System.Drawing.Color.Transparent;
             this.Question_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Question_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Question_Text.Location = new System.Drawing.Point(83, 12);
+            this.Question_Text.Location = new System.Drawing.Point(104, 15);
             this.Question_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Question_Text.Name = "Question_Text";
-            this.Question_Text.Size = new System.Drawing.Size(821, 78);
+            this.Question_Text.Size = new System.Drawing.Size(1026, 98);
             this.Question_Text.TabIndex = 10;
             this.Question_Text.Text = "The questions here must be 90 to 130 letters long, with at least 10 words but no " +
     "more than 25.";
@@ -156,10 +162,10 @@
             this.Lifeline_timeFreeze.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_timeFreeze.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_timeFreeze.Image = global::DSA.Properties.Resources.Lifeline__TimeFreeze;
-            this.Lifeline_timeFreeze.Location = new System.Drawing.Point(1077, 58);
+            this.Lifeline_timeFreeze.Location = new System.Drawing.Point(1346, 72);
             this.Lifeline_timeFreeze.Margin = new System.Windows.Forms.Padding(2);
             this.Lifeline_timeFreeze.Name = "Lifeline_timeFreeze";
-            this.Lifeline_timeFreeze.Size = new System.Drawing.Size(61, 39);
+            this.Lifeline_timeFreeze.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_timeFreeze.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_timeFreeze.TabIndex = 17;
             this.Lifeline_timeFreeze.TabStop = false;
@@ -170,10 +176,10 @@
             this.Lifeline_x2.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_x2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_x2.Image = global::DSA.Properties.Resources.Lifeline_x2;
-            this.Lifeline_x2.Location = new System.Drawing.Point(1017, 58);
+            this.Lifeline_x2.Location = new System.Drawing.Point(1271, 72);
             this.Lifeline_x2.Margin = new System.Windows.Forms.Padding(2);
             this.Lifeline_x2.Name = "Lifeline_x2";
-            this.Lifeline_x2.Size = new System.Drawing.Size(61, 39);
+            this.Lifeline_x2.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_x2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_x2.TabIndex = 16;
             this.Lifeline_x2.TabStop = false;
@@ -184,10 +190,10 @@
             this.Lifeline_SwitchQ.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_SwitchQ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_SwitchQ.Image = global::DSA.Properties.Resources.Lifeline__SwitchQuestion;
-            this.Lifeline_SwitchQ.Location = new System.Drawing.Point(1138, 58);
+            this.Lifeline_SwitchQ.Location = new System.Drawing.Point(1422, 72);
             this.Lifeline_SwitchQ.Margin = new System.Windows.Forms.Padding(2);
             this.Lifeline_SwitchQ.Name = "Lifeline_SwitchQ";
-            this.Lifeline_SwitchQ.Size = new System.Drawing.Size(61, 39);
+            this.Lifeline_SwitchQ.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_SwitchQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_SwitchQ.TabIndex = 16;
             this.Lifeline_SwitchQ.TabStop = false;
@@ -198,10 +204,10 @@
             this.Lifeline_5050.BackColor = System.Drawing.Color.Transparent;
             this.Lifeline_5050.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Lifeline_5050.Image = global::DSA.Properties.Resources.Lifeline_50_50;
-            this.Lifeline_5050.Location = new System.Drawing.Point(956, 58);
+            this.Lifeline_5050.Location = new System.Drawing.Point(1195, 72);
             this.Lifeline_5050.Margin = new System.Windows.Forms.Padding(2);
             this.Lifeline_5050.Name = "Lifeline_5050";
-            this.Lifeline_5050.Size = new System.Drawing.Size(61, 39);
+            this.Lifeline_5050.Size = new System.Drawing.Size(76, 49);
             this.Lifeline_5050.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Lifeline_5050.TabIndex = 15;
             this.Lifeline_5050.TabStop = false;
@@ -211,10 +217,10 @@
             // 
             this.GifTimer.BackColor = System.Drawing.Color.Transparent;
             this.GifTimer.Image = global::DSA.Properties.Resources.GIF_New1minTimer;
-            this.GifTimer.Location = new System.Drawing.Point(440, 406);
+            this.GifTimer.Location = new System.Drawing.Point(550, 508);
             this.GifTimer.Margin = new System.Windows.Forms.Padding(2);
             this.GifTimer.Name = "GifTimer";
-            this.GifTimer.Size = new System.Drawing.Size(99, 49);
+            this.GifTimer.Size = new System.Drawing.Size(124, 61);
             this.GifTimer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GifTimer.TabIndex = 14;
             this.GifTimer.TabStop = false;
@@ -225,10 +231,10 @@
             this.panel_Question.BackgroundImage = global::DSA.Properties.Resources.Q_A_QuestionPanel;
             this.panel_Question.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_Question.Controls.Add(this.Question_Text);
-            this.panel_Question.Location = new System.Drawing.Point(-10, 454);
+            this.panel_Question.Location = new System.Drawing.Point(-12, 568);
             this.panel_Question.Margin = new System.Windows.Forms.Padding(2);
             this.panel_Question.Name = "panel_Question";
-            this.panel_Question.Size = new System.Drawing.Size(991, 100);
+            this.panel_Question.Size = new System.Drawing.Size(1239, 125);
             this.panel_Question.TabIndex = 34;
             // 
             // ChoiceA
@@ -237,10 +243,10 @@
             this.ChoiceA.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceA.Font = new System.Drawing.Font("Felix Titling", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceA.ForeColor = System.Drawing.Color.Gold;
-            this.ChoiceA.Location = new System.Drawing.Point(62, 18);
+            this.ChoiceA.Location = new System.Drawing.Point(78, 22);
             this.ChoiceA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceA.Name = "ChoiceA";
-            this.ChoiceA.Size = new System.Drawing.Size(40, 25);
+            this.ChoiceA.Size = new System.Drawing.Size(50, 33);
             this.ChoiceA.TabIndex = 29;
             this.ChoiceA.Text = "A :";
             // 
@@ -250,10 +256,10 @@
             this.ChoiceA_Text.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceA_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceA_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceA_Text.Location = new System.Drawing.Point(101, 14);
+            this.ChoiceA_Text.Location = new System.Drawing.Point(126, 18);
             this.ChoiceA_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceA_Text.Name = "ChoiceA_Text";
-            this.ChoiceA_Text.Size = new System.Drawing.Size(268, 38);
+            this.ChoiceA_Text.Size = new System.Drawing.Size(328, 43);
             this.ChoiceA_Text.TabIndex = 22;
             this.ChoiceA_Text.Text = "Choices must be short.";
             this.ChoiceA_Text.Click += new System.EventHandler(this.ChoiceA_Text_Click);
@@ -268,10 +274,10 @@
             this.panelA.Controls.Add(this.ChoiceA_Text);
             this.panelA.Controls.Add(this.ChoiceA_LongText);
             this.panelA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelA.Location = new System.Drawing.Point(0, 552);
+            this.panelA.Location = new System.Drawing.Point(0, 690);
             this.panelA.Margin = new System.Windows.Forms.Padding(2);
             this.panelA.Name = "panelA";
-            this.panelA.Size = new System.Drawing.Size(485, 68);
+            this.panelA.Size = new System.Drawing.Size(606, 85);
             this.panelA.TabIndex = 35;
             // 
             // ChoiceA_LongText
@@ -280,11 +286,11 @@
             this.ChoiceA_LongText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceA_LongText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceA_LongText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceA_LongText.Location = new System.Drawing.Point(104, 3);
+            this.ChoiceA_LongText.Location = new System.Drawing.Point(130, 4);
             this.ChoiceA_LongText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceA_LongText.Name = "ChoiceA_LongText";
             this.ChoiceA_LongText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ChoiceA_LongText.Size = new System.Drawing.Size(345, 64);
+            this.ChoiceA_LongText.Size = new System.Drawing.Size(431, 80);
             this.ChoiceA_LongText.TabIndex = 11;
             this.ChoiceA_LongText.Text = "The value a function approaches as input nears a point.";
             this.ChoiceA_LongText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -300,10 +306,10 @@
             this.panelC.Controls.Add(this.ChoiceC);
             this.panelC.Controls.Add(this.ChoiceC_Text);
             this.panelC.Controls.Add(this.ChoiceC_LongText);
-            this.panelC.Location = new System.Drawing.Point(485, 552);
+            this.panelC.Location = new System.Drawing.Point(606, 690);
             this.panelC.Margin = new System.Windows.Forms.Padding(2);
             this.panelC.Name = "panelC";
-            this.panelC.Size = new System.Drawing.Size(485, 68);
+            this.panelC.Size = new System.Drawing.Size(606, 85);
             this.panelC.TabIndex = 36;
             // 
             // ChoiceC
@@ -312,10 +318,10 @@
             this.ChoiceC.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceC.Font = new System.Drawing.Font("Felix Titling", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceC.ForeColor = System.Drawing.Color.Gold;
-            this.ChoiceC.Location = new System.Drawing.Point(23, 21);
+            this.ChoiceC.Location = new System.Drawing.Point(29, 26);
             this.ChoiceC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceC.Name = "ChoiceC";
-            this.ChoiceC.Size = new System.Drawing.Size(42, 25);
+            this.ChoiceC.Size = new System.Drawing.Size(53, 33);
             this.ChoiceC.TabIndex = 29;
             this.ChoiceC.Text = "C :";
             // 
@@ -326,10 +332,10 @@
             this.ChoiceC_Text.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceC_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceC_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceC_Text.Location = new System.Drawing.Point(64, 14);
+            this.ChoiceC_Text.Location = new System.Drawing.Point(80, 18);
             this.ChoiceC_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceC_Text.Name = "ChoiceC_Text";
-            this.ChoiceC_Text.Size = new System.Drawing.Size(299, 38);
+            this.ChoiceC_Text.Size = new System.Drawing.Size(362, 43);
             this.ChoiceC_Text.TabIndex = 30;
             this.ChoiceC_Text.Text = "Limit answers to four/five";
             this.ChoiceC_Text.Click += new System.EventHandler(this.ChoiceC_Text_Click);
@@ -341,11 +347,11 @@
             this.ChoiceC_LongText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceC_LongText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceC_LongText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceC_LongText.Location = new System.Drawing.Point(64, 1);
+            this.ChoiceC_LongText.Location = new System.Drawing.Point(80, 1);
             this.ChoiceC_LongText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceC_LongText.Name = "ChoiceC_LongText";
             this.ChoiceC_LongText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ChoiceC_LongText.Size = new System.Drawing.Size(345, 64);
+            this.ChoiceC_LongText.Size = new System.Drawing.Size(431, 80);
             this.ChoiceC_LongText.TabIndex = 48;
             this.ChoiceC_LongText.Text = "The value a function approaches as input nears a point.";
             this.ChoiceC_LongText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -361,10 +367,10 @@
             this.panelD.Controls.Add(this.ChoiceD_Text);
             this.panelD.Controls.Add(this.ChoiceD);
             this.panelD.Controls.Add(this.ChoiceD_LongText);
-            this.panelD.Location = new System.Drawing.Point(485, 618);
+            this.panelD.Location = new System.Drawing.Point(606, 772);
             this.panelD.Margin = new System.Windows.Forms.Padding(2);
             this.panelD.Name = "panelD";
-            this.panelD.Size = new System.Drawing.Size(485, 68);
+            this.panelD.Size = new System.Drawing.Size(606, 85);
             this.panelD.TabIndex = 37;
             // 
             // ChoiceD_Text
@@ -374,10 +380,10 @@
             this.ChoiceD_Text.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceD_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceD_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceD_Text.Location = new System.Drawing.Point(64, 13);
+            this.ChoiceD_Text.Location = new System.Drawing.Point(80, 16);
             this.ChoiceD_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceD_Text.Name = "ChoiceD_Text";
-            this.ChoiceD_Text.Size = new System.Drawing.Size(299, 38);
+            this.ChoiceD_Text.Size = new System.Drawing.Size(362, 43);
             this.ChoiceD_Text.TabIndex = 31;
             this.ChoiceD_Text.Text = "Limit answers to four/five";
             this.ChoiceD_Text.Click += new System.EventHandler(this.ChoiceD_Text_Click);
@@ -389,10 +395,10 @@
             this.ChoiceD.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceD.Font = new System.Drawing.Font("Felix Titling", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceD.ForeColor = System.Drawing.Color.Gold;
-            this.ChoiceD.Location = new System.Drawing.Point(23, 18);
+            this.ChoiceD.Location = new System.Drawing.Point(29, 22);
             this.ChoiceD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceD.Name = "ChoiceD";
-            this.ChoiceD.Size = new System.Drawing.Size(44, 25);
+            this.ChoiceD.Size = new System.Drawing.Size(55, 33);
             this.ChoiceD.TabIndex = 29;
             this.ChoiceD.Text = "D :";
             // 
@@ -402,11 +408,11 @@
             this.ChoiceD_LongText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceD_LongText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceD_LongText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceD_LongText.Location = new System.Drawing.Point(64, 1);
+            this.ChoiceD_LongText.Location = new System.Drawing.Point(80, 1);
             this.ChoiceD_LongText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceD_LongText.Name = "ChoiceD_LongText";
             this.ChoiceD_LongText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ChoiceD_LongText.Size = new System.Drawing.Size(345, 64);
+            this.ChoiceD_LongText.Size = new System.Drawing.Size(431, 80);
             this.ChoiceD_LongText.TabIndex = 49;
             this.ChoiceD_LongText.Text = "The value a function approaches as input nears a point.";
             this.ChoiceD_LongText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -425,7 +431,7 @@
             this.MoneyTree_15.Location = new System.Drawing.Point(0, 0);
             this.MoneyTree_15.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_15.Name = "MoneyTree_15";
-            this.MoneyTree_15.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_15.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_15.TabIndex = 0;
             // 
             // label11
@@ -434,10 +440,10 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label11.Location = new System.Drawing.Point(10, 8);
+            this.label11.Location = new System.Drawing.Point(12, 10);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 18);
+            this.label11.Size = new System.Drawing.Size(38, 23);
             this.label11.TabIndex = 42;
             this.label11.Text = "15";
             // 
@@ -447,10 +453,10 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label10.Location = new System.Drawing.Point(67, 8);
+            this.label10.Location = new System.Drawing.Point(84, 10);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 18);
+            this.label10.Size = new System.Drawing.Size(168, 23);
             this.label10.TabIndex = 41;
             this.label10.Text = "Php 2,000,000";
             // 
@@ -462,10 +468,10 @@
             this.MoneyTree_14.Controls.Add(this.label12);
             this.MoneyTree_14.Controls.Add(this.label13);
             this.MoneyTree_14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_14.Location = new System.Drawing.Point(0, 38);
+            this.MoneyTree_14.Location = new System.Drawing.Point(0, 48);
             this.MoneyTree_14.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_14.Name = "MoneyTree_14";
-            this.MoneyTree_14.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_14.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_14.TabIndex = 43;
             // 
             // label12
@@ -474,10 +480,10 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(10, 8);
+            this.label12.Location = new System.Drawing.Point(12, 10);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 18);
+            this.label12.Size = new System.Drawing.Size(38, 23);
             this.label12.TabIndex = 42;
             this.label12.Text = "14";
             // 
@@ -487,10 +493,10 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(67, 8);
+            this.label13.Location = new System.Drawing.Point(84, 10);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 18);
+            this.label13.Size = new System.Drawing.Size(168, 23);
             this.label13.TabIndex = 41;
             this.label13.Text = "Php 1,000,000";
             // 
@@ -502,10 +508,10 @@
             this.MoneyTree_13.Controls.Add(this.label14);
             this.MoneyTree_13.Controls.Add(this.label212);
             this.MoneyTree_13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_13.Location = new System.Drawing.Point(0, 76);
+            this.MoneyTree_13.Location = new System.Drawing.Point(0, 96);
             this.MoneyTree_13.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_13.Name = "MoneyTree_13";
-            this.MoneyTree_13.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_13.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_13.TabIndex = 43;
             // 
             // label14
@@ -514,10 +520,10 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(10, 8);
+            this.label14.Location = new System.Drawing.Point(12, 10);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 18);
+            this.label14.Size = new System.Drawing.Size(38, 23);
             this.label14.TabIndex = 42;
             this.label14.Text = "13";
             // 
@@ -527,10 +533,10 @@
             this.label212.BackColor = System.Drawing.Color.Transparent;
             this.label212.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label212.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label212.Location = new System.Drawing.Point(67, 8);
+            this.label212.Location = new System.Drawing.Point(84, 10);
             this.label212.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(121, 18);
+            this.label212.Size = new System.Drawing.Size(153, 23);
             this.label212.TabIndex = 41;
             this.label212.Text = "Php  600,000";
             // 
@@ -542,10 +548,10 @@
             this.MoneyTree_12.Controls.Add(this.label18);
             this.MoneyTree_12.Controls.Add(this.label19);
             this.MoneyTree_12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_12.Location = new System.Drawing.Point(0, 114);
+            this.MoneyTree_12.Location = new System.Drawing.Point(0, 144);
             this.MoneyTree_12.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_12.Name = "MoneyTree_12";
-            this.MoneyTree_12.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_12.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_12.TabIndex = 43;
             // 
             // label18
@@ -554,10 +560,10 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(10, 8);
+            this.label18.Location = new System.Drawing.Point(12, 10);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(30, 18);
+            this.label18.Size = new System.Drawing.Size(38, 23);
             this.label18.TabIndex = 42;
             this.label18.Text = "12";
             // 
@@ -567,10 +573,10 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(67, 8);
+            this.label19.Location = new System.Drawing.Point(84, 10);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 18);
+            this.label19.Size = new System.Drawing.Size(153, 23);
             this.label19.TabIndex = 41;
             this.label19.Text = "Php  400,000";
             // 
@@ -582,10 +588,10 @@
             this.MoneyTree_11.Controls.Add(this.label16);
             this.MoneyTree_11.Controls.Add(this.label17);
             this.MoneyTree_11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_11.Location = new System.Drawing.Point(0, 152);
+            this.MoneyTree_11.Location = new System.Drawing.Point(0, 192);
             this.MoneyTree_11.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_11.Name = "MoneyTree_11";
-            this.MoneyTree_11.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_11.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_11.TabIndex = 44;
             // 
             // label16
@@ -594,10 +600,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(10, 8);
+            this.label16.Location = new System.Drawing.Point(12, 10);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(30, 18);
+            this.label16.Size = new System.Drawing.Size(38, 23);
             this.label16.TabIndex = 42;
             this.label16.Text = "11";
             // 
@@ -607,10 +613,10 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(67, 8);
+            this.label17.Location = new System.Drawing.Point(84, 10);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(121, 18);
+            this.label17.Size = new System.Drawing.Size(153, 23);
             this.label17.TabIndex = 41;
             this.label17.Text = "Php  250,000";
             // 
@@ -622,10 +628,10 @@
             this.MoneyTree_10.Controls.Add(this.label20);
             this.MoneyTree_10.Controls.Add(this.label21);
             this.MoneyTree_10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_10.Location = new System.Drawing.Point(0, 190);
+            this.MoneyTree_10.Location = new System.Drawing.Point(0, 240);
             this.MoneyTree_10.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_10.Name = "MoneyTree_10";
-            this.MoneyTree_10.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_10.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_10.TabIndex = 44;
             // 
             // label20
@@ -634,10 +640,10 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label20.Location = new System.Drawing.Point(10, 8);
+            this.label20.Location = new System.Drawing.Point(12, 10);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(30, 18);
+            this.label20.Size = new System.Drawing.Size(38, 23);
             this.label20.TabIndex = 42;
             this.label20.Text = "10";
             // 
@@ -647,10 +653,10 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label21.Location = new System.Drawing.Point(67, 8);
+            this.label21.Location = new System.Drawing.Point(84, 10);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 18);
+            this.label21.Size = new System.Drawing.Size(153, 23);
             this.label21.TabIndex = 41;
             this.label21.Text = "Php  150,000";
             // 
@@ -662,10 +668,10 @@
             this.MoneyTree_9.Controls.Add(this.label22);
             this.MoneyTree_9.Controls.Add(this.label23);
             this.MoneyTree_9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_9.Location = new System.Drawing.Point(0, 228);
+            this.MoneyTree_9.Location = new System.Drawing.Point(0, 288);
             this.MoneyTree_9.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_9.Name = "MoneyTree_9";
-            this.MoneyTree_9.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_9.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_9.TabIndex = 44;
             // 
             // label22
@@ -674,10 +680,10 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(15, 8);
+            this.label22.Location = new System.Drawing.Point(19, 10);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(19, 18);
+            this.label22.Size = new System.Drawing.Size(24, 23);
             this.label22.TabIndex = 42;
             this.label22.Text = "9";
             // 
@@ -687,10 +693,10 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(67, 8);
+            this.label23.Location = new System.Drawing.Point(84, 10);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(121, 18);
+            this.label23.Size = new System.Drawing.Size(153, 23);
             this.label23.TabIndex = 41;
             this.label23.Text = "Php  100,000";
             // 
@@ -702,10 +708,10 @@
             this.MoneyTree_8.Controls.Add(this.label24);
             this.MoneyTree_8.Controls.Add(this.label25);
             this.MoneyTree_8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_8.Location = new System.Drawing.Point(0, 266);
+            this.MoneyTree_8.Location = new System.Drawing.Point(0, 336);
             this.MoneyTree_8.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_8.Name = "MoneyTree_8";
-            this.MoneyTree_8.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_8.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_8.TabIndex = 44;
             // 
             // label24
@@ -714,10 +720,10 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(15, 8);
+            this.label24.Location = new System.Drawing.Point(19, 10);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(19, 18);
+            this.label24.Size = new System.Drawing.Size(24, 23);
             this.label24.TabIndex = 42;
             this.label24.Text = "8";
             // 
@@ -727,10 +733,10 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label25.Location = new System.Drawing.Point(67, 8);
+            this.label25.Location = new System.Drawing.Point(84, 10);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(114, 18);
+            this.label25.Size = new System.Drawing.Size(144, 23);
             this.label25.TabIndex = 41;
             this.label25.Text = "Php   70,000";
             // 
@@ -742,10 +748,10 @@
             this.MoneyTree_7.Controls.Add(this.label28);
             this.MoneyTree_7.Controls.Add(this.label29);
             this.MoneyTree_7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_7.Location = new System.Drawing.Point(0, 304);
+            this.MoneyTree_7.Location = new System.Drawing.Point(0, 384);
             this.MoneyTree_7.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_7.Name = "MoneyTree_7";
-            this.MoneyTree_7.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_7.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_7.TabIndex = 45;
             // 
             // label28
@@ -754,10 +760,10 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label28.Location = new System.Drawing.Point(15, 8);
+            this.label28.Location = new System.Drawing.Point(19, 10);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(19, 18);
+            this.label28.Size = new System.Drawing.Size(24, 23);
             this.label28.TabIndex = 42;
             this.label28.Text = "7";
             // 
@@ -767,10 +773,10 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label29.Location = new System.Drawing.Point(67, 8);
+            this.label29.Location = new System.Drawing.Point(84, 10);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(114, 18);
+            this.label29.Size = new System.Drawing.Size(144, 23);
             this.label29.TabIndex = 41;
             this.label29.Text = "Php   50,000";
             // 
@@ -782,10 +788,10 @@
             this.MoneyTree_6.Controls.Add(this.label30);
             this.MoneyTree_6.Controls.Add(this.label31);
             this.MoneyTree_6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_6.Location = new System.Drawing.Point(0, 342);
+            this.MoneyTree_6.Location = new System.Drawing.Point(0, 432);
             this.MoneyTree_6.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_6.Name = "MoneyTree_6";
-            this.MoneyTree_6.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_6.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_6.TabIndex = 45;
             // 
             // label30
@@ -794,10 +800,10 @@
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(15, 8);
+            this.label30.Location = new System.Drawing.Point(19, 10);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(19, 18);
+            this.label30.Size = new System.Drawing.Size(24, 23);
             this.label30.TabIndex = 42;
             this.label30.Text = "6";
             // 
@@ -807,10 +813,10 @@
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label31.Location = new System.Drawing.Point(67, 8);
+            this.label31.Location = new System.Drawing.Point(84, 10);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(114, 18);
+            this.label31.Size = new System.Drawing.Size(144, 23);
             this.label31.TabIndex = 41;
             this.label31.Text = "Php   35,000";
             // 
@@ -822,10 +828,10 @@
             this.MoneyTree_5.Controls.Add(this.label26);
             this.MoneyTree_5.Controls.Add(this.label27);
             this.MoneyTree_5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_5.Location = new System.Drawing.Point(0, 380);
+            this.MoneyTree_5.Location = new System.Drawing.Point(0, 480);
             this.MoneyTree_5.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_5.Name = "MoneyTree_5";
-            this.MoneyTree_5.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_5.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_5.TabIndex = 45;
             // 
             // label26
@@ -834,10 +840,10 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label26.Location = new System.Drawing.Point(15, 8);
+            this.label26.Location = new System.Drawing.Point(19, 10);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(19, 18);
+            this.label26.Size = new System.Drawing.Size(24, 23);
             this.label26.TabIndex = 42;
             this.label26.Text = "5";
             // 
@@ -847,10 +853,10 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label27.Location = new System.Drawing.Point(67, 8);
+            this.label27.Location = new System.Drawing.Point(84, 10);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(114, 18);
+            this.label27.Size = new System.Drawing.Size(144, 23);
             this.label27.TabIndex = 41;
             this.label27.Text = "Php   20,000";
             // 
@@ -862,10 +868,10 @@
             this.MoneyTree_4.Controls.Add(this.label32);
             this.MoneyTree_4.Controls.Add(this.label33);
             this.MoneyTree_4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_4.Location = new System.Drawing.Point(0, 418);
+            this.MoneyTree_4.Location = new System.Drawing.Point(0, 528);
             this.MoneyTree_4.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_4.Name = "MoneyTree_4";
-            this.MoneyTree_4.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_4.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_4.TabIndex = 45;
             // 
             // label32
@@ -874,10 +880,10 @@
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(15, 8);
+            this.label32.Location = new System.Drawing.Point(19, 10);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(19, 18);
+            this.label32.Size = new System.Drawing.Size(24, 23);
             this.label32.TabIndex = 42;
             this.label32.Text = "4";
             // 
@@ -887,10 +893,10 @@
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label33.Location = new System.Drawing.Point(67, 8);
+            this.label33.Location = new System.Drawing.Point(84, 10);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(114, 18);
+            this.label33.Size = new System.Drawing.Size(144, 23);
             this.label33.TabIndex = 41;
             this.label33.Text = "Php   10,000";
             // 
@@ -902,10 +908,10 @@
             this.MoneyTree_3.Controls.Add(this.label34);
             this.MoneyTree_3.Controls.Add(this.label35);
             this.MoneyTree_3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_3.Location = new System.Drawing.Point(0, 456);
+            this.MoneyTree_3.Location = new System.Drawing.Point(0, 576);
             this.MoneyTree_3.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_3.Name = "MoneyTree_3";
-            this.MoneyTree_3.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_3.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_3.TabIndex = 45;
             // 
             // label34
@@ -914,10 +920,10 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label34.Location = new System.Drawing.Point(15, 8);
+            this.label34.Location = new System.Drawing.Point(19, 10);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(19, 18);
+            this.label34.Size = new System.Drawing.Size(24, 23);
             this.label34.TabIndex = 42;
             this.label34.Text = "3";
             // 
@@ -927,10 +933,10 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label35.Location = new System.Drawing.Point(67, 8);
+            this.label35.Location = new System.Drawing.Point(84, 10);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(103, 18);
+            this.label35.Size = new System.Drawing.Size(130, 23);
             this.label35.TabIndex = 41;
             this.label35.Text = "Php   5,000";
             // 
@@ -942,10 +948,10 @@
             this.MoneyTree_2.Controls.Add(this.label36);
             this.MoneyTree_2.Controls.Add(this.label37);
             this.MoneyTree_2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_2.Location = new System.Drawing.Point(0, 494);
+            this.MoneyTree_2.Location = new System.Drawing.Point(0, 624);
             this.MoneyTree_2.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_2.Name = "MoneyTree_2";
-            this.MoneyTree_2.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_2.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_2.TabIndex = 45;
             // 
             // label36
@@ -954,10 +960,10 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(15, 8);
+            this.label36.Location = new System.Drawing.Point(19, 10);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(19, 18);
+            this.label36.Size = new System.Drawing.Size(24, 23);
             this.label36.TabIndex = 42;
             this.label36.Text = "2";
             // 
@@ -967,10 +973,10 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label37.Location = new System.Drawing.Point(67, 8);
+            this.label37.Location = new System.Drawing.Point(84, 10);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(103, 18);
+            this.label37.Size = new System.Drawing.Size(130, 23);
             this.label37.TabIndex = 41;
             this.label37.Text = "Php   3,000";
             // 
@@ -982,10 +988,10 @@
             this.MoneyTree_1.Controls.Add(this.label38);
             this.MoneyTree_1.Controls.Add(this.label39);
             this.MoneyTree_1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoneyTree_1.Location = new System.Drawing.Point(0, 532);
+            this.MoneyTree_1.Location = new System.Drawing.Point(0, 672);
             this.MoneyTree_1.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_1.Name = "MoneyTree_1";
-            this.MoneyTree_1.Size = new System.Drawing.Size(236, 38);
+            this.MoneyTree_1.Size = new System.Drawing.Size(295, 48);
             this.MoneyTree_1.TabIndex = 45;
             // 
             // label38
@@ -994,10 +1000,10 @@
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(15, 8);
+            this.label38.Location = new System.Drawing.Point(19, 10);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(19, 18);
+            this.label38.Size = new System.Drawing.Size(24, 23);
             this.label38.TabIndex = 42;
             this.label38.Text = "1";
             // 
@@ -1007,10 +1013,10 @@
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label39.Location = new System.Drawing.Point(67, 8);
+            this.label39.Location = new System.Drawing.Point(84, 10);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(103, 18);
+            this.label39.Size = new System.Drawing.Size(130, 23);
             this.label39.TabIndex = 41;
             this.label39.Text = "Php   1,000";
             // 
@@ -1034,10 +1040,10 @@
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_13);
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_14);
             this.MoneyTree_BG_Panel.Controls.Add(this.MoneyTree_15);
-            this.MoneyTree_BG_Panel.Location = new System.Drawing.Point(959, 105);
+            this.MoneyTree_BG_Panel.Location = new System.Drawing.Point(1199, 131);
             this.MoneyTree_BG_Panel.Margin = new System.Windows.Forms.Padding(2);
             this.MoneyTree_BG_Panel.Name = "MoneyTree_BG_Panel";
-            this.MoneyTree_BG_Panel.Size = new System.Drawing.Size(236, 566);
+            this.MoneyTree_BG_Panel.Size = new System.Drawing.Size(295, 708);
             this.MoneyTree_BG_Panel.TabIndex = 40;
             // 
             // ChoiceB
@@ -1046,10 +1052,10 @@
             this.ChoiceB.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceB.Font = new System.Drawing.Font("Felix Titling", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceB.ForeColor = System.Drawing.Color.Gold;
-            this.ChoiceB.Location = new System.Drawing.Point(68, 20);
+            this.ChoiceB.Location = new System.Drawing.Point(85, 25);
             this.ChoiceB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceB.Name = "ChoiceB";
-            this.ChoiceB.Size = new System.Drawing.Size(38, 25);
+            this.ChoiceB.Size = new System.Drawing.Size(47, 33);
             this.ChoiceB.TabIndex = 29;
             this.ChoiceB.Text = "B :";
             // 
@@ -1061,10 +1067,10 @@
             this.panelB.Controls.Add(this.ChoiceB_LongText);
             this.panelB.Controls.Add(this.ChoiceB);
             this.panelB.Controls.Add(this.ChoiceB_Text);
-            this.panelB.Location = new System.Drawing.Point(0, 618);
+            this.panelB.Location = new System.Drawing.Point(0, 772);
             this.panelB.Margin = new System.Windows.Forms.Padding(2);
             this.panelB.Name = "panelB";
-            this.panelB.Size = new System.Drawing.Size(485, 68);
+            this.panelB.Size = new System.Drawing.Size(606, 85);
             this.panelB.TabIndex = 36;
             // 
             // ChoiceB_LongText
@@ -1073,11 +1079,11 @@
             this.ChoiceB_LongText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceB_LongText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceB_LongText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceB_LongText.Location = new System.Drawing.Point(104, 0);
+            this.ChoiceB_LongText.Location = new System.Drawing.Point(130, 0);
             this.ChoiceB_LongText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceB_LongText.Name = "ChoiceB_LongText";
             this.ChoiceB_LongText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ChoiceB_LongText.Size = new System.Drawing.Size(345, 64);
+            this.ChoiceB_LongText.Size = new System.Drawing.Size(431, 80);
             this.ChoiceB_LongText.TabIndex = 30;
             this.ChoiceB_LongText.Text = "The value a function approaches as input nears a point.";
             this.ChoiceB_LongText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1092,10 +1098,10 @@
             this.ChoiceB_Text.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceB_Text.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceB_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceB_Text.Location = new System.Drawing.Point(101, 14);
+            this.ChoiceB_Text.Location = new System.Drawing.Point(126, 18);
             this.ChoiceB_Text.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceB_Text.Name = "ChoiceB_Text";
-            this.ChoiceB_Text.Size = new System.Drawing.Size(268, 38);
+            this.ChoiceB_Text.Size = new System.Drawing.Size(328, 43);
             this.ChoiceB_Text.TabIndex = 30;
             this.ChoiceB_Text.Text = "Choices must be short.";
             this.ChoiceB_Text.Click += new System.EventHandler(this.ChoiceB_Text_Click);
@@ -1103,12 +1109,12 @@
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(992, 22);
+            this.kryptonButton4.Location = new System.Drawing.Point(1240, 28);
             this.kryptonButton4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton4.Size = new System.Drawing.Size(168, 28);
+            this.kryptonButton4.Size = new System.Drawing.Size(210, 35);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.MidnightBlue;
             this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
@@ -1137,20 +1143,21 @@
             this.panel_FinalAnswerNotif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_FinalAnswerNotif.Controls.Add(this.btn_FinalAnswerNo);
             this.panel_FinalAnswerNotif.Controls.Add(this.kryptonButton1);
-            this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(344, 335);
+            this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(430, 419);
+            this.panel_FinalAnswerNotif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_FinalAnswerNotif.Name = "panel_FinalAnswerNotif";
-            this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(290, 66);
+            this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(362, 82);
             this.panel_FinalAnswerNotif.TabIndex = 46;
             this.panel_FinalAnswerNotif.Visible = false;
             // 
             // btn_FinalAnswerNo
             // 
-            this.btn_FinalAnswerNo.Location = new System.Drawing.Point(163, 32);
+            this.btn_FinalAnswerNo.Location = new System.Drawing.Point(204, 40);
             this.btn_FinalAnswerNo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_FinalAnswerNo.Name = "btn_FinalAnswerNo";
             this.btn_FinalAnswerNo.OverrideDefault.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
             this.btn_FinalAnswerNo.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_FinalAnswerNo.Size = new System.Drawing.Size(60, 22);
+            this.btn_FinalAnswerNo.Size = new System.Drawing.Size(75, 28);
             this.btn_FinalAnswerNo.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.btn_FinalAnswerNo.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
             this.btn_FinalAnswerNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ButtonHighlight;
@@ -1169,12 +1176,12 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(66, 32);
+            this.kryptonButton1.Location = new System.Drawing.Point(82, 40);
             this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.Size = new System.Drawing.Size(60, 22);
+            this.kryptonButton1.Size = new System.Drawing.Size(75, 28);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ButtonHighlight;
@@ -1198,7 +1205,7 @@
             this.BackgroundGif.Location = new System.Drawing.Point(0, 0);
             this.BackgroundGif.Margin = new System.Windows.Forms.Padding(2);
             this.BackgroundGif.Name = "BackgroundGif";
-            this.BackgroundGif.Size = new System.Drawing.Size(1219, 698);
+            this.BackgroundGif.Size = new System.Drawing.Size(1524, 872);
             this.BackgroundGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackgroundGif.TabIndex = 44;
             this.BackgroundGif.TabStop = false;
@@ -1219,21 +1226,49 @@
             this.panel_CorrectAnswerNotice.BackColor = System.Drawing.Color.Transparent;
             this.panel_CorrectAnswerNotice.BackgroundImage = global::DSA.Properties.Resources.Q_A_Correct;
             this.panel_CorrectAnswerNotice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_CorrectAnswerNotice.Location = new System.Drawing.Point(238, 274);
+            this.panel_CorrectAnswerNotice.Location = new System.Drawing.Point(298, 342);
             this.panel_CorrectAnswerNotice.Margin = new System.Windows.Forms.Padding(2);
             this.panel_CorrectAnswerNotice.Name = "panel_CorrectAnswerNotice";
-            this.panel_CorrectAnswerNotice.Size = new System.Drawing.Size(482, 130);
+            this.panel_CorrectAnswerNotice.Size = new System.Drawing.Size(602, 162);
             this.panel_CorrectAnswerNotice.TabIndex = 35;
             this.panel_CorrectAnswerNotice.Visible = false;
             // 
+            // BGMu
+            // 
+            this.BGMu.Controls.Add(this.label1);
+            this.BGMu.Controls.Add(this.BGMusic);
+            this.BGMu.Location = new System.Drawing.Point(84, 72);
+            this.BGMu.Name = "BGMu";
+            this.BGMu.Size = new System.Drawing.Size(103, 251);
+            this.BGMu.TabIndex = 47;
+            // 
+            // BGMusic
+            // 
+            this.BGMusic.Enabled = true;
+            this.BGMusic.Location = new System.Drawing.Point(15, 51);
+            this.BGMusic.Name = "BGMusic";
+            this.BGMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("BGMusic.OcxState")));
+            this.BGMusic.Size = new System.Drawing.Size(75, 177);
+            this.BGMusic.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BGMusic";
+            // 
             // QA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::DSA.Properties.Resources.Host_Questioning;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1219, 698);
+            this.ClientSize = new System.Drawing.Size(1524, 872);
+            this.Controls.Add(this.BGMu);
             this.Controls.Add(this.panel_FinalAnswerNotif);
             this.Controls.Add(this.kryptonButton4);
             this.Controls.Add(this.MoneyTree_BG_Panel);
@@ -1303,6 +1338,9 @@
             this.panelB.PerformLayout();
             this.panel_FinalAnswerNotif.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundGif)).EndInit();
+            this.BGMu.ResumeLayout(false);
+            this.BGMu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BGMusic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1386,5 +1424,8 @@
         private System.Windows.Forms.Label ChoiceC_LongText;
         private System.Windows.Forms.Label ChoiceD_LongText;
         private System.Windows.Forms.Label ChoiceB_LongText;
+        private System.Windows.Forms.Panel BGMu;
+        private System.Windows.Forms.Label label1;
+        private AxWMPLib.AxWindowsMediaPlayer BGMusic;
     }
 }
