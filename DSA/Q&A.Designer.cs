@@ -341,7 +341,7 @@
             this.ChoiceC_LongText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChoiceC_LongText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChoiceC_LongText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ChoiceC_LongText.Location = new System.Drawing.Point(64, 1);
+            this.ChoiceC_LongText.Location = new System.Drawing.Point(82, 0);
             this.ChoiceC_LongText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChoiceC_LongText.Name = "ChoiceC_LongText";
             this.ChoiceC_LongText.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -633,7 +633,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label20.Location = new System.Drawing.Point(10, 8);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -646,7 +646,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label21.Location = new System.Drawing.Point(67, 8);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";

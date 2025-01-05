@@ -119,11 +119,17 @@ namespace DSA
 
         private void btn_Continue_Click(object sender, EventArgs e)
         {
+            BeforeQA beforeQA = new BeforeQA();
             QA nextQuestion = new QA(Questions, HalfChanceVisible, Life2xVisible, timeFreezeVisible, SwitchQuestionVisible);
             QA.myForm = nextQuestion;
-            nextQuestion.Show();
             this.Close();
             this.Dispose();
+            beforeQA.ShowDialog();
+            nextQuestion.Show();
+            nextQuestion = null;
+            beforeQA = null;
+            
+            
             
         }
 

@@ -20,7 +20,7 @@ namespace DSA
             this.StartPosition = FormStartPosition.CenterScreen;
 
             timer = new Timer();
-            timer.Interval = 3500;
+            timer.Interval = 4200;
             timer.Tick += Timer_Tick;
             timer.Start();
 

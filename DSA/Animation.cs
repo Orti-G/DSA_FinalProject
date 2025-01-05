@@ -17,7 +17,7 @@ namespace DSA
         {
             InitializeComponent();
             _timer = new Timer();
-            _timer.Interval = 5500;
+            _timer.Interval = 4000;
             _timer.Tick += Timer_Tick;
             _timer.Start();
         }
@@ -25,12 +25,35 @@ namespace DSA
         private void Timer_Tick(object sender, EventArgs e)
         {
             _timer.Stop();
-            QA gameplay = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
-            QA.myForm = gameplay;
-            gameplay.Show();
-            this.Hide();
-            //this.Close();
-            //this.Dispose();
+            BeforeQA beforeQA = new BeforeQA();
+            this.Close();
+            this.Dispose();
+
+            if (Category.categoryName == "Math")
+            {
+                QA gameplay = new QA(Mathematics.MathematicsQuestions(), true, true, true, true);
+                beforeQA.ShowDialog();
+                gameplay.Show();
+                gameplay = null;
+            }
+            else if (Category.categoryName == "Science")
+            {
+                QA gameplay = new QA(Science.ScienceQuestions(), true, true, true, true);
+                beforeQA.ShowDialog();
+                gameplay.Show();
+                gameplay = null;
+            }
+            else 
+            {
+                QA gameplay = new QA(History.HistoryQuestions(), true, true, true, true);
+                beforeQA.ShowDialog();
+                gameplay.Show();
+                gameplay = null;
+            }
+
+            beforeQA = null;
+            
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

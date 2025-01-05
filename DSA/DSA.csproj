@@ -557,5 +557,8 @@
   <ItemGroup>
     <None Include="Resources\GIF_BeforeQA%28final%29.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1 WINNING UPDATED .gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

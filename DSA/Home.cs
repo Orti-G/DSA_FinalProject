@@ -18,28 +18,6 @@ namespace DSA
             InitializeComponent();
         }
 
-        private void kryptonButton2_Click(object sender, EventArgs e)
-        {
-            if (Character.characterInstance == null)
-            {
-                Character characterPanel = new Character();
-                Character.characterInstance = characterPanel;
-                characterPanel.Show();
-            } 
-            else 
-            {
-                Character.characterInstance.Show();
-            }
-            
-            this.Hide();
-        }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
-        {
-            /*Winning form8 = new Winning();
-            form8.Show();
-            this.Hide();*/
-        }
 
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
@@ -50,8 +28,17 @@ namespace DSA
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Character character = new Character();
-            character.Show();
+            if (Character.characterInstance == null)
+            {
+                Character characterPanel = new Character();
+                Character.characterInstance = characterPanel;
+                characterPanel.Show();
+            }
+            else
+            {
+                Character.characterInstance.Show();
+            }
+
             this.Hide();
         }
     }

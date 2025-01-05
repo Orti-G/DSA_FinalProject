@@ -50,14 +50,28 @@ namespace DSA
         }
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            QA gameplay = new QA(Mathematics.MathematicsQuestions(),true,true,true,true);
-            gameplay.Show();
+            Animation animate = new Animation();
+            animate.Show();
+            instanceSetUp = null;
+
+            Category.categoryInstance.Dispose();
+            Category.categoryInstance = null;
+
+            Character.characterInstance.Dispose();
+            Character.characterInstance = null;
+
+            //Home.homeInstance.Dispose();
+            Home.homeInstance = null;
+            animate = null;
+
+
             this.Close();
             this.Dispose();
-            instanceSetUp = null;
-            Category.categoryInstance = null;
-            Character.characterInstance = null;
-            Home.homeInstance = null;
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+
         }
 
         private void btn_Back_Click(object sender, EventArgs e)

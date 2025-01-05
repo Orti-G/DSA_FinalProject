@@ -15,16 +15,16 @@ namespace DSA
     {
         public static Character characterInstance;
 
-        private Image player1_image = Resources.Character_GIF_P1;
+        private Image player1_image = Properties.Resources.Character_GIF_P1;
         private Image player1_Stillimage = Properties.Resources.Character_still_P1;
 
-        private Image player2_image = Resources.Character_GIF_P2;
-        private Image player2_Stillimage = Resources.Character_still_P2;
+        private Image player2_image = Properties.Resources.Character_GIF_P2;
+        private Image player2_Stillimage = Properties.Resources.Character_still_P2;
 
-        private Image player3_image = Resources.Character_GIF_P3;
-        private Image player3_Stillimage = Resources.Character_still_P3;
+        private Image player3_image = Properties.Resources.Character_GIF_P3;
+        private Image player3_Stillimage = Properties.Resources.Character_still_P3;
 
-        private Image panelBackground = Resources.CharacterSelectedBox;
+        private Image panelBackground = Properties.Resources.CharacterSelectedBox;
 
         public static string playerCharacter;
         public static string playerName;

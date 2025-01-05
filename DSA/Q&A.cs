@@ -47,13 +47,13 @@ namespace DSA
         private Inventory currentQuestion;
         private int MoneyTreeLevel;
 
-        private int[] SafeHavens = {5,10,15};
+        private int[] SafeHavens;
 
         private Timer timerForLifelines;
-        
-        public QA(Queue<Inventory> questions,bool halfchance,bool life2x, bool timeFreeze, bool switchQuestion)
+
+        public QA(Queue<Inventory> questions, bool halfchance, bool life2x, bool timeFreeze, bool switchQuestion)
         {
-            
+
             InitializeComponent();
             AdjustBackgorund();
             timerForLifelines = new Timer();
@@ -66,6 +66,20 @@ namespace DSA
             SwitchQuestionVisible = switchQuestion;
 
             Questions = questions;
+
+            if (Category.moneyTree == "Classic")
+            {
+                int[] checkpoint = { 5, 10, 15 };
+                SafeHavens = checkpoint;
+                SwitchQuestionVisible = false;
+                label20.ForeColor = Color.DarkOrange;
+                label21.ForeColor = Color.DarkOrange;
+            }
+            else
+            {
+                int[] checkpoint = {5,15};
+                SafeHavens = checkpoint;
+            }
             
         }
 
@@ -876,6 +890,10 @@ namespace DSA
                     this.Close();
                     this.Dispose();
                     myForm = null;
+                    winning = null;
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
+                    GC.Collect();
                 }
                 else
                 {
@@ -884,6 +902,10 @@ namespace DSA
                     this.Close();
                     this.Dispose();
                     myForm = null;
+                    gameResult = null;
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
+                    GC.Collect();
                 }
             } 
             else if(elapsedTransition == 3 && transitionCount == 2)
@@ -896,6 +918,9 @@ namespace DSA
                 this.Close();
                 this.Dispose();
                 myForm = null;
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
             }
         }
 
@@ -939,7 +964,7 @@ namespace DSA
             ShowCorrectAnswer();
             if (UserAnswer == answerKey || UserSecondAnswer == answerKey)
             {
-                BackgroundGif.Image = null;
+                BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
                 panel_CorrectAnswerNotice.Visible = true;
                 transitionCount = 1;
                 transitionTimer.Start();
@@ -951,6 +976,6 @@ namespace DSA
                 transitionCount = 2;
                 transitionTimer.Start();
             }
-        }   
+        }
     }
 }

@@ -863,6 +863,16 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap P1_WINNING_UPDATED_ {
+            get {
+                object obj = ResourceManager.GetObject("P1 WINNING UPDATED ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Panel_1srPlace {
             get {
                 object obj = ResourceManager.GetObject("Panel_1srPlace", resourceCulture);
