@@ -33,17 +33,19 @@
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.startButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.IntroVid = new AxWMPLib.AxWindowsMediaPlayer();
+            this.mechanicsVid = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IntroVid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mechanicsVid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.BG_Mechanics;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.kryptonButton2);
             this.panel1.Controls.Add(this.kryptonButton1);
             this.panel1.Controls.Add(this.startButton);
-            this.panel1.Controls.Add(this.IntroVid);
+            this.panel1.Controls.Add(this.mechanicsVid);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -52,7 +54,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(943, 738);
+            this.kryptonButton2.Location = new System.Drawing.Point(910, 737);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
@@ -75,7 +77,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(561, 738);
+            this.kryptonButton1.Location = new System.Drawing.Point(528, 737);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Navy;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Blue;
@@ -100,7 +102,7 @@
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(670, 727);
+            this.startButton.Location = new System.Drawing.Point(637, 726);
             this.startButton.Name = "startButton";
             this.startButton.OverrideDefault.Back.Color1 = System.Drawing.Color.Blue;
             this.startButton.OverrideDefault.Back.Color2 = System.Drawing.Color.Navy;
@@ -125,15 +127,16 @@
             this.startButton.StateTracking.Back.Color2 = System.Drawing.Color.Gold;
             this.startButton.TabIndex = 19;
             this.startButton.Values.Text = "START";
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
-            // IntroVid
+            // mechanicsVid
             // 
-            this.IntroVid.Enabled = true;
-            this.IntroVid.Location = new System.Drawing.Point(-38, -7);
-            this.IntroVid.Name = "IntroVid";
-            this.IntroVid.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("IntroVid.OcxState")));
-            this.IntroVid.Size = new System.Drawing.Size(1351, 806);
-            this.IntroVid.TabIndex = 1;
+            this.mechanicsVid.Enabled = true;
+            this.mechanicsVid.Location = new System.Drawing.Point(-38, -7);
+            this.mechanicsVid.Name = "mechanicsVid";
+            this.mechanicsVid.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mechanicsVid.OcxState")));
+            this.mechanicsVid.Size = new System.Drawing.Size(1308, 787);
+            this.mechanicsVid.TabIndex = 1;
             // 
             // Form4
             // 
@@ -149,7 +152,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.IntroVid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mechanicsVid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,7 +160,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private AxWMPLib.AxWindowsMediaPlayer IntroVid;
+        private AxWMPLib.AxWindowsMediaPlayer mechanicsVid;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton startButton;
