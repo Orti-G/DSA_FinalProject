@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,9 +52,11 @@ namespace DSA
 
         private Timer timerForLifelines;
 
-        public QA(Queue<Inventory> questions, bool halfchance, bool life2x, bool timeFreeze, bool switchQuestion)
+        private SoundPlayer sfx;
+        
+        public QA(Queue<Inventory> questions,bool halfchance,bool life2x, bool timeFreeze, bool switchQuestion)
         {
-
+            
             InitializeComponent();
             AdjustBackgorund();
             timerForLifelines = new Timer();
@@ -81,6 +84,10 @@ namespace DSA
                 SafeHavens = checkpoint;
             }
             GifTimer.Enabled = false;
+        }
+
+            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\BGM_Question_1kto20k.MP3";
+            
         }
 
 
@@ -155,8 +162,6 @@ namespace DSA
             }
 
             answerKey = currentQuestion.getAnswer();
-
-            
             
         }
         private void MoneyTreeLevelHighlight() 
@@ -225,6 +230,9 @@ namespace DSA
 
         private void Lifeline_5050_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
+
             Random rnd = new Random();
             List<string> list = new List<string>();
             list.Add("A");
@@ -287,6 +295,8 @@ namespace DSA
 
         private void Lifeline_x2_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
             Life2x = true;
             Lifeline_x2.Visible = false;
             Life2xVisible = false;
@@ -298,6 +308,8 @@ namespace DSA
 
         private void Lifeline_timeFreeze_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
             TimeToAnswer.Stop();
             GifTimer.Enabled = false;
 
@@ -314,6 +326,8 @@ namespace DSA
 
         private void Lifeline_SwitchQ_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
 
             Question_Text.Text = currentQuestion.getSpareQuestion();
 
@@ -499,6 +513,9 @@ namespace DSA
 
         private void ChoiceA_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav"); 
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "A";
@@ -521,6 +538,8 @@ namespace DSA
 
         private void ChoiceB_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "B";
@@ -543,6 +562,8 @@ namespace DSA
 
         private void ChoiceC_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "C";
@@ -565,6 +586,8 @@ namespace DSA
 
         private void ChoiceD_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "D";
@@ -627,6 +650,7 @@ namespace DSA
                 AnimationTimer.Dispose();
 
                 DisabledButtonEvent();
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\BGM_Intense.MP3";
 
                 BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
                 transitionTimer.Start();
@@ -717,7 +741,7 @@ namespace DSA
                     UserAnswer = null;
                     
                 }
-
+                BGMusic.URL=@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\BGM_Intense.MP3";
                 BackgroundGif.Image = Properties.Resources.GIF_Intense_P1;
                 transitionTimer.Start();
                 DisabledButtonEvent();
@@ -920,7 +944,7 @@ namespace DSA
                     GC.Collect();
                 }
             } 
-            else if(elapsedTransition == 3 && transitionCount == 2)
+            else if(elapsedTransition == 5 && transitionCount == 2)
             {
                 transitionTimer.Stop();
                 transitionTimer.Dispose();
@@ -985,14 +1009,17 @@ namespace DSA
                 BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
                 panel_CorrectAnswerNotice.Visible = true;
                 transitionCount = 1;
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\BGM_CorrectAnswer.MP3";
                 transitionTimer.Start();
-
+      
             }
             else 
             {
                 BackgroundGif.Image = Properties.Resources.GIF_Host_Disappointed;
                 transitionCount = 2;
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\BGM_WrongAnswer.MP3";
                 transitionTimer.Start();
+               
             }
         }
     }

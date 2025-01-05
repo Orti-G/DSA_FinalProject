@@ -63,6 +63,16 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG_Mechanics {
+            get {
+                object obj = ResourceManager.GetObject("BG_Mechanics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_studio {
             get {
                 object obj = ResourceManager.GetObject("BG studio", resourceCulture);

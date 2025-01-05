@@ -561,5 +561,8 @@
   <ItemGroup>
     <None Include="Resources\P1 WINNING UPDATED .gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Mechanics.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

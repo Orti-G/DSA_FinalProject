@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,6 +40,7 @@ namespace DSA
         private const int AnimationStep = 5;
         private bool isAnimating = false; // Track animation state
 
+        private SoundPlayer sfx;
         public Category()
         {
             InitializeComponent();
@@ -48,6 +50,9 @@ namespace DSA
 
         private void btn_Math_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             if (isAnimating) return; // Prevent interaction while animation is in progress
 
             categoryName = "Math";
@@ -60,6 +65,9 @@ namespace DSA
 
         private void btn_Science_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             if (isAnimating) return; // Prevent interaction while animation is in progress
 
             categoryName = "Science";
@@ -72,6 +80,9 @@ namespace DSA
 
         private void btn_History_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             if (isAnimating) return; // Prevent interaction while animation is in progress
 
             categoryName = "History";
@@ -135,6 +146,9 @@ namespace DSA
 
         private void btn_Classic_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             moneyTree = "Classic";
             btn_Classic.BackgroundImage = Classic_Clicked;
             btn_HighRisk.BackgroundImage = HighRisk_Default;
@@ -142,6 +156,9 @@ namespace DSA
 
         private void btn_HighRisk_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             moneyTree = "High Risk";
             btn_HighRisk.BackgroundImage = HighRisk_Clicked;
             btn_Classic.BackgroundImage = Classic_Default;
