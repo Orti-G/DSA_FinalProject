@@ -129,6 +129,12 @@
     <Compile Include="Leaderboard.Designer.cs">
       <DependentUpon>Leaderboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mechanics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Leaderboard.resx">
       <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mechanics.resx">
       <DependentUpon>Mechanics.cs</DependentUpon>
@@ -576,6 +585,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\P3 WINNING UPDATED .gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label_GameHistory.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

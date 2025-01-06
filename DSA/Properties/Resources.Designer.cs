@@ -773,6 +773,16 @@ namespace DSA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Label_GameHistory {
+            get {
+                object obj = ResourceManager.GetObject("Label_GameHistory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Labels_CharacterName {
             get {
                 object obj = ResourceManager.GetObject("Labels_CharacterName", resourceCulture);

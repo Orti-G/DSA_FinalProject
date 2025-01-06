@@ -42,7 +42,8 @@ namespace DSA
             Home.homeInstance = homeForm;
             homeForm.Show();
             timer.Stop();
-            this.Hide();
+            this.Close();
+            this.Dispose();
         }
 
         private void ButtonTimer_Tick(object sender, EventArgs e)
@@ -57,14 +58,16 @@ namespace DSA
         {
             Character character = new Character();
             character.Show();
-            this.Hide();
+            this.Close();
+            this.Dispose();
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             Form4 mechanics = new Form4();
             mechanics.Show();
-            this.Hide();
+            this.Close();
+            this.Dispose();
         }
 
         private void Introduction_Load(object sender, EventArgs e)

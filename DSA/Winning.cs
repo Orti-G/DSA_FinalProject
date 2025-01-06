@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,11 +18,14 @@ namespace DSA
         private bool timeFreezeVisible;
         private bool SwitchQuestionVisible;
         private Queue<Inventory> Questions;
+        private SoundPlayer sfx;
 
         private int UserMoney;
         public Winning(Queue<Inventory> questions, bool halfchance, bool life2x, bool timeFreeze, bool switchQuestion)
         {
-            
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Winning.MP3");
+            sfx.Play();
+
             HalfChanceVisible = halfchance;
             Life2xVisible = life2x;
             timeFreezeVisible = timeFreeze;
@@ -29,6 +33,8 @@ namespace DSA
             Questions = questions;
 
             InitializeComponent();
+
+
         }
 
         private void Winning_Load(object sender, EventArgs e)

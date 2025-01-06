@@ -31,8 +31,7 @@ namespace DSA
             _timer.Stop();
             BeforeQA beforeQA = new BeforeQA();
             BeforeQA.instanceBQA = beforeQA;
-            this.Close();
-            this.Dispose();
+            
 
             if (Category.categoryName == "Math")
             {
@@ -61,7 +60,8 @@ namespace DSA
 
             beforeQA = null;
 
-
+            this.Close();
+            this.Dispose();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
