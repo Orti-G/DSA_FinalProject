@@ -28,51 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrandPrize2M));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userWinnings = new System.Windows.Forms.PictureBox();
+            this.userWinnings2M = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userWinnings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userWinnings2M)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::DSA.Properties.Resources.GIF_GranPrize_P1;
+            this.pictureBox1.BackgroundImage = global::DSA.Properties.Resources.GIF_GranPrize_p2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1524, 871);
+            this.pictureBox1.Size = new System.Drawing.Size(1143, 708);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // userWinnings
+            // userWinnings2M
             // 
-            this.userWinnings.BackColor = System.Drawing.Color.Transparent;
-            this.userWinnings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userWinnings.Image = ((System.Drawing.Image)(resources.GetObject("userWinnings.Image")));
-            this.userWinnings.Location = new System.Drawing.Point(234, 671);
-            this.userWinnings.Margin = new System.Windows.Forms.Padding(2);
-            this.userWinnings.Name = "userWinnings";
-            this.userWinnings.Size = new System.Drawing.Size(1023, 135);
-            this.userWinnings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userWinnings.TabIndex = 20;
-            this.userWinnings.TabStop = false;
-            this.userWinnings.Click += new System.EventHandler(this.userWinnings_Click);
+            this.userWinnings2M.BackColor = System.Drawing.Color.Transparent;
+            this.userWinnings2M.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userWinnings2M.Image = global::DSA.Properties.Resources.GIF_NewCashPrize_2M;
+            this.userWinnings2M.Location = new System.Drawing.Point(176, 545);
+            this.userWinnings2M.Margin = new System.Windows.Forms.Padding(2);
+            this.userWinnings2M.Name = "userWinnings2M";
+            this.userWinnings2M.Size = new System.Drawing.Size(767, 110);
+            this.userWinnings2M.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userWinnings2M.TabIndex = 20;
+            this.userWinnings2M.TabStop = false;
             // 
             // GrandPrize2M
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1524, 871);
-            this.Controls.Add(this.userWinnings);
+            this.ClientSize = new System.Drawing.Size(1143, 708);
+            this.Controls.Add(this.userWinnings2M);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GrandPrize2M";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GrandPrize2M";
+            this.Load += new System.EventHandler(this.GrandPrize2M_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userWinnings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userWinnings2M)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -80,6 +81,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox userWinnings;
+        private System.Windows.Forms.PictureBox userWinnings2M;
     }
 }
