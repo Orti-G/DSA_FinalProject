@@ -98,6 +98,12 @@
     <Compile Include="EndScreen.Designer.cs">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="GrandPrize2M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrandPrize2M.Designer.cs">
+      <DependentUpon>GrandPrize2M.cs</DependentUpon>
+    </Compile>
     <Compile Include="HistoryUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
