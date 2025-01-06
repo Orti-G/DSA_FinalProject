@@ -112,15 +112,15 @@ namespace DSA
 
             if (Character.playerCharacter == "Jeff")
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P1;
+                pic_player.Image = Properties.Resources.Character_GIF_P1;
             }
             else if (Character.playerCharacter == "Golfy")
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P2;
+                pic_player.Image = Properties.Resources.Character_GIF_P2;
             }
             else
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P3;
+                pic_player.Image = Properties.Resources.Character_GIF_P3;
             }
 
             if (Category.categoryName == "Math")

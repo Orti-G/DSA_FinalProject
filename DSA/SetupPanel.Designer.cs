@@ -37,11 +37,13 @@
             this.picBox_category = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.selectCharacter1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_moneyTree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_category)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Back
@@ -99,9 +101,9 @@
             this.label_userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(0)))), ((int)(((byte)(137)))));
             this.label_userName.Font = new System.Drawing.Font("Footlight MT Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_userName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.label_userName.Location = new System.Drawing.Point(835, 272);
+            this.label_userName.Location = new System.Drawing.Point(778, 292);
             this.label_userName.Name = "label_userName";
-            this.label_userName.Size = new System.Drawing.Size(259, 38);
+            this.label_userName.Size = new System.Drawing.Size(296, 38);
             this.label_userName.TabIndex = 27;
             this.label_userName.Text = "USER NAME";
             this.label_userName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -121,10 +123,10 @@
             // picBox_moneyTree
             // 
             this.picBox_moneyTree.Image = global::DSA.Properties.Resources.Format_HighRiskMT_Clicked;
-            this.picBox_moneyTree.Location = new System.Drawing.Point(586, 271);
+            this.picBox_moneyTree.Location = new System.Drawing.Point(751, 349);
             this.picBox_moneyTree.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_moneyTree.Name = "picBox_moneyTree";
-            this.picBox_moneyTree.Size = new System.Drawing.Size(340, 99);
+            this.picBox_moneyTree.Size = new System.Drawing.Size(429, 126);
             this.picBox_moneyTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox_moneyTree.TabIndex = 29;
             this.picBox_moneyTree.TabStop = false;
@@ -132,10 +134,10 @@
             // picBox_category
             // 
             this.picBox_category.Image = global::DSA.Properties.Resources.Category_Science_Clicked;
-            this.picBox_category.Location = new System.Drawing.Point(586, 375);
+            this.picBox_category.Location = new System.Drawing.Point(751, 479);
             this.picBox_category.Margin = new System.Windows.Forms.Padding(2);
             this.picBox_category.Name = "picBox_category";
-            this.picBox_category.Size = new System.Drawing.Size(426, 155);
+            this.picBox_category.Size = new System.Drawing.Size(495, 178);
             this.picBox_category.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox_category.TabIndex = 30;
             this.picBox_category.TabStop = false;
@@ -143,10 +145,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(781, 256);
+            this.pictureBox2.Location = new System.Drawing.Point(751, 279);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(372, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(353, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
@@ -157,13 +159,24 @@
             this.selectCharacter1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("selectCharacter1.BackgroundImage")));
             this.selectCharacter1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.selectCharacter1.Image = ((System.Drawing.Image)(resources.GetObject("selectCharacter1.Image")));
-            this.selectCharacter1.Location = new System.Drawing.Point(413, 256);
+            this.selectCharacter1.Location = new System.Drawing.Point(3, -74);
             this.selectCharacter1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.selectCharacter1.Name = "selectCharacter1";
-            this.selectCharacter1.Size = new System.Drawing.Size(300, 401);
+            this.selectCharacter1.Size = new System.Drawing.Size(307, 473);
             this.selectCharacter1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.selectCharacter1.TabIndex = 32;
             this.selectCharacter1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.selectCharacter1);
+            this.panel1.Location = new System.Drawing.Point(413, 275);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(313, 382);
+            this.panel1.TabIndex = 33;
             // 
             // SetupPanel
             // 
@@ -172,7 +185,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1524, 871);
-            this.Controls.Add(this.selectCharacter1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.picBox_category);
             this.Controls.Add(this.picBox_moneyTree);
             this.Controls.Add(this.pictureBox5);
@@ -191,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBox_category)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selectCharacter1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -204,5 +218,6 @@
         private System.Windows.Forms.PictureBox picBox_category;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox selectCharacter1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
