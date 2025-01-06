@@ -178,6 +178,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GrandPrize2M.resx">
       <DependentUpon>GrandPrize2M.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="HistoryUC.resx">
       <DependentUpon>HistoryUC.cs</DependentUpon>
