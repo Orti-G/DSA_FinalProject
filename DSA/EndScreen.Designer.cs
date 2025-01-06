@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EndScreen));
+            this.pic_player = new System.Windows.Forms.PictureBox();
             this.btn_Home = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.startButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.userWinnings = new System.Windows.Forms.PictureBox();
@@ -36,18 +37,33 @@
             this.picBox_MoneyTree = new System.Windows.Forms.PictureBox();
             this.picBox_Category = new System.Windows.Forms.PictureBox();
             this.panel_userName = new System.Windows.Forms.PictureBox();
-            this.picBox_player = new System.Windows.Forms.PictureBox();
             this.label_userName = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userWinnings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_MoneyTree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Category)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_userName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pic_player
+            // 
+            this.pic_player.BackColor = System.Drawing.Color.Transparent;
+            this.pic_player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic_player.BackgroundImage")));
+            this.pic_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pic_player.Image = ((System.Drawing.Image)(resources.GetObject("pic_player.Image")));
+            this.pic_player.Location = new System.Drawing.Point(2, -38);
+            this.pic_player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_player.Name = "pic_player";
+            this.pic_player.Size = new System.Drawing.Size(217, 357);
+            this.pic_player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_player.TabIndex = 32;
+            this.pic_player.TabStop = false;
             // 
             // btn_Home
             // 
@@ -72,7 +88,7 @@
             this.btn_Home.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
             this.btn_Home.TabIndex = 18;
             this.btn_Home.Values.Text = "HOME";
-            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
+            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click_1);
             // 
             // startButton
             // 
@@ -164,20 +180,6 @@
             this.panel_userName.TabIndex = 28;
             this.panel_userName.TabStop = false;
             // 
-            // picBox_player
-            // 
-            this.picBox_player.BackColor = System.Drawing.Color.Transparent;
-            this.picBox_player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBox_player.BackgroundImage")));
-            this.picBox_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picBox_player.Image = ((System.Drawing.Image)(resources.GetObject("picBox_player.Image")));
-            this.picBox_player.Location = new System.Drawing.Point(384, 174);
-            this.picBox_player.Margin = new System.Windows.Forms.Padding(2);
-            this.picBox_player.Name = "picBox_player";
-            this.picBox_player.Size = new System.Drawing.Size(218, 272);
-            this.picBox_player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox_player.TabIndex = 27;
-            this.picBox_player.TabStop = false;
-            // 
             // label_userName
             // 
             this.label_userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(0)))), ((int)(((byte)(137)))));
@@ -229,20 +231,32 @@
             this.kryptonButton1.Values.Text = "SHOW LEADER BOARD";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.CharacterSelectedBox;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pic_player);
+            this.panel1.Location = new System.Drawing.Point(370, 174);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(222, 270);
+            this.panel1.TabIndex = 50;
+            // 
             // EndScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::DSA.Properties.Resources.BG_EndScreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1219, 697);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label_userName);
             this.Controls.Add(this.picBox_MoneyTree);
             this.Controls.Add(this.picBox_Category);
             this.Controls.Add(this.panel_userName);
-            this.Controls.Add(this.picBox_player);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.userWinnings);
             this.Controls.Add(this.btn_Home);
@@ -252,15 +266,16 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EndScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form9";
+            this.Text = "x";
             this.Load += new System.EventHandler(this.EndScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userWinnings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_MoneyTree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_Category)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_userName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -273,9 +288,10 @@
         private System.Windows.Forms.PictureBox picBox_MoneyTree;
         private System.Windows.Forms.PictureBox picBox_Category;
         private System.Windows.Forms.PictureBox panel_userName;
-        private System.Windows.Forms.PictureBox picBox_player;
         private System.Windows.Forms.Label label_userName;
         private System.Windows.Forms.PictureBox pictureBox4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pic_player;
     }
 }

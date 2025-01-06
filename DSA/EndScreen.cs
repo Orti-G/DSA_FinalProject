@@ -112,15 +112,15 @@ namespace DSA
 
             if (Character.playerCharacter == "Jeff")
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P1;
+                pic_player.Image = Properties.Resources.Character_GIF_P1;
             }
             else if (Character.playerCharacter == "Golfy")
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P2;
+                pic_player.Image = Properties.Resources.Character_GIF_P2;
             }
             else
             {
-                picBox_player.Image = Properties.Resources.Character_GIF_P3;
+                pic_player.Image = Properties.Resources.Character_GIF_P3;
             }
 
             if (Category.categoryName == "Math")
@@ -159,7 +159,7 @@ namespace DSA
             myForm = null;
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
+        private void btn_Home_Click_1(object sender, EventArgs e)
         {
             Home homeForm = new Home();
             Home.homeInstance = homeForm;
