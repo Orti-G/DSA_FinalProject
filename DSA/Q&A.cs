@@ -86,6 +86,7 @@ namespace DSA
             GifTimer.Enabled = false;
 
             BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_1kto20k.MP3";
+            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_35kto2M.MP3";
         }
 
 
@@ -1050,11 +1051,11 @@ namespace DSA
                 }
                 else if (Character.playerCharacter == "Golfy")
                 {
-                    BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                    BackgroundGif.Image = Properties.Resources.P2_WINNING_UPDATED;
                 }
                 else
                 {
-                    BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
+                    BackgroundGif.Image = Properties.Resources.P3_WINNING_UPDATED_;
                 }
 
                 sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\WAV_CorrectAnswer.WAV");

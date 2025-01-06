@@ -1143,7 +1143,7 @@
             this.panel_FinalAnswerNotif.Controls.Add(this.btn_FinalAnswerNo);
             this.panel_FinalAnswerNotif.Controls.Add(this.kryptonButton1);
             this.panel_FinalAnswerNotif.Location = new System.Drawing.Point(430, 419);
-            this.panel_FinalAnswerNotif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_FinalAnswerNotif.Margin = new System.Windows.Forms.Padding(4);
             this.panel_FinalAnswerNotif.Name = "panel_FinalAnswerNotif";
             this.panel_FinalAnswerNotif.Size = new System.Drawing.Size(362, 82);
             this.panel_FinalAnswerNotif.TabIndex = 46;
