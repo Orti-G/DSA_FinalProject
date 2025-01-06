@@ -16,5 +16,10 @@ namespace DSA
         {
             InitializeComponent();
         }
+
+        private void userWinnings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

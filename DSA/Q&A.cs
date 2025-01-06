@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,6 +52,8 @@ namespace DSA
 
         private Timer timerForLifelines;
 
+        private SoundPlayer sfx;
+
         public QA(Queue<Inventory> questions, bool halfchance, bool life2x, bool timeFreeze, bool switchQuestion)
         {
 
@@ -81,6 +84,8 @@ namespace DSA
                 SafeHavens = checkpoint;
             }
             GifTimer.Enabled = false;
+
+            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_1kto20k.MP3";
         }
 
 
@@ -225,6 +230,9 @@ namespace DSA
 
         private void Lifeline_5050_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
+
             Random rnd = new Random();
             List<string> list = new List<string>();
             list.Add("A");
@@ -287,6 +295,8 @@ namespace DSA
 
         private void Lifeline_x2_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
             Life2x = true;
             Lifeline_x2.Visible = false;
             Life2xVisible = false;
@@ -298,6 +308,9 @@ namespace DSA
 
         private void Lifeline_timeFreeze_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
+
             TimeToAnswer.Stop();
             GifTimer.Enabled = false;
 
@@ -314,7 +327,8 @@ namespace DSA
 
         private void Lifeline_SwitchQ_Click(object sender, EventArgs e)
         {
-
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_LifelineActivated(wav).wav");
+            sfx.Play();
             Question_Text.Text = currentQuestion.getSpareQuestion();
 
             if (currentQuestion.getSpareOptions()[0].Length <= 26)
@@ -499,6 +513,9 @@ namespace DSA
 
         private void ChoiceA_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
+
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "A";
@@ -521,6 +538,8 @@ namespace DSA
 
         private void ChoiceB_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "B";
@@ -543,6 +562,8 @@ namespace DSA
 
         private void ChoiceC_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "C";
@@ -565,6 +586,8 @@ namespace DSA
 
         private void ChoiceD_Text_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_AnswerDoubleClicked(wav).wav");
+            sfx.Play();
             if (Life2x && UserAnswer == null)
             {
                 UserAnswer = "D";
@@ -606,6 +629,7 @@ namespace DSA
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Intense.MP3";
             panel_FinalAnswerNotif.Visible = false;
 
             if (Life2x && UserSecondAnswer == null)
@@ -741,9 +765,12 @@ namespace DSA
                 {
                     BackgroundGif.Image = Properties.Resources.GIF_Intense_P3;
                 }
-                
+
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Intense.MP3";
                 transitionTimer.Start();
                 DisabledButtonEvent();
+
+
             }
         }
         private void btn_FinalAnswerNo_Click(object sender, EventArgs e)
@@ -1029,7 +1056,10 @@ namespace DSA
                 {
                     BackgroundGif.Image = Properties.Resources.P1_WINNING_UPDATED_;
                 }
-                
+
+                sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\WAV_CorrectAnswer.WAV");
+                sfx.Play();
+                panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.Q_A_Correct;
                 panel_CorrectAnswerNotice.Visible = true;
                 transitionCount = 1;
                 transitionTimer.Start();
@@ -1037,6 +1067,11 @@ namespace DSA
             }
             else 
             {
+                sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\WAV_WrongAnswer.WAV");
+                sfx.Play();
+                panel_CorrectAnswerNotice.BackgroundImage = Properties.Resources.Q_A_Wrong;
+                panel_CorrectAnswerNotice.Visible = true;
+
                 BackgroundGif.Image = Properties.Resources.GIF_Host_Disappointed;
                 transitionCount = 2;
                 transitionTimer.Start();

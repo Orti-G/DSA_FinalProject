@@ -58,6 +58,7 @@
             this.userWinnings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userWinnings.TabIndex = 20;
             this.userWinnings.TabStop = false;
+            this.userWinnings.Click += new System.EventHandler(this.userWinnings_Click);
             // 
             // GrandPrize2M
             // 

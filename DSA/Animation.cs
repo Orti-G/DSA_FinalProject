@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,9 +14,12 @@ namespace DSA
     public partial class Animation : Form
     {
         private Timer _timer;
+        private SoundPlayer sfx;
         public Animation()
         {
             InitializeComponent();
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\WAV_IfYouAreReady.WAV");
+            sfx.Play();
             _timer = new Timer();
             _timer.Interval = 4000;
             _timer.Tick += Timer_Tick;
