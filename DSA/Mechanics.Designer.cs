@@ -40,7 +40,6 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::DSA.Properties.Resources.BG_Mechanics;
             this.panel1.Controls.Add(this.btn_Restart);
             this.panel1.Controls.Add(this.btn_Home);
             this.panel1.Controls.Add(this.btn_Start);
@@ -60,6 +59,9 @@
             this.btn_Restart.Size = new System.Drawing.Size(80, 61);
             this.btn_Restart.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_Restart.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Restart.StateCommon.Back.Image = global::DSA.Properties.Resources.ICON_Restart;
+            this.btn_Restart.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Control;
+            this.btn_Restart.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.btn_Restart.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Restart.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
             this.btn_Restart.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -83,7 +85,7 @@
             this.btn_Home.Size = new System.Drawing.Size(74, 61);
             this.btn_Home.StateCommon.Back.Color1 = System.Drawing.Color.Navy;
             this.btn_Home.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_Home.StateCommon.Back.Image = global::DSA.Properties.Resources.TRY_Icon;
+            this.btn_Home.StateCommon.Back.Image = global::DSA.Properties.Resources.ICON_Home;
             this.btn_Home.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.btn_Home.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Home.StateCommon.Border.Color2 = System.Drawing.Color.DarkBlue;
@@ -141,7 +143,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1524, 872);
             this.Controls.Add(this.panel1);
