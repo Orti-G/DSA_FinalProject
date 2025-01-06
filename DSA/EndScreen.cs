@@ -49,6 +49,7 @@ namespace DSA
             else
             {
                 GrandPrize2M.grandPrizeInstance.Dispose();
+                GrandPrize2M.grandPrizeInstance = null;
             }
             
         }
