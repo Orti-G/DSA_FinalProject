@@ -21,8 +21,15 @@ namespace DSA
         }
         private async Task LoadDataAsync()
         {
-
-            await Task.Delay(3000);
+            if (GrandPrize2M.grandPrizeInstance == null) 
+            {
+                await Task.Delay(3000);
+            }
+            else
+            {
+                await Task.Delay(5000);
+            }
+            
 
         }
         private async void EndScreen_Load(object sender, EventArgs e)
@@ -35,7 +42,15 @@ namespace DSA
             showCaseMoney();
             SetUpPlayer();
 
-            BeforeQA.instanceBQA.Dispose();
+            if (GrandPrize2M.grandPrizeInstance == null)
+            {
+                BeforeQA.instanceBQA.Dispose();
+            }
+            else
+            {
+                GrandPrize2M.grandPrizeInstance.Dispose();
+            }
+            
         }
 
         private void showCaseMoney() 

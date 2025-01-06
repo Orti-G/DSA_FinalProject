@@ -85,8 +85,18 @@ namespace DSA
             }
             GifTimer.Enabled = false;
 
-            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_1kto20k.MP3";
-            BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_35kto2M.MP3";
+            currentQuestion = Questions.Dequeue();
+
+            MoneyTreeLevel = 15 - Questions.Count;
+
+            if (MoneyTreeLevel >= 1 && MoneyTreeLevel <= 5)
+            {
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_1kto20k.MP3";
+            }
+            else 
+            {
+                BGMusic.URL = @"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Question_35kto2M.MP3";
+            }
         }
 
 
@@ -102,10 +112,6 @@ namespace DSA
 
             BeforeQA.instanceBQA.Dispose();
             GifTimer.Enabled = true;
-
-            currentQuestion = Questions.Dequeue();
-
-            MoneyTreeLevel = 15 - Questions.Count;
 
             MoneyTreeLevelHighlight();
 
@@ -972,11 +978,17 @@ namespace DSA
                 }
                 else
                 {
+                    GrandPrize2M grandPrize2M = new GrandPrize2M();
+                    GrandPrize2M.grandPrizeInstance = grandPrize2M;
+
                     EndScreen gameResult = new EndScreen(2000000);
+                    grandPrize2M.TopMost = true;
+                    grandPrize2M.Show();
                     gameResult.Show();
                     this.Close();
                     this.Dispose();
                     myForm = null;
+                    grandPrize2M = null;
                     gameResult = null;
                     GC.Collect();
                     GC.WaitForPendingFinalizers();

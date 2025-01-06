@@ -17,7 +17,7 @@ namespace DSA
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QA(Mathematics.MathematicsQuestions(),true,true,true,true));
+            Application.Run(new Home());
         }
     }
 }
