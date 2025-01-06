@@ -176,6 +176,9 @@
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GrandPrize2M.resx">
+      <DependentUpon>GrandPrize2M.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HistoryUC.resx">
       <DependentUpon>HistoryUC.cs</DependentUpon>
     </EmbeddedResource>
