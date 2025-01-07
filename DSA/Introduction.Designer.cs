@@ -40,7 +40,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.BackgroundImage = global::DSA.Properties.Resources.BG_Studio_3;
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.GIF_New_HomeScreen;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.kryptonButton1);
             this.panel1.Controls.Add(this.startButton);
@@ -50,6 +50,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1920, 1055);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // kryptonButton1
             // 

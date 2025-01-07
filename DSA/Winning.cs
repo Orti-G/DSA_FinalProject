@@ -23,7 +23,7 @@ namespace DSA
         private int UserMoney;
         public Winning(Queue<Inventory> questions, bool halfchance, bool life2x, bool timeFreeze, bool switchQuestion)
         {
-            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\BGM_Winning.MP3");
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\WAV_Winning.WAV");
             sfx.Play();
 
             HalfChanceVisible = halfchance;
@@ -135,9 +135,10 @@ namespace DSA
                 currentMoneyGif.Image = Properties.Resources.GIF_NewCashPrize_2M;
             }
         }
-
         private void btn_Continue_Click(object sender, EventArgs e)
         {
+        sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_ContinueAndSelections.WAV");
+        sfx.Play();
             BeforeQA beforeQA = new BeforeQA();
             BeforeQA.instanceBQA = beforeQA;
 
@@ -156,7 +157,8 @@ namespace DSA
         }
 
         private void btn_takeMoney_Click(object sender, EventArgs e)
-        {
+        {sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_TakeTheMoney.WAV");
+            sfx.Play();
             BeforeQA beforeQA = new BeforeQA();
             BeforeQA.instanceBQA = beforeQA;
 

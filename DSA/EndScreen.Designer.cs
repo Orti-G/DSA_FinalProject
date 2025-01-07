@@ -57,7 +57,7 @@
             this.pic_player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic_player.BackgroundImage")));
             this.pic_player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pic_player.Image = ((System.Drawing.Image)(resources.GetObject("pic_player.Image")));
-            this.pic_player.Location = new System.Drawing.Point(2, -48);
+            this.pic_player.Location = new System.Drawing.Point(2, -110);
             this.pic_player.Margin = new System.Windows.Forms.Padding(2);
             this.pic_player.Name = "pic_player";
             this.pic_player.Size = new System.Drawing.Size(271, 446);

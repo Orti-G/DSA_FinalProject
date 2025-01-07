@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace DSA
             }
             else
             {
-                await Task.Delay(5000);
+                await Task.Delay(15000);
             }
             
 
@@ -165,9 +166,12 @@ namespace DSA
             GC.WaitForPendingFinalizers();
             GC.Collect();
         }
-
+ private SoundPlayer sfx;
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
+           
+        sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_ContinueAndSelections.WAV");
+        sfx.Play();
             Leaderboard myForm = new Leaderboard();
             myForm.Show();
             this.Close();
@@ -177,6 +181,7 @@ namespace DSA
 
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
+       
             Home homeForm = new Home();
             Home.homeInstance = homeForm;
             homeForm.Show();

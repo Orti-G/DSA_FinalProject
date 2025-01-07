@@ -589,5 +589,11 @@
   <ItemGroup>
     <None Include="Resources\Label_GameHistory.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_NEW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_NEW1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

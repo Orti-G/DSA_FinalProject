@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -65,7 +66,7 @@ namespace DSA
             Character.characterInstance.Dispose();
             Character.characterInstance = null;
 
-            //Home.homeInstance.Dispose();
+            Home.homeInstance.Dispose();
             Home.homeInstance = null;
             animate = null;
 
@@ -78,9 +79,10 @@ namespace DSA
             GC.Collect();
 
         }
-
+ private SoundPlayer sfx;
         private void btn_Back_Click(object sender, EventArgs e)
         {
+
             Category.categoryInstance.Show();
             this.Close();
             this.Dispose();

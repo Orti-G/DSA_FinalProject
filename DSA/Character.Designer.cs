@@ -233,7 +233,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::DSA.Properties.Resources.BG_studio;
+            this.BackgroundImage = global::DSA.Properties.Resources.BG_NEW1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1524, 871);
             this.Controls.Add(this.panel_P3);

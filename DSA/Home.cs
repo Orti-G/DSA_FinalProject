@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,7 @@ namespace DSA
             mechanics.Show();
             this.Hide();
         }
-
+private SoundPlayer sfx;
         private void startButton_Click(object sender, EventArgs e)
         {
             if (Character.characterInstance == null)

@@ -40,6 +40,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::DSA.Properties.Resources.BG_Mechanics;
             this.panel1.Controls.Add(this.btn_Restart);
             this.panel1.Controls.Add(this.btn_Home);
             this.panel1.Controls.Add(this.btn_Start);

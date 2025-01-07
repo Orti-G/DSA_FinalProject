@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,6 +43,8 @@ namespace DSA
 
         private void selectCharacter1_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_ContinueAndSelections.WAV");
+            sfx.Play();
             playerCharacter = "Jeff";
             pictureBox_P1.Image = player1_image;
             panel_P1.BackgroundImage = panelBackground;
@@ -55,6 +58,8 @@ namespace DSA
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_ContinueAndSelections.WAV");
+            sfx.Play();
             playerCharacter = "Golfy";
 
             pictureBox_P1.Image = player1_Stillimage;
@@ -69,6 +74,8 @@ namespace DSA
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            sfx = new SoundPlayer(@"C:\Users\manam\OneDrive\Desktop\DSA PROJECT-1stSem2ndY\INPUT MATERIALS\SFX\FinalBGM&SFX\SFX_ContinueAndSelections.WAV");
+            sfx.Play();
             playerCharacter = "Squidward";
 
             pictureBox_P1.Image = player1_Stillimage;
@@ -89,9 +96,11 @@ namespace DSA
                 txtBox_userName.Text = null;
             }  
         }
-
+ private SoundPlayer sfx;
         private void btn_Back_Click(object sender, EventArgs e)
         {
+           
+        
             if (Home.homeInstance != null)
             {
                 Home.homeInstance.Show();

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,7 +27,7 @@ namespace DSA
             timer.Start();
 
             buttonTimer = new Timer();
-            buttonTimer.Interval = 30000; 
+            buttonTimer.Interval = 32000; 
             buttonTimer.Tick += ButtonTimer_Tick;
             buttonTimer.Start();
 
@@ -54,12 +55,16 @@ namespace DSA
             buttonTimer.Stop();
         }
 
+        private SoundPlayer sfx;
         private void startButton_Click(object sender, EventArgs e)
         {
-            Character character = new Character();
-            character.Show();
+            Home home = new Home();
+            Home.homeInstance = home;
+            home.Show();
             this.Close();
             this.Dispose();
+
+
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -80,6 +85,9 @@ namespace DSA
 
         }
 
-     
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

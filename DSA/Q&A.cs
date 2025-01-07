@@ -979,17 +979,13 @@ namespace DSA
                 else
                 {
                     GrandPrize2M grandPrize2M = new GrandPrize2M();
-                    GrandPrize2M.grandPrizeInstance = grandPrize2M;
-
-                    EndScreen gameResult = new EndScreen(2000000);
-                    grandPrize2M.TopMost = true;
                     grandPrize2M.Show();
-                    gameResult.Show();
+
                     this.Close();
                     this.Dispose();
                     myForm = null;
                     grandPrize2M = null;
-                    gameResult = null;
+
                     GC.Collect();
                     GC.WaitForPendingFinalizers();
                     GC.Collect();

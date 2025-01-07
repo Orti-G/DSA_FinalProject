@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Leaderboard));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel_GameHistory = new System.Windows.Forms.FlowLayoutPanel();
@@ -69,7 +68,7 @@
             this.kryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Gold;
             this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
             this.kryptonButton3.TabIndex = 33;
-            this.kryptonButton3.Values.Text = "BACK";
+            this.kryptonButton3.Values.Text = "HOME";
             this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // flowLayoutPanel_GameHistory
@@ -86,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::DSA.Properties.Resources.BG_NEW;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1506, 825);
             this.Controls.Add(this.flowLayoutPanel_GameHistory);
